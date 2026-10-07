@@ -2398,6 +2398,89 @@
             "start_time": "2026-09-23T06:00:00",
             "end_time": "2026-09-29T22:00:00",
             "description": "Xurkitree, Pheromosa, and Buzzwole will be in five-star raid battles from September 23, 2026 to September 29, 2026.\n- Xurkitree: Asia-Pacific\n- Pheromosa: Europe, the Middle East, Africa, and India\n- Buzzwole: The Americas and Greenland\nThere will also be a Raid Hour featuring these regional raid bosses from 6:00 p.m. to 7:00 p.m. local time on September 23."
+        },
+        {
+            "title": "Shadow Thundurus (Incarnate Forme) in Shadow Raids",
+            "article_url": "https://leekduck.com/events/shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/events-default-img.jpg",
+            "category": "Raid Battles",
+            "details": {
+                "raids": [
+                    {
+                        "name": "Thundurus (Incarnate)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_642_11.png",
+                        "shiny_available": true
+                    }
+                ],
+                "shiny": [
+                    {
+                        "name": "Thundurus (Incarnate)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_642_11_shiny.png",
+                        "shiny_available": false
+                    }
+                ]
+            },
+            "is_local_time": true,
+            "start_time": "2026-09-09T06:00:00",
+            "end_time": "2026-10-06T22:00:00",
+            "description": "Shadow Thundurus (Incarnate Forme) will appear in five-star Shadow Raids every weekend from September 9, 2026 to October 6, 2026. If you’re lucky, you may encounter Shiny Shadow Thundurus (Incarnate Forme)!"
+        },
+        {
+            "title": "Mega Victreebel in Mega Raids",
+            "article_url": "https://leekduck.com/events/mega-victreebel-in-mega-raids-september-2026/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/mega-default.jpg",
+            "category": "Raid Battles",
+            "details": {
+                "raids": [
+                    {
+                        "name": "Mega Victreebel",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm71.fMEGA.icon.png",
+                        "shiny_available": true
+                    }
+                ],
+                "shiny": [
+                    {
+                        "name": "Mega Victreebel",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm71.fMEGA.s.icon.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Victreebel",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_071_00_shiny.png",
+                        "shiny_available": false
+                    }
+                ]
+            },
+            "is_local_time": true,
+            "start_time": "2026-09-30T06:00:00",
+            "end_time": "2026-10-06T22:00:00",
+            "description": "Mega Victreebel will be in Mega Raids from September 30, 2026 at 6 am to October 6, 2026 at 10 pm local time."
+        },
+        {
+            "title": "Xerneas in 5-star Raid Battles",
+            "article_url": "https://leekduck.com/events/xerneas-in-5-star-raid-battles-september-2026/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/xerneas-woods.jpg",
+            "category": "Raid Battles",
+            "details": {
+                "raids": [
+                    {
+                        "name": "Xerneas",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_716_00.png",
+                        "shiny_available": true
+                    }
+                ],
+                "shiny": [
+                    {
+                        "name": "Xerneas",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_716_00_shiny.png",
+                        "shiny_available": false
+                    }
+                ]
+            },
+            "is_local_time": true,
+            "start_time": "2026-09-30T06:00:00",
+            "end_time": "2026-10-06T22:00:00",
+            "description": "Xerneas will be in five-star raid battles from September 30, 2026 to October 6, 2026.\nThere will also be a Raid Hour featuring Xerneas from 6:00 p.m. to 7:00 p.m. local time on September 30."
         }
     ],
     "Community Day": [
