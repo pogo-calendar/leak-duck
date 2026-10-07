@@ -1,50 +1,4 @@
 {
-    "Max Mondays": [
-        {
-            "title": "Dynamax Sizzlipede during Max Monday",
-            "article_url": "https://leekduck.com/events/max-mondays-2026-10-05/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg",
-            "category": "Max Mondays",
-            "details": {},
-            "is_local_time": true,
-            "start_time": "2026-10-05T06:00:00",
-            "end_time": "2026-10-05T21:00:00",
-            "description": "Dynamax Sizzlipede may appear in Max Battles from October 5, 2026 through October 11, 2026.\nThese Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays.\n- Power Spots will refresh more frequently.\n- Additional Power Spots will be active on Mondays compared to the rest of the week.\n- Max Battles will rotate to feature different Dynamax Pokémon.\nOn October 5, 2026, the featured Dynamax Pokémon is Sizzlipede.\n- Sizzlipede"
-        },
-        {
-            "title": "Dynamax Rookidee during Max Monday",
-            "article_url": "https://leekduck.com/events/max-mondays-2026-10-12/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg",
-            "category": "Max Mondays",
-            "details": {},
-            "is_local_time": true,
-            "start_time": "2026-10-12T06:00:00",
-            "end_time": "2026-10-12T21:00:00",
-            "description": "Dynamax Rookidee may appear in Max Battles from October 12, 2026 through October 18, 2026.\nThese Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays.\n- Power Spots will refresh more frequently.\n- Additional Power Spots will be active on Mondays compared to the rest of the week.\n- Max Battles will rotate to feature different Dynamax Pokémon.\nOn October 12, 2026, the featured Dynamax Pokémon is Rookidee.\n- Rookidee"
-        },
-        {
-            "title": "Dynamax Sneasel during Max Monday",
-            "article_url": "https://leekduck.com/events/max-mondays-2026-10-19/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg",
-            "category": "Max Mondays",
-            "details": {},
-            "is_local_time": true,
-            "start_time": "2026-10-19T06:00:00",
-            "end_time": "2026-10-19T21:00:00",
-            "description": "Dynamax Sneasel may appear in Max Battles from October 19, 2026 through October 25, 2026.\nThese Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays.\n- Power Spots will refresh more frequently.\n- Additional Power Spots will be active on Mondays compared to the rest of the week.\n- Max Battles will rotate to feature different Dynamax Pokémon.\nOn October 19, 2026, the featured Dynamax Pokémon is Sneasel.\n- Sneasel"
-        },
-        {
-            "title": "Dynamax Sableye during Max Monday",
-            "article_url": "https://leekduck.com/events/max-mondays-2026-10-26/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg",
-            "category": "Max Mondays",
-            "details": {},
-            "is_local_time": true,
-            "start_time": "2026-10-26T06:00:00",
-            "end_time": "2026-10-26T21:00:00",
-            "description": "Dynamax Sableye may appear in Max Battles from October 26, 2026 through November 1, 2026.\nThese Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays.\n- Power Spots will refresh more frequently.\n- Additional Power Spots will be active on Mondays compared to the rest of the week.\n- Max Battles will rotate to feature different Dynamax Pokémon.\nOn October 26, 2026, the featured Dynamax Pokémon is Sableye.\n- Sableye"
-        }
-    ],
     "GO Pass": [
         {
             "title": "GO Pass: September",
@@ -1374,6 +1328,41 @@
             "description": "Explore by starlight during the Perseids meteor shower for a chance to encounter Minior in Pokémon GO!\nThis Minior Shower runs from August 10, 2027 at 5:00 p.m. to August 15, 2027 at 11:59 p.m. local time."
         }
     ],
+    "Max Mondays": [
+        {
+            "title": "Dynamax Rookidee during Max Monday",
+            "article_url": "https://leekduck.com/events/max-mondays-2026-10-12/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg",
+            "category": "Max Mondays",
+            "details": {},
+            "is_local_time": true,
+            "start_time": "2026-10-12T06:00:00",
+            "end_time": "2026-10-12T21:00:00",
+            "description": "Dynamax Rookidee may appear in Max Battles from October 12, 2026 through October 18, 2026.\nThese Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays.\n- Power Spots will refresh more frequently.\n- Additional Power Spots will be active on Mondays compared to the rest of the week.\n- Max Battles will rotate to feature different Dynamax Pokémon.\nOn October 12, 2026, the featured Dynamax Pokémon is Rookidee.\n- Rookidee"
+        },
+        {
+            "title": "Dynamax Sneasel during Max Monday",
+            "article_url": "https://leekduck.com/events/max-mondays-2026-10-19/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg",
+            "category": "Max Mondays",
+            "details": {},
+            "is_local_time": true,
+            "start_time": "2026-10-19T06:00:00",
+            "end_time": "2026-10-19T21:00:00",
+            "description": "Dynamax Sneasel may appear in Max Battles from October 19, 2026 through October 25, 2026.\nThese Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays.\n- Power Spots will refresh more frequently.\n- Additional Power Spots will be active on Mondays compared to the rest of the week.\n- Max Battles will rotate to feature different Dynamax Pokémon.\nOn October 19, 2026, the featured Dynamax Pokémon is Sneasel.\n- Sneasel"
+        },
+        {
+            "title": "Dynamax Sableye during Max Monday",
+            "article_url": "https://leekduck.com/events/max-mondays-2026-10-26/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg",
+            "category": "Max Mondays",
+            "details": {},
+            "is_local_time": true,
+            "start_time": "2026-10-26T06:00:00",
+            "end_time": "2026-10-26T21:00:00",
+            "description": "Dynamax Sableye may appear in Max Battles from October 26, 2026 through November 1, 2026.\nThese Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays.\n- Power Spots will refresh more frequently.\n- Additional Power Spots will be active on Mondays compared to the rest of the week.\n- Max Battles will rotate to feature different Dynamax Pokémon.\nOn October 26, 2026, the featured Dynamax Pokémon is Sableye.\n- Sableye"
+        }
+    ],
     "Max Battles": [
         {
             "title": "Dynamax Uxie, Mesprit, and Azelf Max Battle Day",
@@ -1508,6 +1497,11 @@
                     "Up to 6 Special Trades per day"
                 ],
                 "features": [
+                    {
+                        "name": "Gigantamax Duraludon",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-11-06-pokemon-go-wild-area-2026-sendai-japan/gigantamax-duraludon.png",
+                        "shiny_available": false
+                    },
                     {
                         "name": "Hisuian Goodra",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm706.fHISUIAN.icon.png",
@@ -1935,6 +1929,11 @@
                         "shiny_available": true
                     },
                     {
+                        "name": "Gigantamax Duraludon",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-11-06-pokemon-go-wild-area-2026-sendai-japan/gigantamax-duraludon.png",
+                        "shiny_available": false
+                    },
+                    {
                         "name": "Modern Jacket Machamp",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_068_00.png",
                         "shiny_available": true
@@ -1961,7 +1960,7 @@
             "is_local_time": false,
             "start_time": 1793926800,
             "end_time": 1794128400,
-            "description": "GO Wild Area returns in 2026 with Steel- and Dragon-type Pokémon, the debuts of Dynamax Dialga and Dynamax Palkia, and powerful mighty Pokémon. Collect GO Safari Balls to help catch these challenging encounters!\nDates: November 6, 7, or 8, 2026 Time: 10:00 a.m. – 6:00 p.m. JST (UTC+9) Location: Sendai, Japan, with gameplay throughout Miyagi Prefecture Ticket: ¥4,000 (including applicable taxes and fees) for one day\nAll event gameplay is exclusive to ticket holders. A standard ticket covers one selected day; Extra Day add-ons extend eligible gameplay to additional days. Gameplay is available only within the event area at the date and time specified on your ticket.\nTicket registration: Register from September 11 at 8:00 a.m. JST through September 15, 2026, at 7:59 a.m. JST. Registered Trainers will be notified of their purchase window afterward. Tickets are first come, first served, and registration does not guarantee availability. Read the ticket registration announcement."
+            "description": "GO Wild Area returns in 2026 with Steel- and Dragon-type Pokémon, the debuts of Gigantamax Duraludon, Dynamax Dialga, and Dynamax Palkia, and powerful mighty Pokémon. Collect GO Safari Balls to help catch these challenging encounters!\nDates: November 6, 7, or 8, 2026 Time: 10:00 a.m. – 6:00 p.m. JST (UTC+9) Location: Sendai, Japan, with gameplay throughout Miyagi Prefecture Ticket: ¥4,000 (including applicable taxes and fees) for one day\nAll event gameplay is exclusive to ticket holders. A standard ticket covers one selected day; Extra Day add-ons extend eligible gameplay to additional days. Gameplay is available only within the event area at the date and time specified on your ticket.\nTicket registration: Register from September 11 at 8:00 a.m. JST through September 15, 2026, at 7:59 a.m. JST. Registered Trainers will be notified of their purchase window afterward. Tickets are first come, first served, and registration does not guarantee availability. Read the ticket registration announcement."
         },
         {
             "title": "Pokémon GO Wild Area 2026: Mexico City",
@@ -1999,6 +1998,11 @@
                     "Up to 6 Special Trades per day"
                 ],
                 "features": [
+                    {
+                        "name": "Gigantamax Duraludon",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-11-06-pokemon-go-wild-area-2026-mexico-city/gigantamax-duraludon.png",
+                        "shiny_available": false
+                    },
                     {
                         "name": "Hisuian Goodra",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm706.fHISUIAN.icon.png",
@@ -2426,6 +2430,11 @@
                         "shiny_available": true
                     },
                     {
+                        "name": "Gigantamax Duraludon",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-11-06-pokemon-go-wild-area-2026-mexico-city/gigantamax-duraludon.png",
+                        "shiny_available": false
+                    },
+                    {
                         "name": "Modern Jacket Machamp",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_068_00.png",
                         "shiny_available": true
@@ -2452,7 +2461,7 @@
             "is_local_time": false,
             "start_time": 1793980800,
             "end_time": 1794182400,
-            "description": "GO Wild Area returns in 2026 with Steel- and Dragon-type Pokémon, the debuts of Dynamax Dialga and Dynamax Palkia, and powerful mighty Pokémon. Collect GO Safari Balls to help catch these challenging encounters!\nDates: November 6, 7, or 8, 2026 Time: 10:00 a.m. – 6:00 p.m. local time (UTC−6) Location: Mexico City, Mexico, with gameplay throughout the metropolitan area Ticket: MXN$350 (plus applicable taxes and fees) for one day\nAll event gameplay is exclusive to ticket holders. A standard ticket covers one selected day; Extra Day add-ons extend eligible gameplay to additional days. Gameplay is available only within the event area at the date and time specified on your ticket.\nTickets are available on the official event ticket page, while supplies last."
+            "description": "GO Wild Area returns in 2026 with Steel- and Dragon-type Pokémon, the debuts of Gigantamax Duraludon, Dynamax Dialga, and Dynamax Palkia, and powerful mighty Pokémon. Collect GO Safari Balls to help catch these challenging encounters!\nDates: November 6, 7, or 8, 2026 Time: 10:00 a.m. – 6:00 p.m. local time (UTC−6) Location: Mexico City, Mexico, with gameplay throughout the metropolitan area Ticket: MXN$350 (plus applicable taxes and fees) for one day\nAll event gameplay is exclusive to ticket holders. A standard ticket covers one selected day; Extra Day add-ons extend eligible gameplay to additional days. Gameplay is available only within the event area at the date and time specified on your ticket.\nTickets are available on the official event ticket page, while supplies last."
         },
         {
             "title": "Pokémon GO Wild Area 2026: Global",
@@ -2478,6 +2487,13 @@
                     "Up to 3 free Raid Passes per day from Gyms",
                     "Up to 6 Special Trades per day",
                     "Up to 6 free Raid Passes per day from Gyms"
+                ],
+                "features": [
+                    {
+                        "name": "Gigantamax Duraludon",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-11-14-pokemon-go-wild-area-2026-global/gigantamax-duraludon.png",
+                        "shiny_available": false
+                    }
                 ],
                 "spawns": [
                     {
@@ -2850,6 +2866,11 @@
                         "shiny_available": true
                     },
                     {
+                        "name": "Gigantamax Duraludon",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-11-14-pokemon-go-wild-area-2026-global/gigantamax-duraludon.png",
+                        "shiny_available": false
+                    },
+                    {
                         "name": "Modern Jacket Machamp",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_068_00.png",
                         "shiny_available": true
@@ -2864,7 +2885,7 @@
             "is_local_time": true,
             "start_time": "2026-11-14T10:00:00",
             "end_time": "2026-11-15T18:00:00",
-            "description": "GO Wild Area returns in 2026 with Steel- and Dragon-type Pokémon, the debuts of Dynamax Dialga and Dynamax Palkia, and powerful mighty Pokémon. Collect GO Safari Balls to help catch these challenging encounters!\nDates: November 14 and 15, 2026 Time: 10:00 a.m. – 6:00 p.m. local time each day Location: Worldwide\nAll Trainers can participate in the global event. An optional US$11.99 ticket adds Special Research, increased Shiny chances, extra Incense encounters, and additional bonuses across both days. Purchase a ticket from the Pokémon GO Web Store."
+            "description": "GO Wild Area returns in 2026 with Steel- and Dragon-type Pokémon, the debuts of Gigantamax Duraludon, Dynamax Dialga, and Dynamax Palkia, and powerful mighty Pokémon. Collect GO Safari Balls to help catch these challenging encounters!\nDates: November 14 and 15, 2026 Time: 10:00 a.m. – 6:00 p.m. local time each day Location: Worldwide\nAll Trainers can participate in the global event. An optional US$11.99 ticket adds Special Research, increased Shiny chances, extra Incense encounters, and additional bonuses across both days. Purchase a ticket from the Pokémon GO Web Store."
         }
     ],
     "Season": [
