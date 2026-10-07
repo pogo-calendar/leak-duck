@@ -1,17 +1,6 @@
 {
     "Max Mondays": [
         {
-            "title": "Dynamax Sobble during Max Monday",
-            "article_url": "https://leekduck.com/events/max-mondays-2026-09-28/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg",
-            "category": "Max Mondays",
-            "details": {},
-            "is_local_time": true,
-            "start_time": "2026-09-28T06:00:00",
-            "end_time": "2026-09-28T21:00:00",
-            "description": "Dynamax Sobble may appear in Max Battles from September 28, 2026 through October 4, 2026.\nThese Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays.\n- Power Spots will refresh more frequently.\n- Additional Power Spots will be active on Mondays compared to the rest of the week.\n- Max Battles will rotate to feature different Dynamax Pokémon.\nOn September 28, 2026, the featured Dynamax Pokémon is Sobble.\n- Sobble"
-        },
-        {
             "title": "Dynamax Sizzlipede during Max Monday",
             "article_url": "https://leekduck.com/events/max-mondays-2026-10-05/",
             "banner_url": "https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg",
@@ -56,18 +45,57 @@
             "description": "Dynamax Sableye may appear in Max Battles from October 26, 2026 through November 1, 2026.\nThese Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays.\n- Power Spots will refresh more frequently.\n- Additional Power Spots will be active on Mondays compared to the rest of the week.\n- Max Battles will rotate to feature different Dynamax Pokémon.\nOn October 26, 2026, the featured Dynamax Pokémon is Sableye.\n- Sableye"
         }
     ],
-    "GO Battle League": [
+    "GO Pass": [
         {
-            "title": "Ultra League, Master League: Mega Edition, and Retro Cup: Great League Edition | Twilight Trails",
-            "article_url": "https://leekduck.com/events/gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/go-battle-league-ultra-league-machamp-swampert.jpg",
-            "category": "GO Battle League",
-            "details": {},
-            "is_local_time": false,
-            "start_time": 1790107200,
-            "end_time": 1790712000,
-            "description": "The Ultra League, Master League: Mega Edition, and Retro Cup: Great League Edition will run from September 22, 2026, at 1:00 p.m. to September 29, 2026, at 1:00 p.m. PT.\nTrainers will also receive 4× Stardust from win rewards (this does not include end-of-set rewards).\n- Pokémon must be at or below 2,500 CP to enter.\n- No CP limit.\n- Mega-Evolved Pokémon are allowed.\n- Pokémon must be at or below 1,500 CP to enter.\n- Dark-, Steel-, and Fairy-type Pokémon are not eligible."
+            "title": "GO Pass: September",
+            "article_url": "https://leekduck.com/events/go-pass-september-2026/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-09-08-go-pass-september-2026/go-pass-september-2026.jpg",
+            "category": "GO Pass",
+            "details": {
+                "bonuses": [
+                    "2× Daily Adventure Incense duration",
+                    "Hold 10 more Gifts in your Item Bag",
+                    "Hold up to 20 more Gifts in your Item Bag",
+                    "Increased XP and Stardust from hatching Eggs",
+                    "One additional Candy for trading Pokémon",
+                    "Open up to 40 Gifts per day",
+                    "Open up to 50 Gifts per day",
+                    "Receive up to 125 Gifts per day from spinning PokéStop and Gym Photo Discs",
+                    "Receive up to 150 Gifts per day from spinning PokéStop and Gym Photo Discs",
+                    "Trainers level 31 and above will receive one guaranteed Candy XL when trading Pokémon"
+                ]
+            },
+            "is_local_time": true,
+            "start_time": "2026-09-08T10:00:00",
+            "end_time": "2026-10-06T10:00:00",
+            "description": "Latios soars in faster than a jet for GO Pass: September!\nThe GO Pass and GO Pass Deluxe for September will be available from September 8, 2026 at 10:00 am to October 6, 2026 at 10:00 am local time."
         },
+        {
+            "title": "GO Pass: October",
+            "article_url": "https://leekduck.com/events/go-pass-october-2026/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-10-06-go-pass-october-2026/go-pass-october-2026.jpg",
+            "category": "GO Pass",
+            "details": {
+                "bonuses": [
+                    "2× Daily Adventure Incense duration",
+                    "Hold 10 more Gifts in your Item Bag",
+                    "Hold up to 20 more Gifts in your Item Bag",
+                    "Increased XP and Stardust from hatching Eggs",
+                    "One additional Candy for trading Pokémon",
+                    "Open up to 40 Gifts per day",
+                    "Open up to 50 Gifts per day",
+                    "Receive up to 125 Gifts per day from spinning PokéStop and Gym Photo Discs",
+                    "Receive up to 150 Gifts per day from spinning PokéStop and Gym Photo Discs",
+                    "Trainers level 31 and above will receive one guaranteed Candy XL when trading Pokémon"
+                ]
+            },
+            "is_local_time": true,
+            "start_time": "2026-10-06T10:00:00",
+            "end_time": "2026-11-03T10:00:00",
+            "description": "Kyogre makes waves and the Lucky Trinket returns in GO Pass: October!\nThe GO Pass and GO Pass Deluxe for October will be available from October 6, 2026 at 10:00 am to November 3, 2026 at 10:00 am local time."
+        }
+    ],
+    "GO Battle League": [
         {
             "title": "Master League and Mega Color Cup: Great League Edition | Twilight Trails",
             "article_url": "https://leekduck.com/events/gbl-twilight-trails_master-league_mega-color-cup-great-league-edition/",
@@ -169,83 +197,6 @@
         }
     ],
     "Raid Battles": [
-        {
-            "title": "Mega Malamar in Mega Raids",
-            "article_url": "https://leekduck.com/events/mega-malamar-in-mega-raids-september-2026/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/mega-default.jpg",
-            "category": "Raid Battles",
-            "details": {
-                "raids": [
-                    {
-                        "name": "Mega Malamar",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm687.fMEGA.icon.png",
-                        "shiny_available": true
-                    }
-                ],
-                "shiny": [
-                    {
-                        "name": "Malamar",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_687_00_shiny.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Mega Malamar",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm687.fMEGA.s.icon.png",
-                        "shiny_available": false
-                    }
-                ]
-            },
-            "is_local_time": true,
-            "start_time": "2026-09-23T06:00:00",
-            "end_time": "2026-09-29T22:00:00",
-            "description": "Mega Malamar will be in Mega Raids from September 23, 2026 at 6 am to September 29, 2026 at 10 pm local time."
-        },
-        {
-            "title": "Xurkitree, Pheromosa, and Buzzwole in 5-star Raid Battles",
-            "article_url": "https://leekduck.com/events/xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/buzzwole-xurkitree-pheromosa-ultra-beasts.jpg",
-            "category": "Raid Battles",
-            "details": {
-                "raids": [
-                    {
-                        "name": "Buzzwole",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm794.icon.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Pheromosa",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm795.icon.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Xurkitree",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm796.icon.png",
-                        "shiny_available": true
-                    }
-                ],
-                "shiny": [
-                    {
-                        "name": "Buzzwole",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm794.s.icon.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Pheromosa",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm795.s.icon.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Xurkitree",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm796.s.icon.png",
-                        "shiny_available": false
-                    }
-                ]
-            },
-            "is_local_time": true,
-            "start_time": "2026-09-23T06:00:00",
-            "end_time": "2026-09-29T22:00:00",
-            "description": "Xurkitree, Pheromosa, and Buzzwole will be in five-star raid battles from September 23, 2026 to September 29, 2026.\n- Xurkitree: Asia-Pacific\n- Pheromosa: Europe, the Middle East, Africa, and India\n- Buzzwole: The Americas and Greenland\nThere will also be a Raid Hour featuring these regional raid bosses from 6:00 p.m. to 7:00 p.m. local time on September 23."
-        },
         {
             "title": "Shadow Thundurus (Incarnate Forme) in Shadow Raids",
             "article_url": "https://leekduck.com/events/shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026/",
@@ -596,17 +547,6 @@
     ],
     "Raid Hour": [
         {
-            "title": "Xerneas Raid Hour",
-            "article_url": "https://leekduck.com/events/raidhour20260930/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/raidhour.jpg",
-            "category": "Raid Hour",
-            "details": {},
-            "is_local_time": true,
-            "start_time": "2026-09-30T18:00:00",
-            "end_time": "2026-09-30T19:00:00",
-            "description": "A Raid Hour featuring Xerneas is scheduled from 6:00 p.m. to 7:00 p.m. local time. During this hour there will be an increased number of five-star raids."
-        },
-        {
             "title": "Yveltal Raid Hour",
             "article_url": "https://leekduck.com/events/raidhour20261007/",
             "banner_url": "https://cdn.leekduck.com/assets/img/events/raidhour.jpg",
@@ -651,410 +591,167 @@
             "description": "A Raid Hour featuring Giratina (Origin Forme) is scheduled from 6:00 p.m. to 7:00 p.m. local time. During this hour there will be an increased number of five-star raids."
         }
     ],
+    "Pokémon Spotlight Hour": [
+        {
+            "title": "Elgyem Spotlight Hour",
+            "article_url": "https://leekduck.com/events/pokemonspotlighthour2026-10-08/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
+            "category": "Pokémon Spotlight Hour",
+            "details": {
+                "spawns": [
+                    {
+                        "name": "Elgyem",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_605_00.png",
+                        "shiny_available": true
+                    }
+                ]
+            },
+            "is_local_time": true,
+            "start_time": "2026-10-08T18:00:00",
+            "end_time": "2026-10-08T19:00:00",
+            "description": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time.\nOctober 8: The featured Pokémon is Elgyem and the special bonus is 2× Catch Candy."
+        },
+        {
+            "title": "Stufful Spotlight Hour",
+            "article_url": "https://leekduck.com/events/pokemonspotlighthour2026-10-15/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
+            "category": "Pokémon Spotlight Hour",
+            "details": {
+                "spawns": [
+                    {
+                        "name": "Stufful",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm759.icon.png",
+                        "shiny_available": true
+                    }
+                ]
+            },
+            "is_local_time": true,
+            "start_time": "2026-10-15T18:00:00",
+            "end_time": "2026-10-15T19:00:00",
+            "description": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time.\nOctober 15: The featured Pokémon is Stufful and the special bonus is 2× Transfer Candy."
+        },
+        {
+            "title": "Morelull Spotlight Hour",
+            "article_url": "https://leekduck.com/events/pokemonspotlighthour2026-10-22/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
+            "category": "Pokémon Spotlight Hour",
+            "details": {
+                "spawns": [
+                    {
+                        "name": "Morelull",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm755.icon.png",
+                        "shiny_available": true
+                    }
+                ]
+            },
+            "is_local_time": true,
+            "start_time": "2026-10-22T18:00:00",
+            "end_time": "2026-10-22T19:00:00",
+            "description": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time.\nOctober 22: The featured Pokémon is Morelull and the special bonus is 2× Catch Stardust."
+        },
+        {
+            "title": "Gastly Spotlight Hour",
+            "article_url": "https://leekduck.com/events/pokemonspotlighthour2026-10-29/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
+            "category": "Pokémon Spotlight Hour",
+            "details": {
+                "spawns": [
+                    {
+                        "name": "Gastly",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_092_00.png",
+                        "shiny_available": true
+                    }
+                ]
+            },
+            "is_local_time": true,
+            "start_time": "2026-10-29T18:00:00",
+            "end_time": "2026-10-29T19:00:00",
+            "description": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time.\nOctober 29: The featured Pokémon is Gastly and the special bonus is 2× Evolution XP."
+        }
+    ],
+    "Community Day": [
+        {
+            "title": "Zorua Community Day",
+            "article_url": "https://leekduck.com/events/october-communityday2026/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-10-10-october-communityday2026/zorua-october-cd-2026.png",
+            "category": "Community Day",
+            "details": {
+                "bonuses": [
+                    "1-hour Lures*",
+                    "2x Catch Candy",
+                    "2x Chance for Trainers level 31 and up to receive Candy XL from catching Pokémon",
+                    "3-hour Incense",
+                    "3x Catch XP",
+                    "Increased Spawns",
+                    "One additional Special Trade can be made for a maximum of two for the day*",
+                    "Trades made will require 50% less Stardust*"
+                ],
+                "features": [
+                    {
+                        "name": "Zorua",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm570.icon.png",
+                        "shiny_available": true
+                    }
+                ],
+                "spawns": [
+                    {
+                        "name": "Zorua",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm570.icon.png",
+                        "shiny_available": true
+                    }
+                ],
+                "shiny": [
+                    {
+                        "name": "Zoroark",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm571.s.icon.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Zorua",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm570.s.icon.png",
+                        "shiny_available": false
+                    }
+                ]
+            },
+            "is_local_time": true,
+            "start_time": "2026-10-10T14:00:00",
+            "end_time": "2026-10-10T17:00:00",
+            "description": "Zorua, the Tricky Fox Pokémon, will be featured during October Community Day!"
+        },
+        {
+            "title": "November Community Day",
+            "article_url": "https://leekduck.com/events/november-communityday2026/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/cd-default.jpg",
+            "category": "Community Day",
+            "details": {},
+            "is_local_time": true,
+            "start_time": "2026-11-21T14:00:00",
+            "end_time": "2026-11-21T17:00:00",
+            "description": "The November Community Day event will take place on November 21, 2026 from 2 pm to 5 pm. Stay tuned for more details."
+        }
+    ],
     "Event": [
-        {
-            "title": "LEGO Stores and Pokémon GO",
-            "article_url": "https://leekduck.com/events/lego-pokemon-go-2026/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-08-03-lego-pokemon-go-2026/lego-stores-pokemon-go.jpg",
-            "category": "Event",
-            "details": {
-                "features": [
-                    {
-                        "name": "Pikachu",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_025_00.png",
-                        "shiny_available": true
-                    }
-                ],
-                "bonuses": [
-                    "Nanab Berry ×5",
-                    "Pinap Berry ×5",
-                    "Poké Ball ×10",
-                    "Razz Berry ×5"
-                ],
-                "raids": [
-                    {
-                        "name": "Pikachu",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_025_00.png",
-                        "shiny_available": true
-                    }
-                ]
-            },
-            "is_local_time": true,
-            "start_time": "2026-08-03T10:00:00",
-            "end_time": "2026-09-30T23:59:00",
-            "description": "The Pokémon GO and LEGO Group partnership continues for Trainers in the US, UK, Poland, France, Germany, and Australia! Visit participating LEGO Store locations for raids, a LEGO-themed stamp rally, event stickers, and LEGO Pokémon SMART Play.\nThe LEGO Stores and Pokémon GO event will take place from August 3, 2026 at 10 am to September 30, 2026 at 11 pm."
-        },
-        {
-            "title": "Patterns of the Wild",
-            "article_url": "https://leekduck.com/events/patterns-of-the-wild-2026/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-10-02-patterns-of-the-wild-2026/patterns-of-the-wild-2026.jpg",
-            "category": "Event",
-            "details": {
-                "bonuses": [
-                    "Incense will last for two hours",
-                    "Increased chance to encounter Pikachu wearing a batik shirt and other event-themed Pokémon while using Incense",
-                    "Increased chance to encounter Shiny featured wild Pokémon"
-                ],
-                "features": [
-                    {
-                        "name": "Batik Shirt Pikachu",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm25.fTSHIRT_03.icon.png",
-                        "shiny_available": true
-                    }
-                ],
-                "spawns": [
-                    {
-                        "name": "Batik Shirt Pikachu",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm25.fTSHIRT_03.icon.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Bellsprout",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_069_00.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Caterpie",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_010_00.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Gloom",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_044_00.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Hoppip",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_187_00.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Ledian",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_166_00.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Ledyba",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_165_00.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Oddish",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_043_00.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Skiploom",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_188_00.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Sunkern",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_191_00.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Wurmple",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_265_00.png",
-                        "shiny_available": true
-                    }
-                ],
-                "research": [
-                    {
-                        "name": "Batik Shirt Pikachu",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm25.fTSHIRT_03.icon.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Hoppip",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_187_00.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Ledyba",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_165_00.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Oddish",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_043_00.png",
-                        "shiny_available": true
-                    }
-                ],
-                "shiny": [
-                    {
-                        "name": "Batik Shirt Pikachu",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm25.fTSHIRT_03.s.icon.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Bellsprout",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_069_00_shiny.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Caterpie",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_010_00_shiny.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Gloom",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_044_00_shiny.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Hoppip",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_187_00_shiny.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Ledian",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_166_00_shiny.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Ledyba",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_165_00_shiny.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Oddish",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_043_00_shiny.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Skiploom",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_188_00_shiny.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Sunkern",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_191_00_shiny.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Wurmple",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_265_00_shiny.png",
-                        "shiny_available": false
-                    }
-                ]
-            },
-            "is_local_time": true,
-            "start_time": "2026-10-02T10:00:00",
-            "end_time": "2026-10-02T20:00:00",
-            "description": "This event is available only in Indonesia.\nNote: The original announcement was updated to say this event is exclusive to Indonesia. It originally gave no indication that it was not a global event.\nPatterns of the Wild brings a Special Background for Pikachu wearing a batik shirt, along with boosted wild encounters, Incense bonuses, and research rewards!\nThe event takes place on Friday, October 2, 2026, from 10:00 a.m. to 8:00 p.m. local time. Timed Research is available for a longer period, from September 28 through October 7."
-        },
-        {
-            "title": "Harvest Festival 2026: Applin Picking",
-            "article_url": "https://leekduck.com/events/harvest-festival-2026/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-09-29-harvest-festival-2026/harvest-festival-2026.jpg",
-            "category": "Event",
-            "details": {
-                "bonuses": [
-                    "Applin will have an increased chance of holding Tart Apples, Sweet Apples, or Syrupy Apples when caught",
-                    "Increased chance to encounter Shiny Smoliv",
-                    "More Stardust from defeating Team GO Rocket Grunts and Leaders",
-                    "Mossy Lure Modules activated during the event will last for one hour"
-                ],
-                "features": [
-                    {
-                        "name": "Applin",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm840.icon.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Flower Crown Cottonee",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm546.cSPRING_2024.icon.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Lechonk",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm915.icon.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Skiddo",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm672.icon.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Smoliv",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm928.icon.png",
-                        "shiny_available": true
-                    }
-                ],
-                "spawns": [
-                    {
-                        "name": "Applin",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm840.icon.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Foongus",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_590_00.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Lechonk",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm915.icon.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Shroomish",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_285_00.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Skwovet",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm819.icon.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Smoliv",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm928.icon.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Snorlax",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_143_00.png",
-                        "shiny_available": true
-                    }
-                ],
-                "shiny": [
-                    {
-                        "name": "Appletun",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm842.s.icon.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Applin",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm840.s.icon.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Arboliva",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm930.s.icon.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Dipplin",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm1011.s.icon.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Dolliv",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm929.s.icon.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Flapple",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm841.s.icon.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Hydrapple",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm1019.s.icon.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Smoliv",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm928.s.icon.png",
-                        "shiny_available": false
-                    }
-                ]
-            },
-            "is_local_time": true,
-            "start_time": "2026-09-29T10:00:00",
-            "end_time": "2026-10-05T20:00:00",
-            "description": "Harvest Festival returns with the Pokémon GO debut of Shiny Applin! Gather apples, choose a Timed Research path, and earn rewards through the event GO Pass.\nThe Harvest Festival 2026: Applin Picking event will take place from September 29, 2026 at 10 am to October 5, 2026 at 8 pm local time."
-        },
-        {
-            "title": "Harvest Festival: Taken Over",
-            "article_url": "https://leekduck.com/events/harvest-festival-taken-over-2026/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-10-02-harvest-festival-taken-over-2026/harvest-festival-taken-over-2026.jpg",
-            "category": "Event",
-            "details": {
-                "bonuses": [
-                    "Increased chance to encounter Shiny Slugma",
-                    "More Team GO Rocket appearances at PokéStops and in balloons",
-                    "Use a Charged TM to remove Frustration from Shadow Pokémon",
-                    "Wider Attack, Defense, and HP variance for Pokémon caught in one-star and three-star Shadow Raids during the event"
-                ],
-                "features": [
-                    {
-                        "name": "Zekrom",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_644_00.png",
-                        "shiny_available": true
-                    }
-                ],
-                "shadow": [
-                    {
-                        "name": "Fomantis",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm753.icon.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Sandygast",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm769.icon.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Wimpod",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm767.icon.png",
-                        "shiny_available": true
-                    }
-                ],
-                "spawns": [
-                    {
-                        "name": "Koffing",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_109_00.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Magmar",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_126_00.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Numel",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_322_00.png",
-                        "shiny_available": true
-                    },
-                    {
-                        "name": "Slugma",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_218_00.png",
-                        "shiny_available": true
-                    }
-                ],
-                "shiny": [
-                    {
-                        "name": "Grafaiai",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm945.s.icon.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Shroodle",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm944.s.icon.png",
-                        "shiny_available": false
-                    },
-                    {
-                        "name": "Slugma",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_218_00_shiny.png",
-                        "shiny_available": false
-                    }
-                ]
-            },
-            "is_local_time": true,
-            "start_time": "2026-10-02T00:00:00",
-            "end_time": "2026-10-05T20:00:00",
-            "description": "Rescue Shadow Zekrom as Team GO Rocket takes over the Harvest Festival!\nThe Harvest Festival: Taken Over event will take place from October 2, 2026 at 12 am to October 5, 2026 at 8 pm local time."
-        },
         {
             "title": "World Space Week 2026",
             "article_url": "https://leekduck.com/events/world-space-week-2026/",
             "banner_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-10-04-world-space-week-2026/world-space-week-2026.jpg",
             "category": "Event",
-            "details": {},
+            "details": {
+                "raids": [
+                    {
+                        "name": "Astronaut Pikachu",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm25.fGLASS_HELMET_2026.icon.png",
+                        "shiny_available": true
+                    }
+                ],
+                "shiny": [
+                    {
+                        "name": "Astronaut Pikachu",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm25.fGLASS_HELMET_2026.s.icon.png",
+                        "shiny_available": false
+                    }
+                ]
+            },
             "is_local_time": true,
             "start_time": "2026-10-04T00:00:00",
             "end_time": "2026-10-10T23:59:00",
@@ -1242,15 +939,128 @@
             "description": "Celebrate the release of Pokémon TCG: 30th Celebration!\nVisit participating Target, Best Buy, and GameStop locations in the United States for Mega Raids and Timed Research.\nThe event runs from September 27, 2026, at 10:00 a.m. to October 20, 2026, at 10:00 p.m. local time."
         },
         {
-            "title": "Halloween 2026 Part I",
-            "article_url": "https://leekduck.com/events/halloween-2026-part-1/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/events-default-img.jpg",
+            "title": "Minior Showers: Orionids 2026",
+            "article_url": "https://leekduck.com/events/minior-showers-orionids-2026/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/minior-showers-2026.jpg",
             "category": "Event",
-            "details": {},
+            "details": {
+                "bonuses": [
+                    "Increased Stardust for catching Minior",
+                    "Increased chance to encounter Minior from 5:00 p.m. to 9:00 p.m. local time each day"
+                ],
+                "features": [
+                    {
+                        "name": "Minior (Blue Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_011_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Green Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_010_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Indigo Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_012_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Orange Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_008_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Red Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_007_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Violet Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_013_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Yellow Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_009_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    }
+                ],
+                "spawns": [
+                    {
+                        "name": "Minior (Meteor Form)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_000_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    }
+                ]
+            },
+            "is_local_time": true,
+            "start_time": "2026-10-19T17:00:00",
+            "end_time": "2026-10-24T23:59:00",
+            "description": "Explore by starlight during the Orionids meteor shower for a chance to encounter Minior in Pokémon GO!\nThis Minior Shower runs from October 19, 2026 at 5:00 p.m. to October 24, 2026 at 11:59 p.m. local time."
+        },
+        {
+            "title": "Pokémon GO Halloween 2026 Part I",
+            "article_url": "https://leekduck.com/events/halloween-2026-part-1/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-10-27-halloween-2026-part-1/halloween-2026-part-1.jpg",
+            "category": "Event",
+            "details": {
+                "bonuses": [
+                    "2× Candy for catching Pokémon",
+                    "2× Stardust for catching Pokémon",
+                    "GO Pass Deluxe: 3× Candy for catching Pokémon",
+                    "GO Pass Deluxe: 3× Stardust for catching Pokémon"
+                ],
+                "features": [
+                    {
+                        "name": "Pikachu wearing a hat and capelet",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-10-27-halloween-2026-part-1/pikachu-hat-capelet.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Sinistea wearing a bow",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-10-27-halloween-2026-part-1/sinistea-bow.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Zubat wearing a top hat",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-10-27-halloween-2026-part-1/zubat-top-hat.png",
+                        "shiny_available": false
+                    }
+                ],
+                "spawns": [
+                    {
+                        "name": "Duskull",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons_crop/pokemon_icon_355_00.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Piplup wearing a Halloween Mischief costume",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons_crop/pm393.cHALLOWEEN_2021_NOEVOLVE.icon.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Zubat wearing a top hat",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-10-27-halloween-2026-part-1/zubat-top-hat.png",
+                        "shiny_available": false
+                    }
+                ],
+                "raids": [
+                    {
+                        "name": "Pikachu wearing a hat and capelet",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-10-27-halloween-2026-part-1/pikachu-hat-capelet.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Sinistea wearing a bow",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-10-27-halloween-2026-part-1/sinistea-bow.png",
+                        "shiny_available": false
+                    }
+                ]
+            },
             "is_local_time": true,
             "start_time": "2026-10-27T10:00:00",
-            "end_time": "2026-10-31T20:00:00",
-            "description": "The Halloween 2026 Part I event will take place from October 27, 2026 through October 31, 2026. The event is expected to begin at 10:00 a.m. and end at 8:00 p.m. local time. Stay tuned for more details."
+            "end_time": "2026-11-01T10:00:00",
+            "description": "Celebrate Halloween with the debut of Pikachu wearing a hat and capelet, Zubat wearing a top hat, and Sinistea wearing a bow! Discover spooky surprises in the wild and unlock Candy and Stardust bonuses with the event GO Pass.\nHalloween 2026 Part I runs from Tuesday, October 27, at 10:00 a.m. to Sunday, November 1, 2026, at 10:00 a.m. local time."
         },
         {
             "title": "Halloween 2026 Part II",
@@ -1262,110 +1072,313 @@
             "start_time": "2026-11-01T10:00:00",
             "end_time": "2026-11-05T20:00:00",
             "description": "The Halloween 2026 Part II event will take place from November 1, 2026 through November 5, 2026. The event is expected to begin at 10:00 a.m. and end at 8:00 p.m. local time. Stay tuned for more details."
-        }
-    ],
-    "Pokémon Spotlight Hour": [
-        {
-            "title": "Seedot Spotlight Hour",
-            "article_url": "https://leekduck.com/events/pokemonspotlighthour2026-10-01/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
-            "category": "Pokémon Spotlight Hour",
-            "details": {
-                "spawns": [
-                    {
-                        "name": "Seedot",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_273_00.png",
-                        "shiny_available": true
-                    }
-                ]
-            },
-            "is_local_time": true,
-            "start_time": "2026-10-01T18:00:00",
-            "end_time": "2026-10-01T19:00:00",
-            "description": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time.\nOctober 1: The featured Pokémon is Seedot and the special bonus is 2× Catch XP."
         },
         {
-            "title": "Elgyem Spotlight Hour",
-            "article_url": "https://leekduck.com/events/pokemonspotlighthour2026-10-08/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
-            "category": "Pokémon Spotlight Hour",
+            "title": "Minior Showers: Leonids 2026",
+            "article_url": "https://leekduck.com/events/minior-showers-leonids-2026/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/minior-showers-2026.jpg",
+            "category": "Event",
             "details": {
+                "bonuses": [
+                    "Increased Stardust for catching Minior",
+                    "Increased chance to encounter Minior from 5:00 p.m. to 9:00 p.m. local time each day"
+                ],
+                "features": [
+                    {
+                        "name": "Minior (Blue Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_011_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Green Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_010_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Indigo Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_012_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Orange Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_008_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Red Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_007_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Violet Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_013_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Yellow Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_009_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    }
+                ],
                 "spawns": [
                     {
-                        "name": "Elgyem",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_605_00.png",
-                        "shiny_available": true
+                        "name": "Minior (Meteor Form)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_000_uk_n_00000000_f_n.png",
+                        "shiny_available": false
                     }
                 ]
             },
             "is_local_time": true,
-            "start_time": "2026-10-08T18:00:00",
-            "end_time": "2026-10-08T19:00:00",
-            "description": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time.\nOctober 8: The featured Pokémon is Elgyem and the special bonus is 2× Catch Candy."
+            "start_time": "2026-11-14T17:00:00",
+            "end_time": "2026-11-19T23:59:00",
+            "description": "Explore by starlight during the Leonids meteor shower for a chance to encounter Minior in Pokémon GO!\nThis Minior Shower runs from November 14, 2026 at 5:00 p.m. to November 19, 2026 at 11:59 p.m. local time."
         },
         {
-            "title": "Stufful Spotlight Hour",
-            "article_url": "https://leekduck.com/events/pokemonspotlighthour2026-10-15/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
-            "category": "Pokémon Spotlight Hour",
+            "title": "Minior Showers: Geminids 2026",
+            "article_url": "https://leekduck.com/events/minior-showers-geminids-2026/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/minior-showers-2026.jpg",
+            "category": "Event",
             "details": {
+                "bonuses": [
+                    "Increased Stardust for catching Minior",
+                    "Increased chance to encounter Minior from 5:00 p.m. to 9:00 p.m. local time each day"
+                ],
+                "features": [
+                    {
+                        "name": "Minior (Blue Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_011_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Green Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_010_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Indigo Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_012_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Orange Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_008_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Red Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_007_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Violet Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_013_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Yellow Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_009_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    }
+                ],
                 "spawns": [
                     {
-                        "name": "Stufful",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm759.icon.png",
-                        "shiny_available": true
+                        "name": "Minior (Meteor Form)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_000_uk_n_00000000_f_n.png",
+                        "shiny_available": false
                     }
                 ]
             },
             "is_local_time": true,
-            "start_time": "2026-10-15T18:00:00",
-            "end_time": "2026-10-15T19:00:00",
-            "description": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time.\nOctober 15: The featured Pokémon is Stufful and the special bonus is 2× Transfer Candy."
+            "start_time": "2026-12-11T17:00:00",
+            "end_time": "2026-12-16T23:59:00",
+            "description": "Explore by starlight during the Geminids meteor shower for a chance to encounter Minior in Pokémon GO!\nThis Minior Shower runs from December 11, 2026 at 5:00 p.m. to December 16, 2026 at 11:59 p.m. local time."
         },
         {
-            "title": "Morelull Spotlight Hour",
-            "article_url": "https://leekduck.com/events/pokemonspotlighthour2026-10-22/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
-            "category": "Pokémon Spotlight Hour",
+            "title": "Minior Showers: Eta Aquariids 2027",
+            "article_url": "https://leekduck.com/events/minior-showers-eta-aquariids-2027/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/minior-showers-2026.jpg",
+            "category": "Event",
             "details": {
+                "bonuses": [
+                    "Increased Stardust for catching Minior",
+                    "Increased chance to encounter Minior from 5:00 p.m. to 9:00 p.m. local time each day"
+                ],
+                "features": [
+                    {
+                        "name": "Minior (Blue Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_011_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Green Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_010_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Indigo Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_012_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Orange Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_008_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Red Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_007_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Violet Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_013_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Yellow Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_009_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    }
+                ],
                 "spawns": [
                     {
-                        "name": "Morelull",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm755.icon.png",
-                        "shiny_available": true
+                        "name": "Minior (Meteor Form)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_000_uk_n_00000000_f_n.png",
+                        "shiny_available": false
                     }
                 ]
             },
             "is_local_time": true,
-            "start_time": "2026-10-22T18:00:00",
-            "end_time": "2026-10-22T19:00:00",
-            "description": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time.\nOctober 22: The featured Pokémon is Morelull and the special bonus is 2× Catch Stardust."
+            "start_time": "2027-05-03T17:00:00",
+            "end_time": "2027-05-08T23:59:00",
+            "description": "Explore by starlight during the Eta Aquariids meteor shower for a chance to encounter Minior in Pokémon GO!\nThis Minior Shower runs from May 3, 2027 at 5:00 p.m. to May 8, 2027 at 11:59 p.m. local time."
         },
         {
-            "title": "Gastly Spotlight Hour",
-            "article_url": "https://leekduck.com/events/pokemonspotlighthour2026-10-29/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
-            "category": "Pokémon Spotlight Hour",
+            "title": "Minior Showers: Southern Delta Aquariids 2027",
+            "article_url": "https://leekduck.com/events/minior-showers-southern-delta-aquariids-2027/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/minior-showers-2026.jpg",
+            "category": "Event",
             "details": {
+                "bonuses": [
+                    "Increased Stardust for catching Minior",
+                    "Increased chance to encounter Minior from 5:00 p.m. to 9:00 p.m. local time each day"
+                ],
+                "features": [
+                    {
+                        "name": "Minior (Blue Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_011_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Green Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_010_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Indigo Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_012_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Orange Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_008_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Red Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_007_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Violet Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_013_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Yellow Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_009_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    }
+                ],
                 "spawns": [
                     {
-                        "name": "Gastly",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_092_00.png",
-                        "shiny_available": true
+                        "name": "Minior (Meteor Form)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_000_uk_n_00000000_f_n.png",
+                        "shiny_available": false
                     }
                 ]
             },
             "is_local_time": true,
-            "start_time": "2026-10-29T18:00:00",
-            "end_time": "2026-10-29T19:00:00",
-            "description": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time.\nOctober 29: The featured Pokémon is Gastly and the special bonus is 2× Evolution XP."
+            "start_time": "2027-07-28T17:00:00",
+            "end_time": "2027-08-02T23:59:00",
+            "description": "Explore by starlight during the Southern Delta Aquariids meteor shower for a chance to encounter Minior in Pokémon GO!\nThis Minior Shower runs from July 28, 2027 at 5:00 p.m. to August 2, 2027 at 11:59 p.m. local time."
+        },
+        {
+            "title": "Minior Showers: Perseids 2027",
+            "article_url": "https://leekduck.com/events/minior-showers-perseids-2027/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/minior-showers-2026.jpg",
+            "category": "Event",
+            "details": {
+                "bonuses": [
+                    "Increased Stardust for catching Minior",
+                    "Increased chance to encounter Minior from 5:00 p.m. to 9:00 p.m. local time each day"
+                ],
+                "features": [
+                    {
+                        "name": "Minior (Blue Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_011_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Green Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_010_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Indigo Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_012_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Orange Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_008_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Red Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_007_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Violet Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_013_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Minior (Yellow Core)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_009_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    }
+                ],
+                "spawns": [
+                    {
+                        "name": "Minior (Meteor Form)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0774_000_uk_n_00000000_f_n.png",
+                        "shiny_available": false
+                    }
+                ]
+            },
+            "is_local_time": true,
+            "start_time": "2027-08-10T17:00:00",
+            "end_time": "2027-08-15T23:59:00",
+            "description": "Explore by starlight during the Perseids meteor shower for a chance to encounter Minior in Pokémon GO!\nThis Minior Shower runs from August 10, 2027 at 5:00 p.m. to August 15, 2027 at 11:59 p.m. local time."
         }
     ],
     "Max Battles": [
         {
-            "title": "Gigantamax Cinderace Max Battle Day",
-            "article_url": "https://leekduck.com/events/gigantamax-cinderace-max-battle-day-2026/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-10-03-gigantamax-cinderace-max-battle-day-2026/gigantamax-cinderace-max-battle-day.jpg",
+            "title": "Dynamax Uxie, Mesprit, and Azelf Max Battle Day",
+            "article_url": "https://leekduck.com/events/dynamax-uxie-mesprit-azelf-max-battle-day-2026/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-10-24-dynamax-uxie-mesprit-azelf-max-battle-day-2026/dynamax-uxie-mesprit-azelf-max-battle-day.jpg",
             "category": "Max Battles",
             "details": {
                 "bonuses": [
@@ -1374,153 +1387,64 @@
                     "2× XP from Max Battles",
                     "8× Max Particles from Power Spots",
                     "Additional Power Spots will be active",
-                    "All Power Spots will host Gigantamax Battles",
-                    "From October 2 at 5:00 p.m. to October 3 at 8:00 p.m. PDT (GMT −7), the daily Remote Raid limit will increase from 10 to 20",
+                    "All Power Spots will host Dynamax Battles",
+                    "From October 23 at 5:00 p.m. to October 24 at 8:00 p.m. PDT (GMT −7), the daily Remote Raid limit will increase from 10 to 20",
                     "Max Particle collection limit increased to 1,600",
                     "Power Spots will refresh more frequently",
                     "Up to three Special Trades for the day"
                 ],
                 "features": [
                     {
-                        "name": "Gigantamax Cinderace",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/poke_capture_0815_000_mf_g_00000000_f_n.png",
+                        "name": "Azelf",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_482_00.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Mesprit",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_481_00.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Uxie",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_480_00.png",
                         "shiny_available": true
                     }
                 ],
                 "shiny": [
                     {
-                        "name": "Gigantamax Cinderace",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm815.fGIGANTAMAX.s.icon.png",
-                        "shiny_available": false
-                    }
-                ]
-            },
-            "is_local_time": true,
-            "start_time": "2026-10-03T14:00:00",
-            "end_time": "2026-10-03T17:00:00",
-            "description": "The Gigantamax Cinderace Max Battle Day event will take place on October 3, 2026 from 2 pm to 5 pm local time."
-        },
-        {
-            "title": "Dynamax Max Battle Day",
-            "article_url": "https://leekduck.com/events/max-battle-day-october-24-2026/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/events-default-img.jpg",
-            "category": "Max Battles",
-            "details": {},
-            "is_local_time": true,
-            "start_time": "2026-10-24T14:00:00",
-            "end_time": "2026-10-24T17:00:00",
-            "description": "The Dynamax Max Battle Day event will take place on October 24, 2026 from 2 pm to 5 pm. Stay tuned for more details."
-        }
-    ],
-    "GO Pass": [
-        {
-            "title": "GO Pass: September",
-            "article_url": "https://leekduck.com/events/go-pass-september-2026/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-09-08-go-pass-september-2026/go-pass-september-2026.jpg",
-            "category": "GO Pass",
-            "details": {
-                "bonuses": [
-                    "2× Daily Adventure Incense duration",
-                    "Hold 10 more Gifts in your Item Bag",
-                    "Hold up to 20 more Gifts in your Item Bag",
-                    "Increased XP and Stardust from hatching Eggs",
-                    "One additional Candy for trading Pokémon",
-                    "Open up to 40 Gifts per day",
-                    "Open up to 50 Gifts per day",
-                    "Receive up to 125 Gifts per day from spinning PokéStop and Gym Photo Discs",
-                    "Receive up to 150 Gifts per day from spinning PokéStop and Gym Photo Discs",
-                    "Trainers level 31 and above will receive one guaranteed Candy XL when trading Pokémon"
-                ]
-            },
-            "is_local_time": true,
-            "start_time": "2026-09-08T10:00:00",
-            "end_time": "2026-10-06T10:00:00",
-            "description": "Latios soars in faster than a jet for GO Pass: September!\nThe GO Pass and GO Pass Deluxe for September will be available from September 8, 2026 at 10:00 am to October 6, 2026 at 10:00 am local time."
-        },
-        {
-            "title": "GO Pass: October",
-            "article_url": "https://leekduck.com/events/go-pass-october-2026/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-10-06-go-pass-october-2026/go-pass-october-2026.jpg",
-            "category": "GO Pass",
-            "details": {
-                "bonuses": [
-                    "2× Daily Adventure Incense duration",
-                    "Hold 10 more Gifts in your Item Bag",
-                    "Hold up to 20 more Gifts in your Item Bag",
-                    "Increased XP and Stardust from hatching Eggs",
-                    "One additional Candy for trading Pokémon",
-                    "Open up to 40 Gifts per day",
-                    "Open up to 50 Gifts per day",
-                    "Receive up to 125 Gifts per day from spinning PokéStop and Gym Photo Discs",
-                    "Receive up to 150 Gifts per day from spinning PokéStop and Gym Photo Discs",
-                    "Trainers level 31 and above will receive one guaranteed Candy XL when trading Pokémon"
-                ]
-            },
-            "is_local_time": true,
-            "start_time": "2026-10-06T10:00:00",
-            "end_time": "2026-11-03T10:00:00",
-            "description": "Kyogre makes waves and the Lucky Trinket returns in GO Pass: October!\nThe GO Pass and GO Pass Deluxe for October will be available from October 6, 2026 at 10:00 am to November 3, 2026 at 10:00 am local time."
-        }
-    ],
-    "Community Day": [
-        {
-            "title": "Zorua Community Day",
-            "article_url": "https://leekduck.com/events/october-communityday2026/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-10-10-october-communityday2026/zorua-october-cd-2026.png",
-            "category": "Community Day",
-            "details": {
-                "bonuses": [
-                    "1-hour Lures*",
-                    "2x Catch Candy",
-                    "2x Chance for Trainers level 31 and up to receive Candy XL from catching Pokémon",
-                    "3-hour Incense",
-                    "3x Catch XP",
-                    "Increased Spawns",
-                    "One additional Special Trade can be made for a maximum of two for the day*",
-                    "Trades made will require 50% less Stardust*"
-                ],
-                "features": [
-                    {
-                        "name": "Zorua",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm570.icon.png",
-                        "shiny_available": true
-                    }
-                ],
-                "spawns": [
-                    {
-                        "name": "Zorua",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm570.icon.png",
-                        "shiny_available": true
-                    }
-                ],
-                "shiny": [
-                    {
-                        "name": "Zoroark",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm571.s.icon.png",
+                        "name": "Azelf",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_482_00_shiny.png",
                         "shiny_available": false
                     },
                     {
-                        "name": "Zorua",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm570.s.icon.png",
+                        "name": "Mesprit",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_481_00_shiny.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Uxie",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_480_00_shiny.png",
                         "shiny_available": false
                     }
                 ]
             },
             "is_local_time": true,
-            "start_time": "2026-10-10T14:00:00",
-            "end_time": "2026-10-10T17:00:00",
-            "description": "Zorua, the Tricky Fox Pokémon, will be featured during October Community Day!"
-        },
+            "start_time": "2026-10-24T14:00:00",
+            "end_time": "2026-10-24T17:00:00",
+            "description": "The Dynamax Uxie, Mesprit, and Azelf Max Battle Day event will take place on October 24, 2026 from 2 pm to 5 pm local time."
+        }
+    ],
+    "Twitch Drops": [
         {
-            "title": "November Community Day",
-            "article_url": "https://leekduck.com/events/november-communityday2026/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/cd-default.jpg",
-            "category": "Community Day",
+            "title": "Twitch Drops for Pokémon Night Out 2026",
+            "article_url": "https://leekduck.com/events/pokemon-night-out-2026-twitch-drops/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-10-24-pokemon-night-out-2026-twitch-drops/pokemon-night-out.jpg",
+            "category": "Twitch Drops",
             "details": {},
-            "is_local_time": true,
-            "start_time": "2026-11-21T14:00:00",
-            "end_time": "2026-11-21T17:00:00",
-            "description": "The November Community Day event will take place on November 21, 2026 from 2 pm to 5 pm. Stay tuned for more details."
+            "is_local_time": false,
+            "start_time": 1792895400,
+            "end_time": 1792911540,
+            "description": "Celebrate Pokémon Night Out at Intuit Dome in Los Angeles with a Twitch broadcast that Trainers around the world can watch.\nTune in to Twitch.tv/Pokemon on Saturday, October 24, 2026, starting at 7:30 p.m. PDT (10:30 p.m. EDT) for 30 minutes to earn a code for exclusive Timed Research. Complete the research to receive a Pokémon Night Out baseball jersey for your avatar.\nThe broadcast end time and the code and Timed Research expiration dates have not been announced."
         }
     ],
     "Raid Day": [

@@ -1,168 +1,168 @@
 {
     "1-Star Raids": [
         {
-            "name": "Shadow Machop",
+            "name": "Shadow Gastly",
             "shiny_available": true,
-            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm66.icon.png",
+            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm92.icon.png",
             "tier": 1,
             "cp_range": {
-                "min": 638,
-                "max": 730
+                "min": 608,
+                "max": 702
             },
             "boosted_cp_range": {
-                "min": 798,
-                "max": 913
+                "min": 760,
+                "max": 878
+            },
+            "types": [
+                "Ghost",
+                "Poison"
+            ]
+        },
+        {
+            "name": "Shadow Totodile",
+            "shiny_available": true,
+            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm158.icon.png",
+            "tier": 1,
+            "cp_range": {
+                "min": 562,
+                "max": 646
+            },
+            "boosted_cp_range": {
+                "min": 703,
+                "max": 808
+            },
+            "types": [
+                "Water"
+            ]
+        },
+        {
+            "name": "Shadow Shieldon",
+            "shiny_available": true,
+            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm410.icon.png",
+            "tier": 1,
+            "cp_range": {
+                "min": 431,
+                "max": 509
+            },
+            "boosted_cp_range": {
+                "min": 539,
+                "max": 636
+            },
+            "types": [
+                "Rock",
+                "Steel"
+            ]
+        },
+        {
+            "name": "Shadow Gible",
+            "shiny_available": true,
+            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm443.icon.png",
+            "tier": 1,
+            "cp_range": {
+                "min": 551,
+                "max": 635
+            },
+            "boosted_cp_range": {
+                "min": 689,
+                "max": 794
+            },
+            "types": [
+                "Dragon",
+                "Ground"
+            ]
+        }
+    ],
+    "3-Star Raids": [
+        {
+            "name": "Shadow Primeape",
+            "shiny_available": true,
+            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm57.icon.png",
+            "tier": 3,
+            "cp_range": {
+                "min": 1185,
+                "max": 1307
+            },
+            "boosted_cp_range": {
+                "min": 1482,
+                "max": 1634
             },
             "types": [
                 "Fighting"
             ]
         },
         {
-            "name": "Shadow Bellsprout",
+            "name": "Shadow Kirlia",
             "shiny_available": true,
-            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm69.icon.png",
-            "tier": 1,
-            "cp_range": {
-                "min": 506,
-                "max": 590
-            },
-            "boosted_cp_range": {
-                "min": 633,
-                "max": 738
-            },
-            "types": [
-                "Grass",
-                "Poison"
-            ]
-        },
-        {
-            "name": "Shadow Torchic",
-            "shiny_available": true,
-            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm255.icon.png",
-            "tier": 1,
-            "cp_range": {
-                "min": 541,
-                "max": 624
-            },
-            "boosted_cp_range": {
-                "min": 677,
-                "max": 781
-            },
-            "types": [
-                "Fire"
-            ]
-        },
-        {
-            "name": "Shadow Bagon",
-            "shiny_available": true,
-            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm371.icon.png",
-            "tier": 1,
-            "cp_range": {
-                "min": 575,
-                "max": 660
-            },
-            "boosted_cp_range": {
-                "min": 719,
-                "max": 826
-            },
-            "types": [
-                "Dragon"
-            ]
-        }
-    ],
-    "3-Star Raids": [
-        {
-            "name": "Shadow Alolan Sandslash",
-            "shiny_available": true,
-            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm28.fALOLA.icon.png",
+            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm281.icon.png",
             "tier": 3,
             "cp_range": {
-                "min": 1266,
-                "max": 1390
+                "min": 475,
+                "max": 552
             },
             "boosted_cp_range": {
-                "min": 1582,
-                "max": 1737
+                "min": 593,
+                "max": 690
             },
             "types": [
-                "Ice",
-                "Steel"
+                "Psychic",
+                "Fairy"
             ]
         },
         {
-            "name": "Shadow Quagsire",
+            "name": "Shadow Drapion",
             "shiny_available": true,
-            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm195.icon.png",
+            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm452.icon.png",
             "tier": 3,
             "cp_range": {
-                "min": 1025,
-                "max": 1138
+                "min": 1277,
+                "max": 1401
             },
             "boosted_cp_range": {
-                "min": 1282,
-                "max": 1423
+                "min": 1596,
+                "max": 1752
             },
             "types": [
-                "Water",
-                "Ground"
-            ]
-        },
-        {
-            "name": "Shadow Lampent",
-            "shiny_available": true,
-            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm608.icon.png",
-            "tier": 3,
-            "cp_range": {
-                "min": 871,
-                "max": 976
-            },
-            "boosted_cp_range": {
-                "min": 1089,
-                "max": 1220
-            },
-            "types": [
-                "Ghost",
-                "Fire"
+                "Poison",
+                "Dark"
             ]
         }
     ],
     "5-Star Raids": [
         {
-            "name": "Shadow Thundurus (Incarnate)",
+            "name": "Shadow Landorus (Incarnate)",
             "shiny_available": true,
-            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm642.fINCARNATE.icon.png",
+            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm645.fINCARNATE.icon.png",
             "tier": 5,
             "cp_range": {
-                "min": 1762,
-                "max": 1911
+                "min": 1897,
+                "max": 2050
             },
             "boosted_cp_range": {
-                "min": 2203,
-                "max": 2389
+                "min": 2372,
+                "max": 2563
             },
             "types": [
-                "Electric",
+                "Ground",
                 "Flying"
             ]
         }
     ],
     "Mega Raids": [
         {
-            "name": "Mega Victreebel",
+            "name": "Mega Blastoise",
             "shiny_available": true,
-            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm71.fMEGA.icon.png",
+            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm9.fMEGA.icon.png",
             "tier": "Mega Raids",
             "cp_range": {
-                "min": 1318,
-                "max": 1389
+                "min": 1338,
+                "max": 1409
             },
             "boosted_cp_range": {
-                "min": 1648,
-                "max": 1736
+                "min": 1673,
+                "max": 1761
             },
             "types": [
-                "Grass",
-                "Poison"
+                "Water"
             ]
         }
     ]
