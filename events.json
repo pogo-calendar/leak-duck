@@ -1,54 +1,4 @@
 {
-    "GO Pass": [
-        {
-            "title": "GO Pass: September",
-            "article_url": "https://leekduck.com/events/go-pass-september-2026/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-09-08-go-pass-september-2026/go-pass-september-2026.jpg",
-            "category": "GO Pass",
-            "details": {
-                "bonuses": [
-                    "2× Daily Adventure Incense duration",
-                    "Hold 10 more Gifts in your Item Bag",
-                    "Hold up to 20 more Gifts in your Item Bag",
-                    "Increased XP and Stardust from hatching Eggs",
-                    "One additional Candy for trading Pokémon",
-                    "Open up to 40 Gifts per day",
-                    "Open up to 50 Gifts per day",
-                    "Receive up to 125 Gifts per day from spinning PokéStop and Gym Photo Discs",
-                    "Receive up to 150 Gifts per day from spinning PokéStop and Gym Photo Discs",
-                    "Trainers level 31 and above will receive one guaranteed Candy XL when trading Pokémon"
-                ]
-            },
-            "is_local_time": true,
-            "start_time": "2026-09-08T10:00:00",
-            "end_time": "2026-10-06T10:00:00",
-            "description": "Latios soars in faster than a jet for GO Pass: September!\nThe GO Pass and GO Pass Deluxe for September will be available from September 8, 2026 at 10:00 am to October 6, 2026 at 10:00 am local time."
-        },
-        {
-            "title": "GO Pass: October",
-            "article_url": "https://leekduck.com/events/go-pass-october-2026/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-10-06-go-pass-october-2026/go-pass-october-2026.jpg",
-            "category": "GO Pass",
-            "details": {
-                "bonuses": [
-                    "2× Daily Adventure Incense duration",
-                    "Hold 10 more Gifts in your Item Bag",
-                    "Hold up to 20 more Gifts in your Item Bag",
-                    "Increased XP and Stardust from hatching Eggs",
-                    "One additional Candy for trading Pokémon",
-                    "Open up to 40 Gifts per day",
-                    "Open up to 50 Gifts per day",
-                    "Receive up to 125 Gifts per day from spinning PokéStop and Gym Photo Discs",
-                    "Receive up to 150 Gifts per day from spinning PokéStop and Gym Photo Discs",
-                    "Trainers level 31 and above will receive one guaranteed Candy XL when trading Pokémon"
-                ]
-            },
-            "is_local_time": true,
-            "start_time": "2026-10-06T10:00:00",
-            "end_time": "2026-11-03T10:00:00",
-            "description": "Kyogre makes waves and the Lucky Trinket returns in GO Pass: October!\nThe GO Pass and GO Pass Deluxe for October will be available from October 6, 2026 at 10:00 am to November 3, 2026 at 10:00 am local time."
-        }
-    ],
     "GO Battle League": [
         {
             "title": "Master League and Mega Color Cup: Great League Edition | Twilight Trails",
@@ -1460,6 +1410,32 @@
             "description": "The Super Mega Raid Day event will take place on November 28, 2026 from 2 pm to 5 pm. Stay tuned for more details."
         }
     ],
+    "GO Pass": [
+        {
+            "title": "GO Pass: October",
+            "article_url": "https://leekduck.com/events/go-pass-october-2026/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-10-06-go-pass-october-2026/go-pass-october-2026.jpg",
+            "category": "GO Pass",
+            "details": {
+                "bonuses": [
+                    "2× Daily Adventure Incense duration",
+                    "Hold 10 more Gifts in your Item Bag",
+                    "Hold up to 20 more Gifts in your Item Bag",
+                    "Increased XP and Stardust from hatching Eggs",
+                    "One additional Candy for trading Pokémon",
+                    "Open up to 40 Gifts per day",
+                    "Open up to 50 Gifts per day",
+                    "Receive up to 125 Gifts per day from spinning PokéStop and Gym Photo Discs",
+                    "Receive up to 150 Gifts per day from spinning PokéStop and Gym Photo Discs",
+                    "Trainers level 31 and above will receive one guaranteed Candy XL when trading Pokémon"
+                ]
+            },
+            "is_local_time": true,
+            "start_time": "2026-10-06T10:00:00",
+            "end_time": "2026-11-03T10:00:00",
+            "description": "Kyogre makes waves and the Lucky Trinket returns in GO Pass: October!\nThe GO Pass and GO Pass Deluxe for October will be available from October 6, 2026 at 10:00 am to November 3, 2026 at 10:00 am local time."
+        }
+    ],
     "Wild Area": [
         {
             "title": "Pokémon GO Wild Area 2026: Sendai • Tohoku",
@@ -1941,6 +1917,16 @@
                     {
                         "name": "Palkia",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_484_00.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Zacian (Crowned Sword)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm888.fCROWNED_SWORD.icon.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Zamazenta (Crowned Shield)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm889.fCROWNED_SHIELD.icon.png",
                         "shiny_available": true
                     }
                 ],
@@ -2443,6 +2429,16 @@
                         "name": "Palkia",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_484_00.png",
                         "shiny_available": true
+                    },
+                    {
+                        "name": "Zacian (Crowned Sword)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm888.fCROWNED_SWORD.icon.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Zamazenta (Crowned Shield)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm889.fCROWNED_SHIELD.icon.png",
+                        "shiny_available": true
                     }
                 ],
                 "shiny": [
@@ -2871,6 +2867,16 @@
                         "shiny_available": false
                     },
                     {
+                        "name": "Kyurem (Black)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_646_13.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Kyurem (White)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_646_12.png",
+                        "shiny_available": true
+                    },
+                    {
                         "name": "Modern Jacket Machamp",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_068_00.png",
                         "shiny_available": true
@@ -2878,6 +2884,16 @@
                     {
                         "name": "Palkia",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_484_00.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Reshiram",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_643_00.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Zekrom",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_644_00.png",
                         "shiny_available": true
                     }
                 ]
