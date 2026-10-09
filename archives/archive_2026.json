@@ -12680,6 +12680,25 @@
             "start_time": "2026-10-01T18:00:00",
             "end_time": "2026-10-01T19:00:00",
             "description": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time.\nOctober 1: The featured Pokémon is Seedot and the special bonus is 2× Catch XP."
+        },
+        {
+            "title": "Elgyem Spotlight Hour",
+            "article_url": "https://leekduck.com/events/pokemonspotlighthour2026-10-08/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
+            "category": "Pokémon Spotlight Hour",
+            "details": {
+                "spawns": [
+                    {
+                        "name": "Elgyem",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_605_00.png",
+                        "shiny_available": true
+                    }
+                ]
+            },
+            "is_local_time": true,
+            "start_time": "2026-10-08T18:00:00",
+            "end_time": "2026-10-08T19:00:00",
+            "description": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time.\nOctober 8: The featured Pokémon is Elgyem and the special bonus is 2× Catch Candy."
         }
     ],
     "Raid Hour": [
