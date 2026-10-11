@@ -10932,6 +10932,32 @@
             "start_time": "2026-10-02T00:00:00",
             "end_time": "2026-10-05T20:00:00",
             "description": "Rescue Shadow Zekrom as Team GO Rocket takes over the Harvest Festival!\nThe Harvest Festival: Taken Over event will take place from October 2, 2026 at 12 am to October 5, 2026 at 8 pm local time."
+        },
+        {
+            "title": "World Space Week 2026",
+            "article_url": "https://leekduck.com/events/world-space-week-2026/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-10-04-world-space-week-2026/world-space-week-2026.jpg",
+            "category": "Event",
+            "details": {
+                "raids": [
+                    {
+                        "name": "Astronaut Pikachu",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm25.fGLASS_HELMET_2026.icon.png",
+                        "shiny_available": true
+                    }
+                ],
+                "shiny": [
+                    {
+                        "name": "Astronaut Pikachu",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm25.fGLASS_HELMET_2026.s.icon.png",
+                        "shiny_available": false
+                    }
+                ]
+            },
+            "is_local_time": true,
+            "start_time": "2026-10-04T00:00:00",
+            "end_time": "2026-10-10T23:59:00",
+            "description": "Blast off with Astronaut Pikachu during World Space Week! This new costumed Pokémon makes its Pokémon GO debut in raids and free Timed Research.\nThis global event is part of a collaboration between the European Space Agency and The Pokémon Company.\nWorld Space Week takes place from Sunday, October 4, 2026, at 12:00 a.m. to Saturday, October 10, 2026, at 11:59 p.m. local time."
         }
     ],
     "PokéStop Showcase": [
