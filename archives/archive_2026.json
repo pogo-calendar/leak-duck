@@ -3026,6 +3026,54 @@
             "start_time": "2026-09-12T14:00:00",
             "end_time": "2026-09-12T17:00:00",
             "description": "Gible, the Land Shark Pokémon, will be featured during September Community Day Classic!"
+        },
+        {
+            "title": "Zorua Community Day",
+            "article_url": "https://leekduck.com/events/october-communityday2026/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-10-10-october-communityday2026/zorua-october-cd-2026.png",
+            "category": "Community Day",
+            "details": {
+                "bonuses": [
+                    "1-hour Lures*",
+                    "2x Catch Candy",
+                    "2x Chance for Trainers level 31 and up to receive Candy XL from catching Pokémon",
+                    "3-hour Incense",
+                    "3x Catch XP",
+                    "Increased Spawns",
+                    "One additional Special Trade can be made for a maximum of two for the day*",
+                    "Trades made will require 50% less Stardust*"
+                ],
+                "features": [
+                    {
+                        "name": "Zorua",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm570.icon.png",
+                        "shiny_available": true
+                    }
+                ],
+                "spawns": [
+                    {
+                        "name": "Zorua",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm570.icon.png",
+                        "shiny_available": true
+                    }
+                ],
+                "shiny": [
+                    {
+                        "name": "Zoroark",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm571.s.icon.png",
+                        "shiny_available": false
+                    },
+                    {
+                        "name": "Zorua",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm570.s.icon.png",
+                        "shiny_available": false
+                    }
+                ]
+            },
+            "is_local_time": true,
+            "start_time": "2026-10-10T14:00:00",
+            "end_time": "2026-10-10T17:00:00",
+            "description": "Zorua, the Tricky Fox Pokémon, will be featured during October Community Day!"
         }
     ],
     "Event": [
