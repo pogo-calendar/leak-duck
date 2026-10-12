@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 
 from src.config import PublishedData, ScraperSettings, load_config
 from src.fetch import FetchError, get_if_exists
+from src.manifest import update_manifest
 from src.paths import data_dir
 from src.published import read_published_json
 from src.scrapers.event_page_scraper import EventPageScraper
@@ -155,6 +156,8 @@ def main() -> None:
     config = load_config()
     backfiller = ArchiveBackfiller(config.published, config.settings, args.years)
     backfiller.run(dry_run=args.dry_run)
+    if not args.dry_run:
+        update_manifest(data_dir())
 
 
 if __name__ == "__main__":
