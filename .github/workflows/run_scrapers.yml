@@ -44,12 +44,16 @@ jobs:
           git worktree add --detach "$DATA_DIR" FETCH_HEAD
 
       - name: Run archiver and scrapers
+        id: scrape
         env:
           LEAK_DUCK_PUBLISHED_DIR: ${{ env.DATA_DIR }}
           LEAK_DUCK_OUTPUT_DIR: ${{ env.DATA_DIR }}
         run: python -m src.main
 
+      # Publishes every file that passed validation even when another scraper
+      # failed; the failed scrape step still marks the run as failed.
       - name: Commit and push data branch
+        if: ${{ !cancelled() && steps.scrape.outcome != 'skipped' }}
         working-directory: ${{ env.DATA_DIR }}
         run: |
           git config user.name "github-actions[bot]"

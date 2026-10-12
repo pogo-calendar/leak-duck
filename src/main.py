@@ -34,12 +34,23 @@ def main() -> None:
     config = load_config()
     print("Configuration loaded", flush=True)
 
-    EventArchiver(config.published).run()
-    print("Event archiver completed", flush=True)
-
     failures: list[str] = []
+    archived = False
+    try:
+        EventArchiver(config.published, config.settings).run()
+        archived = True
+        print("Event archiver completed", flush=True)
+    except Exception as e:
+        failures.append(f"EventArchiver: {e}")
+        print(f"✗ ERROR running EventArchiver: {e}", flush=True)
+
     for name, scraper in config.scrapers.items():
         if not scraper.enabled:
+            continue
+        if name == "EventScraper" and not archived:
+            # Republishing events.json would drop ended events that the failed
+            # archiver never moved into an archive.
+            print("Skipping EventScraper because archiving failed", flush=True)
             continue
         print(f"--- Running {name} ---", flush=True)
         try:

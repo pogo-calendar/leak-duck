@@ -156,8 +156,8 @@ This repository is configured to run the scraper automatically using GitHub Acti
   1.  The action checks out the `main` branch to get the latest scraper code.
   2.  It installs the pinned Python dependencies and runs the regression tests.
   3.  It checks out the `data` branch into a separate worktree; the archiver reads the published files from there rather than from raw.githubusercontent.com, whose cache can lag behind the latest push.
-  4.  It runs the archiver and scrapers, writing each validated file into that worktree. An event page that fails validation is skipped with a warning.
-  5.  It commits and pushes only when the generated data changed. Concurrent publishers are serialized to avoid races.
+  4.  It runs the archiver and scrapers, writing each validated file into that worktree. A file that fails validation is left untouched, and an event page that fails validation is skipped with a warning.
+  5.  It commits and pushes only when the generated data changed, even if one scraper failed, so the other files stay fresh; the failure still marks the run as failed. If archiving fails, `events.json` is not republished. Concurrent publishers are serialized to avoid races.
 
 **Note:** For the GitHub Action to work, you must **manually create the `data` branch** as a clean, orphan branch in your repository first.
 
@@ -214,6 +214,7 @@ leak-duck/
 │   ├── test_backfill.py
 │   ├── test_config.py
 │   ├── test_fetch.py
+│   ├── test_main.py
 │   ├── test_published.py
 │   ├── test_scrapers.py
 │   └── test_validation.py
