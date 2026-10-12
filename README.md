@@ -42,7 +42,7 @@ The wiki includes a full breakdown of the data structure for each file, field de
 
 ## Data Output
 
-The scraped data is automatically committed and pushed to the `data` branch of this repository.
+The scraped data is automatically committed and pushed to the `data` branch of this repository, which GitHub Pages serves as free JSON endpoints at `https://pokelitee.github.io/leak-duck/<file>` (for example, `https://pokelitee.github.io/leak-duck/events.json`). The older `https://raw.githubusercontent.com/pokelitee/leak-duck/data/<file>` URLs serve the same files.
 
 **➡️ Browse the raw data files here: [https://github.com/pokelitee/leak-duck/tree/data](https://github.com/pokelitee/leak-duck/tree/data)**
 

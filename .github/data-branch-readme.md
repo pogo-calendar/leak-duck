@@ -6,16 +6,18 @@ This branch contains automatically generated Pokémon GO data sourced from [leek
 
 ## How to Use This Data
 
-The raw JSON file URLs can be used as simple, free API endpoints. See the [official API documentation](https://github.com/pokelitee/leak-duck/wiki/API-Documentation) for field descriptions and complete data structures.
+The files are served through GitHub Pages as free JSON endpoints with CORS enabled, so browser apps can fetch them directly. See the [official API documentation](https://github.com/pokelitee/leak-duck/wiki/API-Documentation) for field descriptions and complete data structures.
 
 ## Data Files
 
-- **Raids:** `https://raw.githubusercontent.com/pokelitee/leak-duck/data/raid_bosses.json`
-- **Events:** `https://raw.githubusercontent.com/pokelitee/leak-duck/data/events.json`
-- **Research:** `https://raw.githubusercontent.com/pokelitee/leak-duck/data/research_tasks.json`
-- **Rocket Lineups:** `https://raw.githubusercontent.com/pokelitee/leak-duck/data/rocket_lineups.json`
-- **Egg Pool:** `https://raw.githubusercontent.com/pokelitee/leak-duck/data/egg_pool.json`
-- **Event Archives:** [browse yearly archives](https://github.com/pokelitee/leak-duck/tree/data/archives)
+- **Raids:** `https://pokelitee.github.io/leak-duck/raid_bosses.json`
+- **Events:** `https://pokelitee.github.io/leak-duck/events.json`
+- **Research:** `https://pokelitee.github.io/leak-duck/research_tasks.json`
+- **Rocket Lineups:** `https://pokelitee.github.io/leak-duck/rocket_lineups.json`
+- **Egg Pool:** `https://pokelitee.github.io/leak-duck/egg_pool.json`
+- **Event Archives:** `https://pokelitee.github.io/leak-duck/archives/archive_YYYY.json` ([browse yearly archives](https://github.com/pokelitee/leak-duck/tree/data/archives))
+
+The older `https://raw.githubusercontent.com/pokelitee/leak-duck/data/<file>` URLs serve the same files and keep working.
 
 ## Event Archives
 
