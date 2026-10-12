@@ -9,7 +9,7 @@ A Python-based web scraper that automatically collects and updates Pokémon GO d
 
 ## About The Project
 
-This project provides a reliable, automated way to access up-to-date information for Pokémon GO. It scrapes the Leek Duck website for the latest details on Raid Bosses, Events, Field Research, Team GO Rocket lineups, and the current Egg Pool. The scraper is designed to be run automatically **every hour** via a GitHub Actions workflow, ensuring the data is always fresh and reliable.
+This project provides a reliable, automated way to access up-to-date information for Pokémon GO. It scrapes the Leek Duck website for the latest details on Raid Bosses, Events, Field Research, Team GO Rocket lineups, and the current Egg Pool. The scraper is scheduled to run **every hour** via a GitHub Actions workflow (GitHub may delay scheduled runs during busy periods), ensuring the data is always fresh and reliable.
 
 The scraped data is automatically committed and pushed to the `data` branch of this repository, making it easy to use as a free, simple API for your own projects.
 

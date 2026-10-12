@@ -2,7 +2,8 @@ name: Scrape Leek Duck Data
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    # Off the top of the hour, when GitHub delays scheduled runs the most.
+    - cron: "17 * * * *"
   workflow_dispatch:
 
 concurrency:
