@@ -209,7 +209,7 @@
             "is_encounter": false
         }
     ],
-    "Normal-type Male Grunt": [
+    "Normal-type Male Grunt": [
         {
             "slot": 1,
             "pokemons": [
@@ -274,7 +274,7 @@
             "is_encounter": false
         }
     ],
-    "Fire-type Female Grunt": [
+    "Fire-type Female Grunt": [
         {
             "slot": 1,
             "pokemons": [
@@ -339,7 +339,7 @@
             "is_encounter": false
         }
     ],
-    "Water-type Female Grunt": [
+    "Water-type Female Grunt": [
         {
             "slot": 1,
             "pokemons": [
@@ -404,7 +404,7 @@
             "is_encounter": false
         }
     ],
-    "Water-type Male Grunt": [
+    "Water-type Male Grunt": [
         {
             "slot": 1,
             "pokemons": [
@@ -449,7 +449,7 @@
             "is_encounter": false
         }
     ],
-    "Electric-type Female Grunt": [
+    "Electric-type Female Grunt": [
         {
             "slot": 1,
             "pokemons": [
@@ -514,7 +514,7 @@
             "is_encounter": false
         }
     ],
-    "Grass-type Male Grunt": [
+    "Grass-type Male Grunt": [
         {
             "slot": 1,
             "pokemons": [
@@ -579,7 +579,7 @@
             "is_encounter": false
         }
     ],
-    "Ice-type Female Grunt": [
+    "Ice-type Female Grunt": [
         {
             "slot": 1,
             "pokemons": [
@@ -644,7 +644,7 @@
             "is_encounter": false
         }
     ],
-    "Fighting-type Female Grunt": [
+    "Fighting-type Female Grunt": [
         {
             "slot": 1,
             "pokemons": [
@@ -709,7 +709,7 @@
             "is_encounter": false
         }
     ],
-    "Poison-type Female Grunt": [
+    "Poison-type Female Grunt": [
         {
             "slot": 1,
             "pokemons": [
@@ -774,7 +774,7 @@
             "is_encounter": false
         }
     ],
-    "Ground-type Male Grunt": [
+    "Ground-type Male Grunt": [
         {
             "slot": 1,
             "pokemons": [
@@ -839,7 +839,7 @@
             "is_encounter": false
         }
     ],
-    "Flying-type Female Grunt": [
+    "Flying-type Female Grunt": [
         {
             "slot": 1,
             "pokemons": [
@@ -904,7 +904,7 @@
             "is_encounter": false
         }
     ],
-    "Psychic-type Male Grunt": [
+    "Psychic-type Male Grunt": [
         {
             "slot": 1,
             "pokemons": [
@@ -969,7 +969,7 @@
             "is_encounter": false
         }
     ],
-    "Bug-type Male Grunt": [
+    "Bug-type Male Grunt": [
         {
             "slot": 1,
             "pokemons": [
@@ -1034,7 +1034,7 @@
             "is_encounter": false
         }
     ],
-    "Rock-type Male Grunt": [
+    "Rock-type Male Grunt": [
         {
             "slot": 1,
             "pokemons": [
@@ -1099,7 +1099,7 @@
             "is_encounter": false
         }
     ],
-    "Ghost-type Male Grunt": [
+    "Ghost-type Male Grunt": [
         {
             "slot": 1,
             "pokemons": [
@@ -1164,7 +1164,7 @@
             "is_encounter": false
         }
     ],
-    "Dragon-type Female Grunt": [
+    "Dragon-type Female Grunt": [
         {
             "slot": 1,
             "pokemons": [
@@ -1229,7 +1229,7 @@
             "is_encounter": false
         }
     ],
-    "Dark-type Female Grunt": [
+    "Dark-type Female Grunt": [
         {
             "slot": 1,
             "pokemons": [
@@ -1289,7 +1289,7 @@
             "is_encounter": false
         }
     ],
-    "Steel-type Male Grunt": [
+    "Steel-type Male Grunt": [
         {
             "slot": 1,
             "pokemons": [
@@ -1354,7 +1354,7 @@
             "is_encounter": false
         }
     ],
-    "Fairy-type Female Grunt": [
+    "Fairy-type Female Grunt": [
         {
             "slot": 1,
             "pokemons": [
@@ -1419,7 +1419,7 @@
             "is_encounter": false
         }
     ],
-    "Male Grunt": [
+    "Male Grunt": [
         {
             "slot": 1,
             "pokemons": [
@@ -1484,7 +1484,7 @@
             "is_encounter": false
         }
     ],
-    "Female Grunt": [
+    "Female Grunt": [
         {
             "slot": 1,
             "pokemons": [
@@ -1544,7 +1544,7 @@
             "is_encounter": false
         }
     ],
-    "Decoy Female Grunt": [
+    "Decoy Female Grunt": [
         {
             "slot": 1,
             "pokemons": [

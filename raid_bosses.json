@@ -1,6 +1,79 @@
 {
     "1-Star Raids": [
         {
+            "name": "Clefairy",
+            "shiny_available": true,
+            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm35.icon.png",
+            "tier": 1,
+            "cp_range": {
+                "min": 611,
+                "max": 660
+            },
+            "boosted_cp_range": {
+                "min": 764,
+                "max": 825
+            },
+            "types": [
+                "Fairy"
+            ],
+            "is_shadow": false
+        },
+        {
+            "name": "Teddiursa",
+            "shiny_available": true,
+            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm216.icon.png",
+            "tier": 1,
+            "cp_range": {
+                "min": 707,
+                "max": 759
+            },
+            "boosted_cp_range": {
+                "min": 884,
+                "max": 949
+            },
+            "types": [
+                "Normal"
+            ],
+            "is_shadow": false
+        },
+        {
+            "name": "Elgyem",
+            "shiny_available": true,
+            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm605.icon.png",
+            "tier": 1,
+            "cp_range": {
+                "min": 738,
+                "max": 791
+            },
+            "boosted_cp_range": {
+                "min": 923,
+                "max": 989
+            },
+            "types": [
+                "Psychic"
+            ],
+            "is_shadow": false
+        },
+        {
+            "name": "Amaura",
+            "shiny_available": true,
+            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm698.icon.png",
+            "tier": 1,
+            "cp_range": {
+                "min": 726,
+                "max": 779
+            },
+            "boosted_cp_range": {
+                "min": 908,
+                "max": 974
+            },
+            "types": [
+                "Rock",
+                "Ice"
+            ],
+            "is_shadow": false
+        },
+        {
             "name": "Shadow Gastly",
             "shiny_available": true,
             "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm92.icon.png",
@@ -16,7 +89,8 @@
             "types": [
                 "Ghost",
                 "Poison"
-            ]
+            ],
+            "is_shadow": true
         },
         {
             "name": "Shadow Totodile",
@@ -33,7 +107,8 @@
             },
             "types": [
                 "Water"
-            ]
+            ],
+            "is_shadow": true
         },
         {
             "name": "Shadow Shieldon",
@@ -51,7 +126,8 @@
             "types": [
                 "Rock",
                 "Steel"
-            ]
+            ],
+            "is_shadow": true
         },
         {
             "name": "Shadow Gible",
@@ -69,10 +145,66 @@
             "types": [
                 "Dragon",
                 "Ground"
-            ]
+            ],
+            "is_shadow": true
         }
     ],
     "3-Star Raids": [
+        {
+            "name": "Starmie",
+            "shiny_available": true,
+            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm121.icon.png",
+            "tier": 3,
+            "cp_range": {
+                "min": 1404,
+                "max": 1476
+            },
+            "boosted_cp_range": {
+                "min": 1756,
+                "max": 1846
+            },
+            "types": [
+                "Water",
+                "Psychic"
+            ],
+            "is_shadow": false
+        },
+        {
+            "name": "Umbreon",
+            "shiny_available": true,
+            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm197.icon.png",
+            "tier": 3,
+            "cp_range": {
+                "min": 1153,
+                "max": 1221
+            },
+            "boosted_cp_range": {
+                "min": 1442,
+                "max": 1526
+            },
+            "types": [
+                "Dark"
+            ],
+            "is_shadow": false
+        },
+        {
+            "name": "Gothitelle",
+            "shiny_available": true,
+            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm576.icon.png",
+            "tier": 3,
+            "cp_range": {
+                "min": 1313,
+                "max": 1382
+            },
+            "boosted_cp_range": {
+                "min": 1641,
+                "max": 1728
+            },
+            "types": [
+                "Psychic"
+            ],
+            "is_shadow": false
+        },
         {
             "name": "Shadow Primeape",
             "shiny_available": true,
@@ -88,7 +220,8 @@
             },
             "types": [
                 "Fighting"
-            ]
+            ],
+            "is_shadow": true
         },
         {
             "name": "Shadow Kirlia",
@@ -106,7 +239,8 @@
             "types": [
                 "Psychic",
                 "Fairy"
-            ]
+            ],
+            "is_shadow": true
         },
         {
             "name": "Shadow Drapion",
@@ -124,10 +258,30 @@
             "types": [
                 "Poison",
                 "Dark"
-            ]
+            ],
+            "is_shadow": true
         }
     ],
     "5-Star Raids": [
+        {
+            "name": "Yveltal",
+            "shiny_available": true,
+            "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm717.icon.png",
+            "tier": 5,
+            "cp_range": {
+                "min": 2073,
+                "max": 2160
+            },
+            "boosted_cp_range": {
+                "min": 2591,
+                "max": 2701
+            },
+            "types": [
+                "Dark",
+                "Flying"
+            ],
+            "is_shadow": false
+        },
         {
             "name": "Shadow Landorus (Incarnate)",
             "shiny_available": true,
@@ -144,7 +298,8 @@
             "types": [
                 "Ground",
                 "Flying"
-            ]
+            ],
+            "is_shadow": true
         }
     ],
     "Mega Raids": [
@@ -163,7 +318,8 @@
             },
             "types": [
                 "Water"
-            ]
+            ],
+            "is_shadow": false
         }
     ]
 }
