@@ -24,8 +24,8 @@ jobs:
       contents: write
 
     steps:
-      - name: Configure output directory
-        run: echo "LEAK_DUCK_OUTPUT_DIR=$RUNNER_TEMP/leak-duck-data" >> "$GITHUB_ENV"
+      - name: Configure data directory
+        run: echo "DATA_DIR=$RUNNER_TEMP/data" >> "$GITHUB_ENV"
 
       - name: Check out main branch for code
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -45,27 +45,32 @@ jobs:
       - name: Run regression tests
         run: python -m unittest discover -v
 
-      - name: Rebuild archives from their source pages
+      - name: Check out data branch
         run: |
-          python -m src.backfill ${{ inputs.years }} \
-            ${{ inputs.dry_run && '--dry-run' || '' }}
+          git fetch --depth=1 origin data
+          git worktree add --detach "$DATA_DIR" FETCH_HEAD
+
+      - name: Rebuild archives from their source pages
+        env:
+          LEAK_DUCK_PUBLISHED_DIR: ${{ env.DATA_DIR }}
+          LEAK_DUCK_OUTPUT_DIR: ${{ env.DATA_DIR }}
+          YEARS: ${{ inputs.years }}
+          DRY_RUN: ${{ inputs.dry_run && '--dry-run' || '' }}
+        # YEARS is intentionally unquoted so each year becomes its own argument.
+        run: python -m src.backfill $YEARS $DRY_RUN
 
       - name: Commit and push rebuilt archives to data branch
         if: ${{ !inputs.dry_run }}
+        working-directory: ${{ env.DATA_DIR }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git fetch origin data
-          git checkout -B data origin/data
-
-          mkdir -p archives
-          cp -R "$LEAK_DUCK_OUTPUT_DIR/archives/." archives/
           git add -- archives/
 
           if git diff --cached --quiet; then
             echo "Archives are already up to date"
           else
             git commit -m "Rebuild event archives from source pages"
-            git push origin data
+            git push origin HEAD:refs/heads/data
           fi

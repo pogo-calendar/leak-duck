@@ -7,7 +7,7 @@ from unittest.mock import Mock, patch
 import requests
 
 from src.archiver import ArchiveFetchError, EventArchiver
-from src.config import PublishedData
+from src.config import PublishedData, ScraperSettings
 from src.validation import OutputValidationError
 
 
@@ -32,7 +32,9 @@ class EventArchiverTests(unittest.TestCase):
         self.temporary_directory = tempfile.TemporaryDirectory()
         self.addCleanup(self.temporary_directory.cleanup)
         self.output_dir = Path(self.temporary_directory.name)
-        self.archiver = EventArchiver(PublishedData("owner", "repository"))
+        self.archiver = EventArchiver(
+            PublishedData("owner", "repository"), ScraperSettings(retries=1, delay=0)
+        )
         self.archiver.json_dir = self.output_dir
         self.archiver.archives_dir = self.output_dir / "archives"
         self.archiver.events_path = self.output_dir / "events.json"

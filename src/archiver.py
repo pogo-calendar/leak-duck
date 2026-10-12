@@ -1,11 +1,10 @@
 from datetime import UTC, datetime, timedelta, timezone
 from typing import Any, cast
 
-import requests
-
-from src.config import PublishedData
-from src.fetch import get_if_exists
+from src.config import PublishedData, ScraperSettings
+from src.fetch import FetchError
 from src.paths import data_dir
+from src.published import read_published_json
 from src.utils import write_json_atomic
 from src.validation import validate_archive_output
 
@@ -15,8 +14,9 @@ class ArchiveFetchError(RuntimeError):
 
 
 class EventArchiver:
-    def __init__(self, published: PublishedData):
+    def __init__(self, published: PublishedData, settings: ScraperSettings):
         self.published = published
+        self.settings = settings
         self.json_dir = data_dir()
         self.archives_dir = self.json_dir / "archives"
         self.events_path = self.json_dir / "events.json"
@@ -48,9 +48,8 @@ class EventArchiver:
     def _fetch_published_json(self, path: str) -> Any | None:
         """Returns published JSON, or None when it has not been published yet."""
         try:
-            response = get_if_exists(self.published.url(path), timeout=15)
-            return response.json() if response is not None else None
-        except (requests.exceptions.RequestException, ValueError) as e:
+            return read_published_json(self.published, path, self.settings)
+        except (FetchError, OSError, ValueError) as e:
             raise ArchiveFetchError(f"Could not fetch published {path}") from e
 
     def run(self) -> None:

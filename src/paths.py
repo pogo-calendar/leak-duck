@@ -25,3 +25,9 @@ def data_dir() -> Path:
         return Path(configured_dir).expanduser().resolve()
     root = runtime_root()
     return root if os.getenv("CI") else root / "json"
+
+
+def published_dir() -> Path | None:
+    """Return a local checkout of the published data branch, when one is used."""
+    configured_dir = os.getenv("LEAK_DUCK_PUBLISHED_DIR")
+    return Path(configured_dir).expanduser().resolve() if configured_dir else None

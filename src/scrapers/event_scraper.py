@@ -6,8 +6,9 @@ import requests
 from bs4 import BeautifulSoup, Tag
 
 from src.config import PublishedData, ScraperSettings
-from src.fetch import get_once
+from src.fetch import FetchError, get_once
 from src.paths import data_dir
+from src.published import read_published_json
 from src.utils import clean_banner_url, parse_feed_datetime
 
 from .base_scraper import BaseScraper
@@ -83,11 +84,10 @@ class EventScraper(BaseScraper):
                 ) from e
 
         try:
-            response = get_once(
-                self.published.url("events.json"), self.settings.timeout
-            )
-            self._set_existing_events(response.json())
-        except (requests.exceptions.RequestException, ValueError) as e:
+            data = read_published_json(self.published, "events.json", self.settings)
+            if data is not None:
+                self._set_existing_events(data)
+        except (FetchError, OSError, ValueError) as e:
             print(f"Could not fetch existing events: {e}", flush=True)
             self.existing_events_data = {}
 
