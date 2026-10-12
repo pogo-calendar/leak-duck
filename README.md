@@ -6,7 +6,7 @@ This branch contains automatically generated Pokémon GO data sourced from [leek
 
 ## How to Use This Data
 
-The files are served through GitHub Pages as free JSON endpoints with CORS enabled, so browser apps can fetch them directly. See the [official API documentation](https://github.com/pokelitee/leak-duck/wiki/API-Documentation) for field descriptions and complete data structures.
+The files are served through GitHub Pages as free JSON endpoints with CORS enabled, so browser apps can fetch them directly. See the [API site](https://pokelitee.github.io/leak-duck/) to browse the data and for field descriptions and complete data structures.
 
 ## Data Files
 
@@ -16,6 +16,7 @@ The files are served through GitHub Pages as free JSON endpoints with CORS enabl
 - **Rocket Lineups:** `https://pokelitee.github.io/leak-duck/rocket_lineups.json`
 - **Egg Pool:** `https://pokelitee.github.io/leak-duck/egg_pool.json`
 - **Event Archives:** `https://pokelitee.github.io/leak-duck/archives/archive_YYYY.json` ([browse yearly archives](https://github.com/pokelitee/leak-duck/tree/data/archives))
+- **Manifest:** `https://pokelitee.github.io/leak-duck/manifest.json` (when each file last changed)
 
 The older `https://raw.githubusercontent.com/pokelitee/leak-duck/data/<file>` URLs serve the same files and keep working.
 
@@ -28,4 +29,4 @@ Archives were rebuilt from their original Leek Duck pages on **August 10, 2026**
 - Pokémon detail arrays (`details.features`, `spawns`, `eggs`, `raids`, `shiny`, `moves`) are arrays of Pokémon objects throughout. The legacy plain-string format is no longer present.
 - `description` is present except for a small number of events whose Leek Duck page no longer exists, so treat it as optional when reading archives.
 
-See the [archive compatibility notes](https://github.com/pokelitee/leak-duck/wiki/API-Documentation#event-archives) for the full contract.
+See the [archive reference](https://pokelitee.github.io/leak-duck/#reference-archives) for the full contract.
