@@ -4,7 +4,13 @@ from unittest.mock import Mock, patch
 import requests
 
 from src.config import ScraperSettings
-from src.fetch import FetchError, get_if_exists, get_with_retries
+from src.fetch import (
+    HEADERS,
+    FetchError,
+    get_if_exists,
+    get_if_exists_with_retries,
+    get_with_retries,
+)
 
 
 def response(status_code: int = 200) -> Mock:
@@ -47,6 +53,24 @@ class FetchTests(unittest.TestCase):
                 get_with_retries(
                     "https://example.invalid", ScraperSettings(retries=2, delay=0)
                 )
+
+    def test_missing_resource_is_retried_only_on_failures(self) -> None:
+        with patch(
+            "src.fetch.requests.get",
+            side_effect=[requests.ConnectionError("offline"), response(404)],
+        ) as get:
+            result = get_if_exists_with_retries(
+                "https://example.invalid", ScraperSettings(retries=2, delay=0)
+            )
+
+        self.assertIsNone(result)
+        self.assertEqual(get.call_count, 2)
+
+    def test_requests_identify_the_scraper(self) -> None:
+        with patch("src.fetch.requests.get", return_value=response()) as get:
+            get_if_exists("https://example.invalid", timeout=1)
+
+        self.assertEqual(get.call_args.kwargs["headers"], HEADERS)
 
 
 if __name__ == "__main__":

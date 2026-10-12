@@ -6,8 +6,9 @@ import requests
 from bs4 import BeautifulSoup
 
 from src.config import PublishedData, ScraperSettings, load_config
-from src.fetch import get_if_exists, get_once
+from src.fetch import FetchError, get_if_exists
 from src.paths import data_dir
+from src.published import read_published_json
 from src.scrapers.event_page_scraper import EventPageScraper
 from src.utils import write_json_atomic
 from src.validation import validate_archive_output
@@ -48,20 +49,30 @@ class ArchiveBackfiller:
     left as-is apart from a format conversion.
     """
 
-    def __init__(self, published: PublishedData, years: list[int], delay: float = 0.15):
+    def __init__(
+        self,
+        published: PublishedData,
+        settings: ScraperSettings,
+        years: list[int],
+        delay: float = 0.15,
+    ):
         self.published = published
+        self.settings = settings
         self.archives_dir = data_dir() / "archives"
         self.years = years
         self.delay = delay
-        self.page_scraper = EventPageScraper(ScraperSettings(timeout=20))
+        self.page_scraper = EventPageScraper(settings)
 
     def _fetch_archive(self, year: int) -> dict[str, list[dict[str, Any]]]:
         try:
-            archive = get_once(
-                self.published.url(f"archives/archive_{year}.json"), timeout=15
-            ).json()
-        except (requests.exceptions.RequestException, ValueError) as e:
+            archive = read_published_json(
+                self.published, f"archives/archive_{year}.json", self.settings
+            )
+        except (FetchError, OSError, ValueError) as e:
             raise ArchiveBackfillError(f"Could not fetch the {year} archive") from e
+
+        if archive is None:
+            raise ArchiveBackfillError(f"No {year} archive has been published")
 
         if not isinstance(archive, dict):
             raise ArchiveBackfillError(f"Published {year} archive is not a JSON object")
@@ -141,7 +152,8 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    backfiller = ArchiveBackfiller(load_config().published, args.years)
+    config = load_config()
+    backfiller = ArchiveBackfiller(config.published, config.settings, args.years)
     backfiller.run(dry_run=args.dry_run)
 
 

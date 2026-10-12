@@ -1,7 +1,7 @@
 # Leak Duck 🦆
 
-[![Scrape Leek Duck Data](https://github.com/pogo-calendar/leak-duck/actions/workflows/run_scrapers.yml/badge.svg)](https://github.com/pogo-calendar/leak-duck/actions/workflows/run_scrapers.yml)
-![Last Updated](https://img.shields.io/github/last-commit/pogo-calendar/leak-duck/data)
+[![Scrape Leek Duck Data](https://github.com/pokelitee/leak-duck/actions/workflows/run_scrapers.yml/badge.svg)](https://github.com/pokelitee/leak-duck/actions/workflows/run_scrapers.yml)
+![Last Updated](https://img.shields.io/github/last-commit/pokelitee/leak-duck/data)
 
 A Python-based web scraper that automatically collects and updates Pokémon GO data from [leekduck.com](https://leekduck.com). This project uses GitHub Actions to run on a schedule and pushes the structured JSON data to a dedicated `data` branch.
 
@@ -9,7 +9,7 @@ A Python-based web scraper that automatically collects and updates Pokémon GO d
 
 ## About The Project
 
-This project provides a reliable, automated way to access up-to-date information for Pokémon GO. It scrapes the Leek Duck website for the latest details on Raid Bosses, Events, Field Research, Team GO Rocket lineups, and the current Egg Pool. The scraper is designed to be run automatically **every hour** via a GitHub Actions workflow, ensuring the data is always fresh and reliable.
+This project provides a reliable, automated way to access up-to-date information for Pokémon GO. It scrapes the Leek Duck website for the latest details on Raid Bosses, Events, Field Research, Team GO Rocket lineups, and the current Egg Pool. The scraper is scheduled to run **every hour** via a GitHub Actions workflow (GitHub may delay scheduled runs during busy periods), ensuring the data is always fresh and reliable.
 
 The scraped data is automatically committed and pushed to the `data` branch of this repository, making it easy to use as a free, simple API for your own projects.
 
@@ -34,7 +34,7 @@ The scraped data is automatically committed and pushed to the `data` branch of t
 
 The raw JSON files can be used as simple, free API endpoints for your projects.
 
-**➡️ For detailed information, visit the [Official Project Wiki](https://github.com/pogo-calendar/leak-duck/wiki)**
+**➡️ For detailed information, visit the [Official Project Wiki](https://github.com/pokelitee/leak-duck/wiki)**
 
 The wiki includes a full breakdown of the data structure for each file, field descriptions, and direct links to the JSON endpoints.
 
@@ -42,26 +42,26 @@ The wiki includes a full breakdown of the data structure for each file, field de
 
 ## Data Output
 
-The scraped data is automatically committed and pushed to the `data` branch of this repository.
+The scraped data is automatically committed and pushed to the `data` branch of this repository, which GitHub Pages serves as free JSON endpoints at `https://pokelitee.github.io/leak-duck/<file>` (for example, `https://pokelitee.github.io/leak-duck/events.json`). The older `https://raw.githubusercontent.com/pokelitee/leak-duck/data/<file>` URLs serve the same files.
 
-**➡️ Browse the raw data files here: [https://github.com/pogo-calendar/leak-duck/tree/data](https://github.com/pogo-calendar/leak-duck/tree/data)**
+**➡️ Browse the raw data files here: [https://github.com/pokelitee/leak-duck/tree/data](https://github.com/pokelitee/leak-duck/tree/data)**
 
 The following files are generated:
 
-- `raid_bosses.json` - All current Pokémon in Tier 1, 3, 5, Mega, and Shadow Raids.
+- `raid_bosses.json` - All current Pokémon in Tier 1, 3, 5, Mega, and Shadow Raids. Shadow bosses share their tier's list and are marked with `is_shadow: true`.
 - `research_tasks.json` - All available Field Research tasks and their possible rewards.
 - `rocket_lineups.json` - The complete lineups for Team GO Rocket Leaders and Grunts.
 - `egg_pool.json` - The current list of Pokémon hatching from each egg distance.
 - `events.json`- All current and upcoming events.
 - `archives/archive_YYYY.json` - Historical event data, organized by year.
-  - _Note: Automated archiving of past events is handled by the script. Coverage begins **September 19, 2025**; events that ended earlier are not archived._
-  - _Archives were rebuilt from their source pages on **August 10, 2026**, so every record uses the current event schema. `description` is absent only for the few events whose Leek Duck page no longer exists. See the [API documentation](https://github.com/pogo-calendar/leak-duck/wiki/API-Documentation#event-archives) for the full compatibility contract._
+  - _Note: Automated archiving of past events is handled by the script. Archiving began on **September 19, 2025**; events that ended earlier are included only if they were still listed on that date, so earlier coverage is partial._
+  - _Archives were rebuilt from their source pages on **August 10, 2026**, so every record uses the current event schema. `description` is absent only for the few events whose Leek Duck page no longer exists. See the [API documentation](https://github.com/pokelitee/leak-duck/wiki/API-Documentation#event-archives) for the full compatibility contract._
 
 ### Example Data (`raid_bosses.json`)
 
 ```json
 {
-  "Tier 5": [
+  "5-Star Raids": [
     {
       "name": "Palkia",
       "tier": 5,
@@ -75,6 +75,7 @@ The following files are generated:
         "max": 2850
       },
       "types": ["Water", "Dragon"],
+      "is_shadow": false,
       "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm484.icon.png"
     }
   ]
@@ -97,7 +98,7 @@ To get a local copy up and running, follow these simple steps.
 1.  **Clone the repository:**
 
     ```sh
-    git clone https://github.com/pogo-calendar/leak-duck.git
+    git clone https://github.com/pokelitee/leak-duck.git
     cd leak-duck
     ```
 
@@ -150,13 +151,13 @@ Use `ruff format .` to apply formatting. The tests are offline and cover parser 
 This repository is configured to run the scraper automatically using GitHub Actions.
 
 - **Workflow file:** `.github/workflows/run_scrapers.yml`
-- **Trigger:** The workflow runs on a schedule (every hour) and can also be triggered manually from the "Actions" tab in GitHub.
+- **Trigger:** The workflow is scheduled to run every hour (GitHub may delay scheduled runs) and can also be triggered manually from the "Actions" tab in GitHub.
 - **Process:**
   1.  The action checks out the `main` branch to get the latest scraper code.
   2.  It installs the pinned Python dependencies and runs the regression tests.
-  3.  It runs the scraper into a temporary output directory.
-  4.  Only after the complete run succeeds does it check out the `data` branch and copy the validated files.
-  5.  It commits and pushes only when the generated data changed. Concurrent publishers are serialized to avoid races.
+  3.  It checks out the `data` branch into a separate worktree; the archiver reads the published files from there rather than from raw.githubusercontent.com, whose cache can lag behind the latest push.
+  4.  It runs the archiver and scrapers, writing each validated file into that worktree. A file that fails validation is left untouched, and an event page that fails validation is skipped with a warning.
+  5.  It commits and pushes only when the generated data changed, even if one scraper failed, so the other files stay fresh; the failure still marks the run as failed. If archiving fails, `events.json` is not republished. Concurrent publishers are serialized to avoid races.
 
 **Note:** For the GitHub Action to work, you must **manually create the `data` branch** as a clean, orphan branch in your repository first.
 
@@ -205,6 +206,7 @@ leak-duck/
 │   ├── fetch.py
 │   ├── main.py
 │   ├── paths.py
+│   ├── published.py
 │   ├── validation.py
 │   └── utils.py
 ├── tests/
@@ -212,6 +214,8 @@ leak-duck/
 │   ├── test_backfill.py
 │   ├── test_config.py
 │   ├── test_fetch.py
+│   ├── test_main.py
+│   ├── test_published.py
 │   ├── test_scrapers.py
 │   └── test_validation.py
 ├── .gitignore

@@ -5,7 +5,7 @@ from unittest.mock import Mock, patch
 import requests
 
 from src.backfill import ArchiveBackfiller, modernize_details, modernize_pokemon
-from src.config import PublishedData
+from src.config import PublishedData, ScraperSettings
 
 
 def archived_event(**overrides: Any) -> dict[str, Any]:
@@ -54,7 +54,10 @@ class ModernizeTests(unittest.TestCase):
 class ArchiveBackfillerTests(unittest.TestCase):
     def setUp(self) -> None:
         self.backfiller = ArchiveBackfiller(
-            PublishedData("owner", "repository"), [2025], delay=0
+            PublishedData("owner", "repository"),
+            ScraperSettings(retries=1, delay=0),
+            [2025],
+            delay=0,
         )
 
     @staticmethod
