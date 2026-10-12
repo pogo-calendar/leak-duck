@@ -11,10 +11,18 @@ from .base_scraper import BaseScraper
 class RaidBossScraper(BaseScraper):
     def parse(self, soup: BeautifulSoup) -> dict[str, Any]:
         raid_data: dict[str, Any] = {}
-        tier_sections = soup.select(".raid-bosses .tier, .shadow-raid-bosses .tier")
+        # Shadow raids reuse the regular tier headers ("1-Star Raids", ...), so
+        # they join the regular tier's list and are told apart by is_shadow.
+        tier_sections = [
+            (cast(Tag, section), is_shadow)
+            for selector, is_shadow in (
+                (".raid-bosses .tier", False),
+                (".shadow-raid-bosses .tier", True),
+            )
+            for section in soup.select(selector)
+        ]
 
-        for section in tier_sections:
-            section = cast(Tag, section)
+        for section, is_shadow in tier_sections:
             header_element = section.find("h2", class_="header")
             if not header_element:
                 continue
@@ -61,9 +69,10 @@ class RaidBossScraper(BaseScraper):
                         "cp_range": parse_cp_range(cp_range_str),
                         "boosted_cp_range": parse_cp_range(boosted_cp_str),
                         "types": types,
+                        "is_shadow": is_shadow,
                     }
                 )
 
-            raid_data[tier_name] = list(pokemon_by_name.values())
+            raid_data.setdefault(tier_name, []).extend(pokemon_by_name.values())
 
         return raid_data

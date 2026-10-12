@@ -48,7 +48,7 @@ The scraped data is automatically committed and pushed to the `data` branch of t
 
 The following files are generated:
 
-- `raid_bosses.json` - All current Pokémon in Tier 1, 3, 5, Mega, and Shadow Raids.
+- `raid_bosses.json` - All current Pokémon in Tier 1, 3, 5, Mega, and Shadow Raids. Shadow bosses share their tier's list and are marked with `is_shadow: true`.
 - `research_tasks.json` - All available Field Research tasks and their possible rewards.
 - `rocket_lineups.json` - The complete lineups for Team GO Rocket Leaders and Grunts.
 - `egg_pool.json` - The current list of Pokémon hatching from each egg distance.
@@ -61,7 +61,7 @@ The following files are generated:
 
 ```json
 {
-  "Tier 5": [
+  "5-Star Raids": [
     {
       "name": "Palkia",
       "tier": 5,
@@ -75,6 +75,7 @@ The following files are generated:
         "max": 2850
       },
       "types": ["Water", "Dragon"],
+      "is_shadow": false,
       "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm484.icon.png"
     }
   ]

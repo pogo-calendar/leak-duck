@@ -143,6 +143,27 @@ class ParserFixtureTests(unittest.TestCase):
         data = RaidBossScraper("offline", "raid_bosses", self.settings).parse(soup)
         self.assertEqual(data["Tier 5"][0]["cp_range"], {"min": 2200, "max": 2300})
 
+    def test_raid_parser_keeps_regular_and_shadow_bosses_in_shared_tiers(
+        self,
+    ) -> None:
+        def tier(container: str, boss: str) -> str:
+            return (
+                f'<div class="{container}"><div class="tier">'
+                '<h2 class="header">1-Star Raids</h2>'
+                f'<div class="card"><p class="name">{boss}</p></div></div></div>'
+            )
+
+        soup = BeautifulSoup(
+            tier("raid-bosses", "Clefairy")
+            + tier("shadow-raid-bosses", "Shadow Gastly"),
+            "lxml",
+        )
+        data = RaidBossScraper("offline", "raid_bosses", self.settings).parse(soup)
+        self.assertEqual(
+            [(boss["name"], boss["is_shadow"]) for boss in data["1-Star Raids"]],
+            [("Clefairy", False), ("Shadow Gastly", True)],
+        )
+
     def test_research_parser(self) -> None:
         soup = BeautifulSoup(
             '<div class="task-category"><h2>Catch</h2><li class="task-item">'
