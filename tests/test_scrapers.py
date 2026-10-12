@@ -247,6 +247,18 @@ class ParserFixtureTests(unittest.TestCase):
         )
         self.assertTrue(data["Leader"][0]["is_encounter"])
 
+    def test_rocket_parser_normalizes_non_breaking_spaces_in_names(self) -> None:
+        soup = BeautifulSoup(
+            '<div class="rocket-profile"><div class="name">Fire-type Female&nbsp;Grunt'
+            '</div><div class="lineup-info"><div class="slot">'
+            '<div class="pokemon-card" data-pokemon="Charmander"></div></div></div></div>',
+            "lxml",
+        )
+        data = RocketLineupScraper("offline", "rocket_lineups", self.settings).parse(
+            soup
+        )
+        self.assertEqual(list(data), ["Fire-type Female Grunt"])
+
     def test_event_page_parser(self) -> None:
         soup = BeautifulSoup(
             '<div class="page-content">'

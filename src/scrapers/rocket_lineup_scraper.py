@@ -18,7 +18,9 @@ class RocketLineupScraper(BaseScraper):
             if not name_element:
                 continue
 
-            leader_name = name_element.get_text(strip=True)
+            # Grunt names contain non-breaking spaces; normal spaces keep the
+            # keys matchable as typed.
+            leader_name = " ".join(name_element.get_text(strip=True).split())
             lineups[leader_name] = []
 
             slots = profile.select(".lineup-info .slot")
