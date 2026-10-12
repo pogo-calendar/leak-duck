@@ -1,0 +1,139 @@
+{
+  "endpoints": [
+    {
+      "id": "raid_bosses",
+      "title": "Raid Bosses",
+      "path": "raid_bosses.json",
+      "summary": "Every current raid boss, grouped by raid tier.",
+      "structure": "An object keyed by the tier name shown on Leek Duck (for example \"5-Star Raids\" or \"Mega Raids\"). Each value is a list of raid boss objects. Shadow raid bosses share their tier's list and are marked with is_shadow.",
+      "fields": [
+        { "name": "name", "type": "string", "description": "The Pokémon's name. Shadow bosses are named \"Shadow …\"." },
+        { "name": "tier", "type": "integer | string", "description": "The tier number (for example 5), or the tier name when it has no number (for example \"Mega Raids\")." },
+        { "name": "is_shadow", "type": "boolean", "description": "true for a Shadow Raid boss." },
+        { "name": "shiny_available", "type": "boolean", "description": "true if the boss can be shiny." },
+        { "name": "cp_range", "type": "object | null", "description": "Catch CP range as { min, max }, or null when Leek Duck does not list one." },
+        { "name": "boosted_cp_range", "type": "object | null", "description": "Weather-boosted catch CP range as { min, max }, or null when not listed." },
+        { "name": "types", "type": "string[]", "description": "The Pokémon's types, for example [\"Water\", \"Dragon\"]." },
+        { "name": "asset_url", "type": "string | null", "description": "URL of the Pokémon's image." }
+      ]
+    },
+    {
+      "id": "events",
+      "title": "Events",
+      "path": "events.json",
+      "summary": "Current and upcoming in-game events, grouped by category.",
+      "structure": "An object keyed by event category (for example \"Raid Hour\" or \"Community Day\"). Each value is a list of event objects. Events move to the yearly archives after they end.",
+      "fields": [
+        { "name": "title", "type": "string", "description": "The event's name." },
+        { "name": "category", "type": "string", "description": "The event's category; always matches the key it is listed under." },
+        { "name": "is_local_time", "type": "boolean", "description": "true if the event runs at the same local time in every timezone." },
+        { "name": "start_time", "type": "integer | string", "description": "Unix time for global events, or a timezone-naive ISO 8601 string (YYYY-MM-DDTHH:MM:SS) for local-time events." },
+        { "name": "end_time", "type": "integer | string", "description": "Same format as start_time." },
+        { "name": "article_url", "type": "string", "description": "The event's Leek Duck article. Unique per event." },
+        { "name": "banner_url", "type": "string", "description": "URL of the event's banner image." },
+        { "name": "description", "type": "string", "description": "The event description; may span several lines." },
+        { "name": "details", "type": "object", "description": "Event sections keyed by the section name on the event page, such as bonuses, features, spawns, eggs, raids, shiny, moves, or research. Only sections the page has are present." },
+        { "name": "details.bonuses", "type": "string[]", "description": "Event bonuses as plain text." },
+        { "name": "details.<section>", "type": "object[]", "description": "Every other section is a list of Pokémon objects: { name, asset_url, shiny_available }. asset_url may be null." }
+      ],
+      "notes": [
+        "Events whose times are still \"to be announced\" are omitted until both times are published, so start_time and end_time are always set.",
+        "An event whose page cannot be read completely is omitted until a later update reads it successfully."
+      ]
+    },
+    {
+      "id": "archives",
+      "title": "Event Archives",
+      "path": "archives/archive_{year}.json",
+      "summary": "Events that have ended, one file per year.",
+      "structure": "Same shape and fields as events.json. Events are filed under the year they ended.",
+      "fields": [
+        { "name": "(all event fields)", "type": "", "description": "As in events.json, with the exception below." },
+        { "name": "description", "type": "string (optional)", "description": "Absent for the few events whose Leek Duck page no longer exists; fall back to title." }
+      ],
+      "notes": [
+        "Archiving began on September 19, 2025. Events that ended earlier are included only if they were still listed then, so earlier coverage is partial.",
+        "Archives were rebuilt from their source pages on August 10, 2026, so every record uses the current schema. Identity, category, banner, and times are never altered by a rebuild.",
+        "manifest.json lists the archive years that exist."
+      ]
+    },
+    {
+      "id": "research_tasks",
+      "title": "Field Research",
+      "path": "research_tasks.json",
+      "summary": "Current Field Research tasks and their possible rewards.",
+      "structure": "An object keyed by task category (for example \"Catching Tasks\"). Each value is a list of task objects.",
+      "fields": [
+        { "name": "task", "type": "string", "description": "The task's description." },
+        { "name": "rewards", "type": "object[]", "description": "The possible rewards for the task." },
+        { "name": "rewards[].type", "type": "string", "description": "\"encounter\", \"item\", or \"resource\"." },
+        { "name": "rewards[].name", "type": "string", "description": "The Pokémon or item name." },
+        { "name": "rewards[].shiny_available", "type": "boolean", "description": "Encounters only: true if the Pokémon can be shiny." },
+        { "name": "rewards[].cp_range", "type": "object | null", "description": "Encounters only: CP range as { min, max }, or null when not listed." },
+        { "name": "rewards[].quantity", "type": "integer", "description": "Items and resources only: how many are rewarded." },
+        { "name": "rewards[].asset_url", "type": "string | null", "description": "URL of the reward's image." }
+      ]
+    },
+    {
+      "id": "rocket_lineups",
+      "title": "Team GO Rocket Lineups",
+      "path": "rocket_lineups.json",
+      "summary": "Current lineups for Team GO Rocket leaders and grunts.",
+      "structure": "An object keyed by the member's name (for example \"Giovanni\" or \"Fire-type Female Grunt\"). Each value is a list of lineup slots.",
+      "fields": [
+        { "name": "slot", "type": "integer", "description": "Position in the lineup: 1, 2, or 3." },
+        { "name": "is_encounter", "type": "boolean", "description": "true if the Pokémon in this slot can be caught after the battle." },
+        { "name": "pokemons", "type": "object[]", "description": "The possible Pokémon for the slot: { name, shiny_available, asset_url }. asset_url may be null." }
+      ]
+    },
+    {
+      "id": "egg_pool",
+      "title": "Egg Pool",
+      "path": "egg_pool.json",
+      "summary": "Pokémon currently hatching from each kind of egg.",
+      "structure": "An object keyed by egg group (for example \"2 km Eggs\" or \"7 km Eggs (From Friend Gifts)\"). Each value is a list of Pokémon objects.",
+      "fields": [
+        { "name": "name", "type": "string", "description": "The Pokémon's name." },
+        { "name": "hatch_distance", "type": "integer | null", "description": "Hatch distance in kilometers, or null if the group name has none." },
+        { "name": "rarity_tier", "type": "integer (optional)", "description": "Hatch rarity from 1 (most common) to 5 (rarest); absent when Leek Duck does not show one." },
+        { "name": "shiny_available", "type": "boolean", "description": "true if the Pokémon can be shiny." },
+        { "name": "asset_url", "type": "string | null", "description": "URL of the Pokémon's image." }
+      ]
+    },
+    {
+      "id": "manifest",
+      "title": "Manifest",
+      "path": "manifest.json",
+      "summary": "Every published file with its checksum and when its content last changed.",
+      "structure": "An object with a files key, mapping each file's path (for example \"archives/archive_2026.json\") to its details.",
+      "fields": [
+        { "name": "files.<path>.updated_at", "type": "string", "description": "When the file's content last changed, as UTC ISO 8601 (YYYY-MM-DDTHH:MM:SSZ)." },
+        { "name": "files.<path>.sha256", "type": "string", "description": "SHA-256 of the file, for cheap change detection." },
+        { "name": "files.<path>.size", "type": "integer", "description": "File size in bytes." }
+      ]
+    }
+  ],
+  "changelog": [
+    {
+      "date": "2026-10-12",
+      "entries": [
+        "raid_bosses.json: regular bosses are listed again. Shadow bosses had been overwriting them; both now share their tier's list, with a new is_shadow field.",
+        "rocket_lineups.json: member names use normal spaces instead of non-breaking spaces.",
+        "events.json: an event whose page cannot be read completely is omitted instead of blocking the whole update.",
+        "Added manifest.json, and the data is now served from pokelitee.github.io. The raw.githubusercontent.com URLs keep working."
+      ]
+    },
+    {
+      "date": "2026-08-10",
+      "entries": [
+        "Archives rebuilt from their source pages: Pokémon detail sections are Pokémon objects throughout, and description is optional in archives."
+      ]
+    },
+    {
+      "date": "2026-07",
+      "entries": [
+        "Event detail sections other than bonuses changed from Pokémon name strings to Pokémon objects."
+      ]
+    }
+  ]
+}

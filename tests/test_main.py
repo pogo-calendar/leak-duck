@@ -16,6 +16,7 @@ def config(*names: str) -> Config:
 class MainTests(unittest.TestCase):
     def run_main(self, archiver: Mock, scrapers: dict[str, Mock]) -> list[str]:
         built: list[str] = []
+        self.update_manifest = Mock()
 
         def build(name: str, *_: object) -> Mock:
             built.append(name)
@@ -25,6 +26,7 @@ class MainTests(unittest.TestCase):
             patch("src.main.load_config", return_value=config(*scrapers)),
             patch("src.main.EventArchiver", return_value=archiver),
             patch("src.main.build_scraper", side_effect=build),
+            patch("src.main.update_manifest", self.update_manifest),
         ):
             with self.assertRaises(RuntimeError):
                 main()
@@ -48,6 +50,7 @@ class MainTests(unittest.TestCase):
 
         self.assertEqual(built, ["ResearchScraper", "EventScraper"])
         scrapers["EventScraper"].run.assert_called_once()
+        self.update_manifest.assert_called_once()
 
 
 if __name__ == "__main__":

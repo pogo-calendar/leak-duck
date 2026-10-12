@@ -1,5 +1,7 @@
 from src.archiver import EventArchiver
 from src.config import Config, ScraperConfig, load_config
+from src.manifest import update_manifest
+from src.paths import data_dir
 from src.scrapers import (
     EggScraper,
     EventScraper,
@@ -59,6 +61,13 @@ def main() -> None:
         except Exception as e:
             failures.append(f"{name}: {e}")
             print(f"✗ ERROR running {name}: {e}", flush=True)
+
+    # Runs after failures too, because the files that did succeed are published.
+    try:
+        update_manifest(data_dir())
+    except Exception as e:
+        failures.append(f"manifest: {e}")
+        print(f"✗ ERROR updating manifest: {e}", flush=True)
 
     if failures:
         raise RuntimeError("One or more scrapers failed: " + "; ".join(failures))

@@ -32,11 +32,11 @@ The scraped data is automatically committed and pushed to the `data` branch of t
 
 ## API & Documentation
 
-The raw JSON files can be used as simple, free API endpoints for your projects.
+The JSON files are free API endpoints for your projects: no key, no sign-up, and CORS is enabled.
 
-**➡️ For detailed information, visit the [Official Project Wiki](https://github.com/pokelitee/leak-duck/wiki)**
+**➡️ Start at the [Leak Duck API site](https://pokelitee.github.io/leak-duck/)**
 
-The wiki includes a full breakdown of the data structure for each file, field descriptions, and direct links to the JSON endpoints.
+The site lists every endpoint with when it last changed, lets you browse and filter the live data, and holds the field reference and changelog. The reference is maintained in [`site/docs.json`](site/docs.json).
 
 ---
 
@@ -52,35 +52,13 @@ The following files are generated:
 - `research_tasks.json` - All available Field Research tasks and their possible rewards.
 - `rocket_lineups.json` - The complete lineups for Team GO Rocket Leaders and Grunts.
 - `egg_pool.json` - The current list of Pokémon hatching from each egg distance.
-- `events.json`- All current and upcoming events.
+- `events.json` - All current and upcoming events.
 - `archives/archive_YYYY.json` - Historical event data, organized by year.
   - _Note: Automated archiving of past events is handled by the script. Archiving began on **September 19, 2025**; events that ended earlier are included only if they were still listed on that date, so earlier coverage is partial._
-  - _Archives were rebuilt from their source pages on **August 10, 2026**, so every record uses the current event schema. `description` is absent only for the few events whose Leek Duck page no longer exists. See the [API documentation](https://github.com/pokelitee/leak-duck/wiki/API-Documentation#event-archives) for the full compatibility contract._
+  - _Archives were rebuilt from their source pages on **August 10, 2026**, so every record uses the current event schema. `description` is absent only for the few events whose Leek Duck page no longer exists. See the [API reference](https://pokelitee.github.io/leak-duck/#reference-archives) for the full compatibility contract._
+- `manifest.json` - Every published file with its SHA-256, size, and when its content last changed.
 
-### Example Data (`raid_bosses.json`)
-
-```json
-{
-  "5-Star Raids": [
-    {
-      "name": "Palkia",
-      "tier": 5,
-      "shiny_available": true,
-      "cp_range": {
-        "min": 2190,
-        "max": 2280
-      },
-      "boosted_cp_range": {
-        "min": 2737,
-        "max": 2850
-      },
-      "types": ["Water", "Dragon"],
-      "is_shadow": false,
-      "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm484.icon.png"
-    }
-  ]
-}
-```
+Field-by-field descriptions of every file are on the [API site](https://pokelitee.github.io/leak-duck/#reference), along with a live data explorer.
 
 ---
 
@@ -144,6 +122,18 @@ python -m compileall -q src tests
 
 Use `ruff format .` to apply formatting. The tests are offline and cover parser selectors, output validation, archive compatibility validation, fetch failures, and archive-preservation behavior.
 
+### Previewing the API Site
+
+To preview the site with locally scraped data, copy it next to the JSON output and serve that folder:
+
+```sh
+python -m src.main
+cp -R site/. json/
+python -m http.server --directory json
+```
+
+Then open http://localhost:8000/.
+
 ---
 
 ## Automation with GitHub Actions
@@ -156,10 +146,16 @@ This repository is configured to run the scraper automatically using GitHub Acti
   1.  The action checks out the `main` branch to get the latest scraper code.
   2.  It installs the pinned Python dependencies and runs the regression tests.
   3.  It checks out the `data` branch into a separate worktree; the archiver reads the published files from there rather than from raw.githubusercontent.com, whose cache can lag behind the latest push.
-  4.  It runs the archiver and scrapers, writing each validated file into that worktree. A file that fails validation is left untouched, and an event page that fails validation is skipped with a warning.
+  4.  It runs the archiver and scrapers, writing each validated file into that worktree, then updates `manifest.json`. A file that fails validation is left untouched, and an event page that fails validation is skipped with a warning.
   5.  It commits and pushes only when the generated data changed, even if one scraper failed, so the other files stay fresh; the failure still marks the run as failed. If archiving fails, `events.json` is not republished. Concurrent publishers are serialized to avoid races.
 
 **Note:** For the GitHub Action to work, you must **manually create the `data` branch** as a clean, orphan branch in your repository first.
+
+### Deploying the API Site
+
+- **Workflow file:** `.github/workflows/deploy_pages.yml`
+- **Trigger:** After every scrape or backfill run, on pushes to `main` that change `site/`, and manually.
+- **Process:** It combines the `data` branch with the `site/` folder and deploys the result with GitHub's Pages actions, so the `data` branch only ever holds data. The repository's Pages source must be set to **GitHub Actions**.
 
 ### Rebuilding the Archives
 
@@ -185,6 +181,7 @@ leak-duck/
 │   ├── workflows/
 │   │   ├── backfill_archives.yml
 │   │   ├── ci.yml
+│   │   ├── deploy_pages.yml
 │   │   └── run_scrapers.yml
 │   ├── data-branch-readme.md
 │   └── dependabot.yml
@@ -205,18 +202,27 @@ leak-duck/
 │   ├── config.py
 │   ├── fetch.py
 │   ├── main.py
+│   ├── manifest.py
 │   ├── paths.py
 │   ├── published.py
 │   ├── validation.py
 │   └── utils.py
+├── site/
+│   ├── assets/
+│   │   ├── app.js
+│   │   └── styles.css
+│   ├── docs.json
+│   └── index.html
 ├── tests/
 │   ├── test_archiver.py
 │   ├── test_backfill.py
 │   ├── test_config.py
 │   ├── test_fetch.py
 │   ├── test_main.py
+│   ├── test_manifest.py
 │   ├── test_published.py
 │   ├── test_scrapers.py
+│   ├── test_site.py
 │   └── test_validation.py
 ├── .gitignore
 ├── LICENSE
