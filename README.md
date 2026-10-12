@@ -156,7 +156,7 @@ This repository is configured to run the scraper automatically using GitHub Acti
   1.  The action checks out the `main` branch to get the latest scraper code.
   2.  It installs the pinned Python dependencies and runs the regression tests.
   3.  It checks out the `data` branch into a separate worktree; the archiver reads the published files from there rather than from raw.githubusercontent.com, whose cache can lag behind the latest push.
-  4.  It runs the archiver and scrapers, writing each validated file into that worktree.
+  4.  It runs the archiver and scrapers, writing each validated file into that worktree. An event page that fails validation is skipped with a warning.
   5.  It commits and pushes only when the generated data changed. Concurrent publishers are serialized to avoid races.
 
 **Note:** For the GitHub Action to work, you must **manually create the `data` branch** as a clean, orphan branch in your repository first.

@@ -77,6 +77,7 @@ class ScraperSafetyTests(unittest.TestCase):
             "".join(
                 f'<a class="event-item-link" href="/events/{event_id}/">'
                 '<div class="event-item-wrapper"><p>Pokémon GO Tour</p>'
+                '<div class="event-img-wrapper"><img src="banner.png"></div>'
                 f'<div class="event-text"><h2>{event_id}</h2></div></div></a>'
                 for event_id in ("tour-global", "tour-city")
             ),
@@ -98,6 +99,7 @@ class ScraperSafetyTests(unittest.TestCase):
         def scrape_tba_page(url: str) -> dict[str, object]:
             return {
                 "article_url": url,
+                "description": "Event description.",
                 "details": {},
                 "is_local_time": True,
                 "start_time": None,
@@ -115,6 +117,43 @@ class ScraperSafetyTests(unittest.TestCase):
         )
         self.assertNotIn("schedule_tba", events[0])
         self.assertFalse(events[0]["is_local_time"])
+
+    def test_invalid_event_is_skipped_without_dropping_the_others(self) -> None:
+        soup = BeautifulSoup(
+            "".join(
+                f'<a class="event-item-link" href="/events/{event_id}/">'
+                '<div class="event-item-wrapper"><p>Event</p>'
+                '<div class="event-img-wrapper"><img src="banner.png"></div>'
+                f'<div class="event-text"><h2>{event_id}</h2></div></div></a>'
+                for event_id in ("valid", "missing-times")
+            ),
+            "lxml",
+        )
+        scraper = EventScraper(
+            "https://leekduck.com/events/",
+            "events",
+            ScraperSettings(retries=1, delay=0),
+            PublishedData("owner", "repository"),
+        )
+
+        def scrape_page(url: str) -> dict[str, object]:
+            has_times = "missing-times" not in url
+            return {
+                "article_url": url,
+                "description": "Event description.",
+                "details": {},
+                "is_local_time": False,
+                "start_time": 1 if has_times else None,
+                "end_time": 2 if has_times else None,
+            }
+
+        with patch.object(EventPageScraper, "scrape", side_effect=scrape_page):
+            data = scraper.parse(soup)
+
+        self.assertEqual(
+            [event["article_url"] for event in data["Event"]],
+            ["https://leekduck.com/events/valid/"],
+        )
 
 
 class ParserFixtureTests(unittest.TestCase):

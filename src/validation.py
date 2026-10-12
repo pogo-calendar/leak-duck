@@ -60,66 +60,68 @@ def _validate_event_records(
     file_name: str, data: dict[str, Any], require_description: bool
 ) -> None:
     for category, events in data.items():
-        label = f"{file_name}.{category}"
         for event in events:
-            if not isinstance(event, dict):
-                raise OutputValidationError(f"{label} contains a non-object entry")
-            if event.get("error"):
-                raise OutputValidationError(
-                    f"event page failed for {event.get('article_url', 'unknown URL')}"
-                )
+            validate_event_record(
+                f"{file_name}.{category}", event, category, require_description
+            )
 
-            required_keys = ["title", "article_url", "banner_url", "category"]
-            if require_description:
-                required_keys.append("description")
-            for required_key in required_keys:
-                value = event.get(required_key)
-                if not isinstance(value, str) or not value.strip():
-                    raise OutputValidationError(
-                        f"{label} entry has invalid {required_key}"
-                    )
 
-            if not require_description and "description" in event:
-                if not isinstance(event["description"], str):
-                    raise OutputValidationError(
-                        f"{label} entry has invalid description"
-                    )
+def validate_event_record(
+    label: str, event: Any, category: str, require_description: bool
+) -> None:
+    """Validate one event record published under ``category``."""
+    if not isinstance(event, dict):
+        raise OutputValidationError(f"{label} contains a non-object entry")
+    if event.get("error"):
+        raise OutputValidationError(
+            f"event page failed for {event.get('article_url', 'unknown URL')}"
+        )
 
-            if event["category"] != category:
-                raise OutputValidationError(
-                    f"{label} entry has mismatched category {event['category']!r}"
-                )
+    required_keys = ["title", "article_url", "banner_url", "category"]
+    if require_description:
+        required_keys.append("description")
+    for required_key in required_keys:
+        value = event.get(required_key)
+        if not isinstance(value, str) or not value.strip():
+            raise OutputValidationError(f"{label} entry has invalid {required_key}")
 
-            details = event.get("details")
-            if not isinstance(details, dict):
-                raise OutputValidationError(
-                    f"{label} entry must contain a details object"
-                )
-            _validate_details(label, details)
+    if not require_description and "description" in event:
+        if not isinstance(event["description"], str):
+            raise OutputValidationError(f"{label} entry has invalid description")
 
-            is_local_time = event.get("is_local_time")
-            if not isinstance(is_local_time, bool):
-                raise OutputValidationError(f"{label} entry must declare is_local_time")
+    if event["category"] != category:
+        raise OutputValidationError(
+            f"{label} entry has mismatched category {event['category']!r}"
+        )
 
-            for time_key in ("start_time", "end_time"):
-                time_value = event.get(time_key)
-                if is_local_time:
-                    try:
-                        parsed_time = datetime.fromisoformat(time_value)
-                    except (TypeError, ValueError):
-                        parsed_time = None
-                    valid_time = parsed_time is not None and parsed_time.tzinfo is None
-                    time_type = "timezone-naive ISO datetime string"
-                else:
-                    valid_time = isinstance(time_value, int) and not isinstance(
-                        time_value, bool
-                    )
-                    time_type = "unix time"
+    details = event.get("details")
+    if not isinstance(details, dict):
+        raise OutputValidationError(f"{label} entry must contain a details object")
+    _validate_details(label, details)
 
-                if not valid_time:
-                    raise OutputValidationError(
-                        f"{label} entry has invalid {time_key}; expected {time_type}"
-                    )
+    is_local_time = event.get("is_local_time")
+    if not isinstance(is_local_time, bool):
+        raise OutputValidationError(f"{label} entry must declare is_local_time")
+
+    for time_key in ("start_time", "end_time"):
+        time_value = event.get(time_key)
+        if is_local_time:
+            try:
+                parsed_time = datetime.fromisoformat(time_value)
+            except (TypeError, ValueError):
+                parsed_time = None
+            valid_time = parsed_time is not None and parsed_time.tzinfo is None
+            time_type = "timezone-naive ISO datetime string"
+        else:
+            valid_time = isinstance(time_value, int) and not isinstance(
+                time_value, bool
+            )
+            time_type = "unix time"
+
+        if not valid_time:
+            raise OutputValidationError(
+                f"{label} entry has invalid {time_key}; expected {time_type}"
+            )
 
 
 def _validate_details(label: str, details: dict[str, Any]) -> None:

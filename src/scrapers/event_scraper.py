@@ -10,6 +10,7 @@ from src.fetch import FetchError, get_once
 from src.paths import data_dir
 from src.published import read_published_json
 from src.utils import clean_banner_url, parse_feed_datetime
+from src.validation import OutputValidationError, validate_event_record
 
 from .base_scraper import BaseScraper
 from .event_page_scraper import EventPageScraper
@@ -174,9 +175,21 @@ class EventScraper(BaseScraper):
                 )
                 continue
 
-            new_events_by_category.setdefault(
-                event.get("category", "Event"), []
-            ).append(event)
+            category = event.get("category", "Event")
+            try:
+                validate_event_record(
+                    f"{self.file_name}.{category}",
+                    event,
+                    category,
+                    require_description=True,
+                )
+            except OutputValidationError as e:
+                # One malformed page must not hold back every other event; the
+                # warning annotation keeps the skip visible on the workflow run.
+                print(f"::warning::Skipping {event['article_url']}: {e}", flush=True)
+                continue
+
+            new_events_by_category.setdefault(category, []).append(event)
 
         merged_events = {
             category: list(events)
