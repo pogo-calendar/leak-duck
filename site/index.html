@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'"
+    />
+    <title>Leak Duck API</title>
+    <meta
+      name="description"
+      content="Free JSON API of Pokémon GO raids, events, research, Team GO Rocket lineups, and eggs, scraped hourly from Leek Duck."
+    />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script type="module" src="assets/app.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <h1>Leak Duck API</h1>
+        <p class="lede">
+          Free JSON endpoints for Pokémon GO raids, events, research, Team GO Rocket
+          lineups, and eggs, scraped from
+          <a href="https://leekduck.com">leekduck.com</a> by a workflow that runs every
+          hour. No key, no sign-up, and CORS is enabled.
+        </p>
+        <nav aria-label="Sections">
+          <a href="#endpoints">Endpoints</a>
+          <a href="#explorer">Explorer</a>
+          <a href="#reference">Reference</a>
+          <a href="#changelog">Changelog</a>
+          <a href="https://github.com/pokelitee/leak-duck">Source</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <p id="load-error" class="notice" role="alert" hidden></p>
+
+      <section id="endpoints" aria-labelledby="endpoints-title">
+        <h2 id="endpoints-title">Endpoints</h2>
+        <p>
+          Each file is a plain JSON document.
+          <a href="#reference-manifest">manifest.json</a> records when each one last
+          changed, so you can poll it instead of downloading everything.
+        </p>
+        <pre class="snippet"><code id="fetch-snippet"></code></pre>
+        <div id="endpoint-list" class="endpoint-list" aria-live="polite"></div>
+      </section>
+
+      <section id="explorer" aria-labelledby="explorer-title">
+        <h2 id="explorer-title">Explorer</h2>
+        <form id="explorer-form" class="explorer-controls">
+          <label>
+            File
+            <select id="explorer-file" required></select>
+          </label>
+          <label>
+            Filter
+            <input
+              id="explorer-filter"
+              type="search"
+              placeholder="e.g. Shadow, Community Day"
+              autocomplete="off"
+            />
+          </label>
+        </form>
+        <p id="explorer-status" class="muted" aria-live="polite"></p>
+        <div id="explorer-results"></div>
+      </section>
+
+      <section id="reference" aria-labelledby="reference-title">
+        <h2 id="reference-title">Reference</h2>
+        <div id="reference-list"></div>
+      </section>
+
+      <section id="changelog" aria-labelledby="changelog-title">
+        <h2 id="changelog-title">Changelog</h2>
+        <div id="changelog-list"></div>
+      </section>
+    </main>
+
+    <footer class="wrap site-footer">
+      <p>
+        Data is sourced from <a href="https://leekduck.com">Leek Duck</a>. This project
+        is not affiliated with Leek Duck, Niantic, or The Pokémon Company. Source code
+        is MIT-licensed on <a href="https://github.com/pokelitee/leak-duck">GitHub</a>.
+        Used by <a href="https://pokelitee.github.io/pogo-calendar/">PoGo Calendar</a>.
+      </p>
+    </footer>
+  </body>
+</html>
