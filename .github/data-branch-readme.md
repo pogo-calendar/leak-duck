@@ -1,6 +1,6 @@
 # Leak Duck Data Branch 🦆
 
-This branch contains automatically generated Pokémon GO data sourced from [leekduck.com](https://leekduck.com). The data is updated every hour by an automated workflow. For information about the scraper, visit the [main repository](https://github.com/pokelitee/leak-duck).
+This branch contains automatically generated Pokémon GO data sourced from [leekduck.com](https://leekduck.com). The data is updated by an automated workflow scheduled to run every hour. For information about the scraper, visit the [main repository](https://github.com/pokelitee/leak-duck).
 
 ![Last Updated](https://img.shields.io/github/last-commit/pokelitee/leak-duck/data)
 
@@ -19,7 +19,7 @@ The raw JSON file URLs can be used as simple, free API endpoints. See the [offic
 
 ## Event Archives
 
-Ended events are moved from `events.json` into `archives/archive_YYYY.json`. Automated archiving began on **September 19, 2025**; events that ended before that date are not included.
+Ended events are moved from `events.json` into `archives/archive_YYYY.json`. Automated archiving began on **September 19, 2025**; events that ended before that date are included only if they were still listed then, so earlier coverage is partial.
 
 Archives were rebuilt from their original Leek Duck pages on **August 10, 2026**, so every archived record now uses the same schema as `events.json`:
 

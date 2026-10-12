@@ -54,7 +54,7 @@ The following files are generated:
 - `egg_pool.json` - The current list of Pokémon hatching from each egg distance.
 - `events.json`- All current and upcoming events.
 - `archives/archive_YYYY.json` - Historical event data, organized by year.
-  - _Note: Automated archiving of past events is handled by the script. Coverage begins **September 19, 2025**; events that ended earlier are not archived._
+  - _Note: Automated archiving of past events is handled by the script. Archiving began on **September 19, 2025**; events that ended earlier are included only if they were still listed on that date, so earlier coverage is partial._
   - _Archives were rebuilt from their source pages on **August 10, 2026**, so every record uses the current event schema. `description` is absent only for the few events whose Leek Duck page no longer exists. See the [API documentation](https://github.com/pokelitee/leak-duck/wiki/API-Documentation#event-archives) for the full compatibility contract._
 
 ### Example Data (`raid_bosses.json`)
@@ -151,7 +151,7 @@ Use `ruff format .` to apply formatting. The tests are offline and cover parser 
 This repository is configured to run the scraper automatically using GitHub Actions.
 
 - **Workflow file:** `.github/workflows/run_scrapers.yml`
-- **Trigger:** The workflow runs on a schedule (every hour) and can also be triggered manually from the "Actions" tab in GitHub.
+- **Trigger:** The workflow is scheduled to run every hour (GitHub may delay scheduled runs) and can also be triggered manually from the "Actions" tab in GitHub.
 - **Process:**
   1.  The action checks out the `main` branch to get the latest scraper code.
   2.  It installs the pinned Python dependencies and runs the regression tests.
