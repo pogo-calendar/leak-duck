@@ -1,6 +1,8 @@
+import io
 import json
 import tempfile
 import unittest
+from contextlib import redirect_stdout
 from pathlib import Path
 from unittest.mock import patch
 
@@ -147,12 +149,22 @@ class ScraperSafetyTests(unittest.TestCase):
                 "end_time": 2 if has_times else None,
             }
 
-        with patch.object(EventPageScraper, "scrape", side_effect=scrape_page):
+        # Captured so the warning annotation is asserted here instead of being
+        # emitted as a real workflow annotation on every run.
+        output = io.StringIO()
+        with (
+            patch.object(EventPageScraper, "scrape", side_effect=scrape_page),
+            redirect_stdout(output),
+        ):
             data = scraper.parse(soup)
 
         self.assertEqual(
             [event["article_url"] for event in data["Event"]],
             ["https://leekduck.com/events/valid/"],
+        )
+        self.assertIn(
+            "::warning::Skipping https://leekduck.com/events/missing-times/",
+            output.getvalue(),
         )
 
 
