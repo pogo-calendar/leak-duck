@@ -1,3 +1,4 @@
+import io
 import unittest
 from unittest.mock import Mock, patch
 
@@ -51,6 +52,18 @@ class MainTests(unittest.TestCase):
         self.assertEqual(built, ["ResearchScraper", "EventScraper"])
         scrapers["EventScraper"].run.assert_called_once()
         self.update_manifest.assert_called_once()
+
+    def test_unencodable_output_does_not_crash_a_legacy_console(self) -> None:
+        console = io.TextIOWrapper(io.BytesIO(), encoding="cp1252")
+        scrapers = {"ResearchScraper": Mock()}
+        scrapers["ResearchScraper"].run.side_effect = ValueError("bad reward 🦆")
+
+        with patch("sys.stdout", console):
+            self.run_main(Mock(), scrapers)
+
+        console.flush()
+        output = console.buffer.getvalue().decode("cp1252")
+        self.assertIn(r"ERROR running ResearchScraper: bad reward \U0001f986", output)
 
 
 if __name__ == "__main__":

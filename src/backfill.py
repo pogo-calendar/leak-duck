@@ -11,7 +11,7 @@ from src.manifest import update_manifest
 from src.paths import data_dir
 from src.published import read_published_json
 from src.scrapers.event_page_scraper import EventPageScraper
-from src.utils import write_json_atomic
+from src.utils import make_console_output_safe, write_json_atomic
 from src.validation import validate_archive_output
 
 POKEMON_DEFAULTS = {"asset_url": None, "shiny_available": False}
@@ -146,6 +146,7 @@ class ArchiveBackfiller:
 
 
 def main() -> None:
+    make_console_output_safe()
     parser = argparse.ArgumentParser(description="Rebuild published event archives.")
     parser.add_argument("years", type=int, nargs="+", help="archive years to rebuild")
     parser.add_argument(

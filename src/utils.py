@@ -1,12 +1,25 @@
+import io
 import json
 import os
 import re
+import sys
 from datetime import datetime
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 from typing import Any
 
 from bs4.element import Tag
+
+
+def make_console_output_safe() -> None:
+    """Escape characters the console cannot encode instead of crashing.
+
+    Windows consoles default to a legacy code page that cannot encode every
+    character in scraped event titles, which made a print raise mid-run.
+    """
+    for stream in (sys.stdout, sys.stderr):
+        if isinstance(stream, io.TextIOWrapper):
+            stream.reconfigure(errors="backslashreplace")
 
 
 def save_html(content: str, path: str | Path) -> None:
