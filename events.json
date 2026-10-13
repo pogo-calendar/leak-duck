@@ -536,6 +536,11 @@
             "details": {
                 "features": [
                     {
+                        "name": "Brambleghast",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm947.icon.png",
+                        "shiny_available": false
+                    },
+                    {
                         "name": "Bramblin",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm946.icon.png",
                         "shiny_available": false
@@ -556,6 +561,11 @@
                         "name": "Bramblin",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm946.icon.png",
                         "shiny_available": false
+                    },
+                    {
+                        "name": "Cacnea",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_331_00.png",
+                        "shiny_available": true
                     },
                     {
                         "name": "Doduo",
@@ -605,6 +615,11 @@
                     {
                         "name": "Skarmory",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_227_00.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Stantler",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_234_00.png",
                         "shiny_available": true
                     }
                 ],

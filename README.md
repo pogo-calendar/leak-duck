@@ -26,7 +26,7 @@ Ended events are moved from `events.json` into `archives/archive_YYYY.json`. Aut
 
 Archives were rebuilt from their original Leek Duck pages on **August 10, 2026**, so every archived record now uses the same schema as `events.json`:
 
-- Pokémon detail arrays (`details.features`, `spawns`, `eggs`, `raids`, `shiny`, `moves`) are arrays of Pokémon objects throughout. The legacy plain-string format is no longer present.
+- Every `details` section other than `bonuses` is an array of Pokémon objects. The legacy plain-string format is no longer present.
 - `description` is present except for a small number of events whose Leek Duck page no longer exists, so treat it as optional when reading archives.
 
 See the [archive reference](https://pokelitee.github.io/leak-duck/#reference-archives) for the full contract.
