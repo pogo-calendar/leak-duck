@@ -40,7 +40,7 @@ def main() -> None:
                 str(python),
                 "install",
                 "-r",
-                str(ROOT / "requirements.txt"),
+                str(ROOT / "requirements" / "runtime.txt"),
                 str(wheel),
             ],
             check=True,
