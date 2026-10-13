@@ -30,7 +30,7 @@ git clone https://github.com/pokelitee/leak-duck.git
 cd leak-duck
 python -m venv .venv
 # Activate .venv using your shell's activation command.
-python -m pip install -r requirements.txt
+python -m pip install -r requirements/runtime.txt
 python -m pip install --no-deps -e .
 leak-duck
 ```

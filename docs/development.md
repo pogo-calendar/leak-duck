@@ -11,7 +11,7 @@ Use Python 3.12+ and Node.js for the site syntax check. Activate the virtual env
 Install the pinned development tools and run the same checks used by CI:
 
 ```sh
-python -m pip install -r requirements-dev.txt
+python -m pip install -r requirements/dev.txt
 python -m ruff format --check .
 python -m ruff check .
 python -m unittest discover -v
@@ -53,4 +53,6 @@ Extend the shared scraper, fetch, and validation utilities. Add offline fixtures
 
 The API contract and changelog are maintained in [`site/docs.json`](../site/docs.json) and rendered by the API site. Update them with schema changes rather than copying field definitions into Markdown. Check event archive compatibility when changing event data.
 
-Dependabot checks Python dependencies and GitHub Actions weekly. Keep `requirements.txt`, `requirements-dev.txt`, and `pyproject.toml` consistent. The required PR check is `quality`; `.github/workflows/ci.yml` defines its checks.
+`requirements/runtime.txt` pins scraper dependencies. `requirements/dev.txt` includes those dependencies and pins development tools. Package installation uses `pyproject.toml`; local checks and automation use the requirement files.
+
+Dependabot checks Python dependencies and GitHub Actions weekly. Keep `requirements/runtime.txt`, `requirements/dev.txt`, and `pyproject.toml` consistent. The required PR check is `quality`; `.github/workflows/ci.yml` defines its checks.
