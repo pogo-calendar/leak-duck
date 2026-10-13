@@ -119,7 +119,10 @@ ruff check .
 python -m unittest discover -v
 python -m compileall -q src tests
 node --check site/assets/app.js
+python scripts/check_package.py
 ```
+
+CI has a 15-minute timeout and also builds the distributions, installs the wheel in a clean environment, and verifies bundled configuration, runtime paths, and the console entry point without scraping live sites.
 
 Use `ruff format .` to apply formatting. The tests are offline and cover parser selectors, output validation, archive compatibility validation, fetch retries and failures, archive preservation, partial-failure handling, the manifest, and that `site/docs.json` documents exactly the published files.
 
@@ -237,15 +240,9 @@ leak-duck/
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Follow the [organization contribution guide](https://github.com/pokelitee/.github/blob/main/CONTRIBUTING.md) and the development checks above. Changes to `main` require a pull request, passing `quality` CI, and resolved review conversations, including changes by administrators. GitHub deletes merged branches automatically. The intended live rulesets are tracked in `.github/rulesets/`; editing those files alone does not apply them.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-
-1.  Fork the Project
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  Open a Pull Request
+The Pages environment only permits `main` deployments. Scraping, backfills, and deployment workflows only run from `main`. A failed scraper may still publish validated files from the other scrapers; this policy remains distinct from projects that publish complete snapshots atomically.
 
 ---
 
