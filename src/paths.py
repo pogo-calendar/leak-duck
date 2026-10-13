@@ -23,8 +23,7 @@ def data_dir() -> Path:
     configured_dir = os.getenv("LEAK_DUCK_OUTPUT_DIR")
     if configured_dir:
         return Path(configured_dir).expanduser().resolve()
-    root = runtime_root()
-    return root if os.getenv("CI") else root / "json"
+    return runtime_root() / "json"
 
 
 def published_dir() -> Path | None:
