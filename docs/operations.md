@@ -1,37 +1,28 @@
-# Contributing
+# Operations
 
-Follow the [organization contribution guide](https://github.com/pokelitee/.github/blob/main/CONTRIBUTING.md). Use the [README](README.md) for setup and API links.
+See the [README](../README.md) for quick start and documentation links. General contribution policy lives in the [organization guide](https://github.com/pokelitee/.github/blob/main/CONTRIBUTING.md).
 
-## Local checks
+## Runtime configuration
 
-Use Python 3.12+ and Node.js for the site syntax check. Activate the virtual environment from the setup instructions before running these commands.
+The scraper loads packaged [`src/config.json`](../src/config.json); there is no CLI configuration-file flag. In a checkout, edit that file to change source URLs, enabled scrapers, or fetch settings. Python callers can pass a path to `src.config.load_config`.
 
-Install the pinned development tools and run the same checks used by CI:
+| Setting | Default | Purpose |
+| --- | --- | --- |
+| `scraper_settings.retries` | `3` | Total HTTP attempts, including the first request. |
+| `scraper_settings.delay` | `5` | Delay between failed attempts in seconds. |
+| `scraper_settings.timeout` | `15` | HTTP timeout in seconds. |
+| `scraper_settings.cache_expiration_hours` | `1` | Downloaded HTML cache lifetime. |
+| `scrapers.<class>.enabled` | `true` | Enable the configured resource scraper. |
+| `scrapers.<class>.url` / `file_name` | Per resource | Source page and output filename stem. |
+| `github.user` / `github.repo` | `pokelitee` / `leak-duck` | Published data source used for archives and existing snapshots. |
 
-```sh
-python -m pip install -r requirements-dev.txt
-python -m ruff format --check .
-python -m ruff check .
-python -m unittest discover -v
-python -m compileall -q src tests
-node --check site/assets/app.js
-python scripts/check_package.py
-```
+| Environment variable | Purpose |
+| --- | --- |
+| `LEAK_DUCK_HOME` | Runtime root for downloaded HTML and default JSON output. |
+| `LEAK_DUCK_OUTPUT_DIR` | Override the JSON output directory. |
+| `LEAK_DUCK_PUBLISHED_DIR` | Read existing published files from a local data-branch checkout instead of remote raw URLs. |
 
-CI has a 15-minute timeout and also builds the distributions, installs the wheel in a clean environment, and verifies bundled configuration, runtime paths, and the console entry point without scraping live sites.
-
-Use `python -m ruff format .` to apply formatting. The tests are offline and cover parser selectors, output validation, archive compatibility validation, fetch retries and failures, archive preservation, partial-failure handling, the manifest, and that `site/docs.json` documents exactly the published files.
-
-## Preview the API site
-
-After scraping locally, copy the site into the JSON output and serve it:
-
-```sh
-python -c "import shutil; shutil.copytree('site', 'json', dirs_exist_ok=True)"
-python -m http.server --directory json
-```
-
-Open [localhost:8000](http://localhost:8000/). These commands assume the default `json/` output directory.
+Without overrides, source checkouts use their repository root and installed packages use the current working directory. Downloads go to `html/` and output to `json/`. Run `leak-duck` or `python -m src.main`; failures produce a nonzero exit status.
 
 ## Automation and publication
 
@@ -76,4 +67,21 @@ The `data` branch contains generated output only and is protected against deleti
 
 The Pages environment and publishing workflows permit only `main`. Live ruleset definitions are tracked in `.github/rulesets/`; editing those files does not apply the settings to GitHub.
 
-Dependabot checks Python dependencies and pinned GitHub Actions weekly. Keep `requirements.txt`, `requirements-dev.txt`, and package dependency declarations consistent when updating dependencies.
+## Manual workflow runs
+
+```sh
+gh workflow run run_scrapers.yml --repo pokelitee/leak-duck --ref main
+gh workflow run backfill_archives.yml --repo pokelitee/leak-duck --ref main -f years="2025 2026" -F dry_run=true
+```
+
+Review the backfill report before dispatching again with `dry_run=false`. Local backfills also default to writing unless `--dry-run` is supplied; the workflow defaults to dry-run. Scrapes and backfills share a publisher concurrency group so they cannot race.
+
+## Troubleshooting and recovery
+
+- **Changed HTML or failed scraper:** inspect the failed resource, capture current HTML, and reproduce with offline tests. Validated files from other scrapers may already have published; a failed run does not imply that nothing changed.
+- **Archive failure:** resolve it before expecting `events.json` to update. The event scraper is skipped to avoid losing ended events that could not be archived.
+- **Stale data:** inspect the scraper run, `manifest.json` content-change times, and the Pages deployment. Unchanged content retains its previous change time.
+- **Missing `data` branch in a fork:** bootstrap an orphan data branch before running publishing workflows. Keep it separate from source history and configure Pages to use GitHub Actions.
+- **Backfill source page removed:** preserve the original archived snapshot; do not replace it with empty data.
+
+For a reproducible older snapshot, use a full data commit SHA in raw GitHub URLs. Repair current output through the scraper/backfill workflow after fixing its source behavior; do not force-push `data` or hand-edit published JSON.
