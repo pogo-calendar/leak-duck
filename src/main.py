@@ -10,6 +10,7 @@ from src.scrapers import (
     RocketLineupScraper,
 )
 from src.scrapers.base_scraper import BaseScraper
+from src.utils import make_console_output_safe
 
 SCRAPER_CLASSES: dict[str, type[BaseScraper]] = {
     "RaidBossScraper": RaidBossScraper,
@@ -32,6 +33,7 @@ def build_scraper(name: str, scraper: ScraperConfig, config: Config) -> BaseScra
 
 
 def main() -> None:
+    make_console_output_safe()
     print("=== Starting Leak Duck Scrapers ===", flush=True)
     config = load_config()
     print("Configuration loaded", flush=True)
@@ -44,7 +46,7 @@ def main() -> None:
         print("Event archiver completed", flush=True)
     except Exception as e:
         failures.append(f"EventArchiver: {e}")
-        print(f"✗ ERROR running EventArchiver: {e}", flush=True)
+        print(f"ERROR running EventArchiver: {e}", flush=True)
 
     for name, scraper in config.scrapers.items():
         if not scraper.enabled:
@@ -60,14 +62,14 @@ def main() -> None:
             print(f"Successfully ran {name}", flush=True)
         except Exception as e:
             failures.append(f"{name}: {e}")
-            print(f"✗ ERROR running {name}: {e}", flush=True)
+            print(f"ERROR running {name}: {e}", flush=True)
 
     # Runs after failures too, because the files that did succeed are published.
     try:
         update_manifest(data_dir())
     except Exception as e:
         failures.append(f"manifest: {e}")
-        print(f"✗ ERROR updating manifest: {e}", flush=True)
+        print(f"ERROR updating manifest: {e}", flush=True)
 
     if failures:
         raise RuntimeError("One or more scrapers failed: " + "; ".join(failures))
