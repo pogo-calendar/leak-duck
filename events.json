@@ -1235,15 +1235,52 @@
     ],
     "Raid Day": [
         {
-            "title": "Super Mega Raid Day",
-            "article_url": "https://leekduck.com/events/super-mega-raid-day-october-2026/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/events-default-img.jpg",
+            "title": "Chandelure Super Mega Raid Day",
+            "article_url": "https://leekduck.com/events/chandelure-super-mega-raid-day-2026/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/chandelure-super-mega-raid-day-2026.jpg",
             "category": "Raid Day",
-            "details": {},
+            "details": {
+                "bonuses": [
+                    "An additional 5,000 Stardust from Super Mega Raid Battles",
+                    "An additional 5,000 XP from Super Mega Raid Battles",
+                    "Chandelure caught from Super Mega Raids will have Mega Level 1 unlocked",
+                    "Increased chance of encountering Shiny Chandelure from Super Mega Raids",
+                    "Increased chance to get Rare Candy XL from Raid Battles",
+                    "Receive up to 14 Raid Passes from spinning Gym Photo Discs",
+                    "Receive up to six free Raid Passes from spinning Gym Photo Discs",
+                    "Remote Raid limit increased to 20 from Friday, October 30, at 5:00 p.m. to Saturday, October 31, 2026, at 8:00 p.m. PDT"
+                ],
+                "features": [
+                    {
+                        "name": "Mega Chandelure",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm609.fMEGA.icon.png",
+                        "shiny_available": true
+                    }
+                ],
+                "raids": [
+                    {
+                        "name": "Mega Chandelure",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm609.fMEGA.icon.png",
+                        "shiny_available": true
+                    }
+                ],
+                "shiny": [
+                    {
+                        "name": "Chandelure",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_609_00_shiny.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Mega Chandelure",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm609.fMEGA.s.icon.png",
+                        "shiny_available": true
+                    }
+                ]
+            },
             "is_local_time": true,
             "start_time": "2026-10-31T14:00:00",
             "end_time": "2026-10-31T17:00:00",
-            "description": "The Super Mega Raid Day event will take place on October 31, 2026 from 2 pm to 5 pm. Stay tuned for more details."
+            "description": "Mega Chandelure makes its Pokémon GO debut during Chandelure Super Mega Raid Day on Saturday, October 31, 2026, from 2:00 p.m. to 5:00 p.m. local time!"
         },
         {
             "title": "Super Mega Raid Day",

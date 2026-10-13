@@ -6,9 +6,9 @@
             "updated_at": "2026-10-13T14:56:12Z"
         },
         "archives/archive_2026.json": {
-            "sha256": "516ecc669b9fcf767ec098e768748fbbac03e4aaaae11db9ef6d26a6a7f6d53e",
-            "size": 1105792,
-            "updated_at": "2026-10-13T14:56:12Z"
+            "sha256": "a015d5b2635c1bdda8e7234fa2e1cc9aa40c03deb9f89fe803b7c63942ebf839",
+            "size": 1106946,
+            "updated_at": "2026-10-13T21:02:03Z"
         },
         "egg_pool.json": {
             "sha256": "cae8eeffb56c788b643b3b2b7ec314ed6be851582756a06a1e20b7c7e2510a1e",
@@ -16,9 +16,9 @@
             "updated_at": "2026-10-12T17:30:07Z"
         },
         "events.json": {
-            "sha256": "328a374ff25fec63326d0a9b7b979fcff2165492824c5f70bcb4a84d288c308e",
-            "size": 165674,
-            "updated_at": "2026-10-13T11:45:10Z"
+            "sha256": "ff6ab4d85fdc1c53981cd67b03b51049fb8dbb6d4b7f849dd3a2174bf4655b19",
+            "size": 167705,
+            "updated_at": "2026-10-13T21:02:03Z"
         },
         "raid_bosses.json": {
             "sha256": "a8d9a7cf53250994719a6a26a55e670a9555aac43b5e0681bfad21c88b30d202",
