@@ -296,6 +296,40 @@ class ParserFixtureTests(unittest.TestCase):
         self.assertEqual(data["details"]["bonuses"], ["Double XP"])
         self.assertEqual(data["description"], "Event description.")
 
+    def test_event_page_parser_marks_shiny_section_pokemon_as_shiny(self) -> None:
+        def pokemon(name: str, sprite: str, badge: bool = False) -> str:
+            shiny_badge = '<img class="shiny-icon" src="shiny.png">' if badge else ""
+            return (
+                '<li class="pkmn-list-item">'
+                f'<div class="pkmn-list-img"><img src="{sprite}"></div>'
+                f'<div class="pkmn-name">{name}</div>{shiny_badge}</li>'
+            )
+
+        soup = BeautifulSoup(
+            '<div class="page-content">'
+            '<h2 class="event-section-header" id="spawns">Spawns</h2>'
+            '<ul class="pkmn-list-flex">'
+            + pokemon("Electrike", "pokemon_icon_309_00.png", badge=True)
+            + pokemon("Growlithe", "pm58.icon.png")
+            + "</ul>"
+            '<h2 class="event-section-header" id="shiny">Shiny</h2>'
+            '<ul class="pkmn-list-flex">'
+            + pokemon("Electrike", "pokemon_icon_309_00_shiny.png")
+            + pokemon("Hisuian Growlithe", "pm58.fHISUIAN.s.icon.png")
+            + "</ul></div>",
+            "lxml",
+        )
+        details = EventPageScraper(self.settings).parse(soup, "event-url")["details"]
+
+        self.assertEqual(
+            {p["name"]: p["shiny_available"] for p in details["spawns"]},
+            {"Electrike": True, "Growlithe": False},
+        )
+        self.assertEqual(
+            {p["name"]: p["shiny_available"] for p in details["shiny"]},
+            {"Electrike": True, "Hisuian Growlithe": True},
+        )
+
     def test_event_page_parser_reads_single_session_schedule(self) -> None:
         soup = BeautifulSoup(
             '<div class="page-content">'
