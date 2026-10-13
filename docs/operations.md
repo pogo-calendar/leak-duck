@@ -28,20 +28,20 @@ Without overrides, source checkouts use their repository root and installed pack
 
 This repository is configured to run the scraper automatically using GitHub Actions.
 
-- **Workflow file:** `.github/workflows/run_scrapers.yml`
+- **Workflow file:** `.github/workflows/update-data.yml`
 - **Trigger:** The workflow is scheduled to run every hour (GitHub may delay scheduled runs) and can also be triggered manually from the "Actions" tab in GitHub.
 - **Process:**
   1.  The action checks out the `main` branch to get the latest scraper code.
   2.  It installs the pinned runtime dependencies and runs the regression tests.
   3.  It checks out the `data` branch into a separate worktree; the archiver reads the published files from there rather than from raw.githubusercontent.com, whose cache can lag behind the latest push.
   4.  It runs the archiver and scrapers, writing each validated file into that worktree, then updates `manifest.json`. A file that fails validation is left untouched, and an event page that fails validation is skipped with a warning.
-  5.  It commits and pushes only when the generated data changed, even if one scraper failed, so the other files stay fresh; the failure still marks the run as failed. If archiving fails, `events.json` is not republished. Concurrent publishers are serialized to avoid races.
+  5.  It transfers the generated snapshot to a separate publishing job, which commits and pushes only when data changed, even if one scraper failed, so the other files stay fresh; the failure still marks the run as failed. If archiving fails, `events.json` is not republished. Concurrent publishers are serialized to avoid races.
 
 **Note:** For the GitHub Action to work, you must **manually create the `data` branch** as a clean, orphan branch in your repository first.
 
 ### Deploying the API Site
 
-- **Workflow file:** `.github/workflows/deploy_pages.yml`
+- **Workflow file:** `.github/workflows/deploy-pages.yml`
 - **Trigger:** After non-cancelled scrape or backfill runs from `main`, on pushes to `main` that change `site/` or the deployment workflow, and manually. Failed runs may have published validated files, so they can also trigger deployment.
 - **Process:** It combines the `data` branch with the `site/` folder and deploys the result with GitHub's Pages actions, so the `data` branch only ever holds data. The repository's Pages source must be set to **GitHub Actions**.
 
@@ -49,7 +49,7 @@ This repository is configured to run the scraper automatically using GitHub Acti
 
 Archived events keep whatever the scraper captured when they ended, so improvements to the parser do not reach them on their own. The backfill workflow re-reads every archived event from its Leek Duck page and republishes the result.
 
-- **Workflow file:** `.github/workflows/backfill_archives.yml`
+- **Workflow file:** `.github/workflows/backfill-archives.yml`
 - **Trigger:** Manual only, from the "Actions" tab. `dry_run` defaults to `true`, so the report can be reviewed before anything is published.
 - **Behavior:** Identity, category, banner, and timestamps are always kept from the archive; only `description` and `details` are refreshed. Events whose page has been removed keep their original snapshot.
 
@@ -70,8 +70,8 @@ The Pages environment and publishing workflows permit only `main`. Live ruleset 
 ## Manual workflow runs
 
 ```sh
-gh workflow run run_scrapers.yml --repo pokelitee/leak-duck --ref main
-gh workflow run backfill_archives.yml --repo pokelitee/leak-duck --ref main -f years="2025 2026" -F dry_run=true
+gh workflow run update-data.yml --repo pokelitee/leak-duck --ref main
+gh workflow run backfill-archives.yml --repo pokelitee/leak-duck --ref main -f years="2025 2026" -F dry_run=true
 ```
 
 Review the backfill report before dispatching again with `dry_run=false`. Local backfills also default to writing unless `--dry-run` is supplied; the workflow defaults to dry-run. Scrapes and backfills share a publisher concurrency group so they cannot race.
@@ -85,3 +85,10 @@ Review the backfill report before dispatching again with `dry_run=false`. Local 
 - **Backfill source page removed:** preserve the original archived snapshot; do not replace it with empty data.
 
 For a reproducible older snapshot, use a full data commit SHA in raw GitHub URLs. Repair current output through the scraper/backfill workflow after fixing its source behavior; do not force-push `data` or hand-edit published JSON.
+
+
+## Workflow permission boundaries
+
+Scraping and backfill generation use read-only tokens and do not retain checkout credentials. Their artifacts exclude Git metadata and contain the complete data snapshot. Only the reusable `publish-data.yml` workflow receives repository write permission. It rejects publication if `data` moved since generation began and uses a normal push so concurrent external updates cannot be overwritten.
+
+A failed scraper still uploads its validated partial results and keeps the overall workflow failed, while the publishing job may update successful files. Backfills upload only after successful generation, and dry runs never upload or publish. Both entry workflows retain the shared publisher concurrency group across generation and publication.

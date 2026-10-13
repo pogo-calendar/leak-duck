@@ -1,0 +1,80 @@
+name: Update Data
+
+on:
+  schedule:
+    # Avoid the top of the hour, when scheduled runs are more likely to be delayed.
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: leak-duck-data-publisher
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      base-commit: ${{ steps.data.outputs.commit }}
+      ready: ${{ steps.archive.outputs.ready }}
+    steps:
+      - name: Configure data directory
+        run: echo "DATA_DIR=$RUNNER_TEMP/data" >> "$GITHUB_ENV"
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements/runtime.txt
+      - name: Install runtime dependencies
+        run: python -m pip install -r requirements/runtime.txt
+      - name: Run regression tests
+        run: python -m unittest discover -v
+      - name: Check out published data
+        id: data
+        run: |
+          git fetch --depth=1 origin data
+          echo "commit=$(git rev-parse FETCH_HEAD)" >> "$GITHUB_OUTPUT"
+          git worktree add --detach "$DATA_DIR" FETCH_HEAD
+      - name: Run archiver and scrapers
+        id: scrape
+        env:
+          LEAK_DUCK_PUBLISHED_DIR: ${{ env.DATA_DIR }}
+          LEAK_DUCK_OUTPUT_DIR: ${{ env.DATA_DIR }}
+        run: python -m src.main
+
+      - name: Archive generated data
+        id: archive
+        if: ${{ !cancelled() && steps.scrape.outcome != 'skipped' }}
+        run: |
+          cp .github/data-branch-readme.md "$DATA_DIR/README.md"
+          tar -czf generated-data.tar.gz --exclude=.git -C "$DATA_DIR" .
+          echo "ready=true" >> "$GITHUB_OUTPUT"
+      - name: Upload generated data
+        if: ${{ !cancelled() && steps.archive.outcome == 'success' }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: generated-data
+          path: generated-data.tar.gz
+          if-no-files-found: error
+          retention-days: 1
+
+  publish:
+    if: >-
+      !cancelled() && github.ref == 'refs/heads/main' &&
+      needs.generate.outputs.ready == 'true'
+    needs: generate
+    permissions:
+      contents: write
+    uses: ./.github/workflows/publish-data.yml
+    with:
+      base-commit: ${{ needs.generate.outputs.base-commit }}
+      commit-message: Automated data update

@@ -1,0 +1,51 @@
+name: Publish Data
+
+on:
+  workflow_call:
+    inputs:
+      base-commit:
+        required: true
+        type: string
+      commit-message:
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    if: ${{ !cancelled() && github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Download generated data
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: generated-data
+      - name: Publish data snapshot
+        env:
+          BASE_COMMIT: ${{ inputs.base-commit }}
+          COMMIT_MESSAGE: ${{ inputs.commit-message }}
+        run: |
+          git fetch --depth=1 origin data
+          if [ "$(git rev-parse FETCH_HEAD)" != "$BASE_COMMIT" ]; then
+            echo "The data branch changed during generation; rerun the workflow."
+            exit 1
+          fi
+          git worktree add --detach data-branch FETCH_HEAD
+          git -C data-branch rm -r --ignore-unmatch .
+          tar -xzf generated-data.tar.gz -C data-branch
+          git -C data-branch add -A
+          if git -C data-branch diff --cached --quiet; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+          git -C data-branch config user.name "github-actions[bot]"
+          git -C data-branch config user.email "github-actions[bot]@users.noreply.github.com"
+          git -C data-branch commit -m "$COMMIT_MESSAGE"
+          git -C data-branch push origin HEAD:refs/heads/data
