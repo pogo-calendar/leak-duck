@@ -11,6 +11,7 @@ permissions:
 jobs:
   quality:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Check out repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -39,3 +40,6 @@ jobs:
 
       - name: Check site script syntax
         run: node --check site/assets/app.js
+
+      - name: Build and verify installed package
+        run: python scripts/check_package.py

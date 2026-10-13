@@ -22,7 +22,11 @@ jobs:
   deploy:
     # A failed scrape still publishes the files that succeeded, so only runs
     # that were cancelled are skipped.
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion != 'cancelled'
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      (github.event_name != 'workflow_run' ||
+       (github.event.workflow_run.head_branch == 'main' &&
+        github.event.workflow_run.conclusion != 'cancelled'))
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
