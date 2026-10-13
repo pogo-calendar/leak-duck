@@ -11,6 +11,11 @@ from src.fetch import get_with_retries
 from src.paths import HTML_DIR
 from src.utils import clean_banner_url, parse_schedule_datetime, save_html
 
+# LeekDuck's "Shiny" section lists Pokémon whose shinies the event offers. It
+# shows each one's shiny sprite instead of the shiny badge other sections use,
+# so every entry there is shiny-eligible even without the badge.
+SHINY_SECTION_ID = "shiny"
+
 
 def clean_spacing(text: str) -> str:
     """
@@ -264,7 +269,10 @@ class EventPageScraper:
                 if asset_img and asset_img.has_attr("src")
                 else None
             )
-            is_shiny = li_tag.find("img", class_="shiny-icon") is not None
+            is_shiny = (
+                section_id == SHINY_SECTION_ID
+                or li_tag.find("img", class_="shiny-icon") is not None
+            )
 
             pokemon_list.append(
                 {"name": name, "asset_url": asset_url, "shiny_available": is_shiny}
