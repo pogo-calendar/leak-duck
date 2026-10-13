@@ -1,4 +1,6 @@
+import io
 import unittest
+from contextlib import redirect_stdout
 from typing import Any
 from unittest.mock import Mock, patch
 
@@ -107,6 +109,25 @@ class ArchiveBackfillerTests(unittest.TestCase):
             rebuilt, _ = self.backfiller._backfill_event(event)
 
         self.assertEqual(rebuilt["description"], "Original description.")
+
+    def test_retries_a_slow_page_before_giving_up(self) -> None:
+        backfiller = ArchiveBackfiller(
+            PublishedData("owner", "repository"),
+            ScraperSettings(retries=2, delay=0),
+            [2025],
+            delay=0,
+        )
+        with (
+            redirect_stdout(io.StringIO()),
+            patch(
+                "src.fetch.requests.get",
+                side_effect=[requests.ReadTimeout("slow"), self.response(EVENT_PAGE)],
+            ),
+        ):
+            rebuilt, outcome = backfiller._backfill_event(archived_event())
+
+        self.assertEqual(outcome, "description recovered")
+        self.assertEqual(rebuilt["description"], "Recovered description.")
 
     def test_network_failures_are_not_silently_swallowed(self) -> None:
         from src.backfill import ArchiveBackfillError

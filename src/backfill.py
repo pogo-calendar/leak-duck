@@ -2,11 +2,10 @@ import argparse
 import time
 from typing import Any, cast
 
-import requests
 from bs4 import BeautifulSoup
 
 from src.config import PublishedData, ScraperSettings, load_config
-from src.fetch import FetchError, get_if_exists
+from src.fetch import FetchError, get_if_exists_with_retries
 from src.manifest import update_manifest
 from src.paths import data_dir
 from src.published import read_published_json
@@ -85,7 +84,7 @@ class ArchiveBackfiller:
     def _rescrape(self, event: dict[str, Any]) -> dict[str, Any] | None:
         """Return the current page's parse, or None when the page is gone."""
         url = event["article_url"]
-        response = get_if_exists(url, timeout=self.page_scraper.settings.timeout)
+        response = get_if_exists_with_retries(url, self.page_scraper.settings)
         if response is None:
             return None
         return self.page_scraper.parse(BeautifulSoup(response.text, "lxml"), url)
@@ -94,7 +93,7 @@ class ArchiveBackfiller:
         """Return the rebuilt event and the outcome for reporting."""
         try:
             parsed = self._rescrape(event)
-        except requests.exceptions.RequestException as e:
+        except FetchError as e:
             raise ArchiveBackfillError(f"Could not read {event['article_url']}") from e
 
         if parsed is None:
