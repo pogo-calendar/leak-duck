@@ -26,9 +26,8 @@ def validate_archive_output(
 
     Archives are point-in-time snapshots, so legacy records archived before the
     field was captured may omit ``description``; when present it must be a
-    string. Pokémon detail entries may use the legacy plain-string format or the
-    current Pokémon object format. Every other field is validated as strictly as
-    freshly scraped events.
+    string. Every other field is validated as strictly as freshly scraped
+    events.
     """
     _validate_sections(file_name, data, allow_empty=allow_empty)
 
@@ -127,8 +126,9 @@ def validate_event_record(
 def _validate_details(label: str, details: dict[str, Any]) -> None:
     """Validate detail sections.
 
-    Section names are page-driven, so only the entry shapes are checked: plain
-    strings (bonuses and legacy Pokémon lists) or Pokémon objects with a name.
+    Section names are page-driven, so only the entry shapes are checked:
+    `bonuses` holds plain strings and every other section holds Pokémon objects
+    with a name.
     """
     for section, entries in details.items():
         if not isinstance(section, str) or not isinstance(entries, list):
@@ -137,8 +137,8 @@ def _validate_details(label: str, details: dict[str, Any]) -> None:
             )
 
         for entry in entries:
-            if isinstance(entry, str):
-                name = entry
+            if section == "bonuses":
+                name = entry if isinstance(entry, str) else None
             elif isinstance(entry, dict):
                 name = entry.get("name")
             else:

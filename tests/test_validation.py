@@ -176,11 +176,18 @@ class ArchiveValidationTests(unittest.TestCase):
         with self.assertRaises(OutputValidationError):
             validate_archive_output("archive_2025", {"Event": [event(description=42)]})
 
-    def test_accepts_legacy_pokemon_strings(self) -> None:
-        validate_archive_output(
-            "archive_2025",
-            {"Event": [event(details={"spawns": ["Zubat"], "bonuses": ["2x XP"]})]},
-        )
+    def test_rejects_plain_pokemon_names(self) -> None:
+        with self.assertRaises(OutputValidationError):
+            validate_archive_output(
+                "archive_2025", {"Event": [event(details={"spawns": ["Zubat"]})]}
+            )
+
+    def test_rejects_objects_in_bonuses(self) -> None:
+        with self.assertRaises(OutputValidationError):
+            validate_archive_output(
+                "archive_2025",
+                {"Event": [event(details={"bonuses": [{"name": "2x XP"}]})]},
+            )
 
     def test_accepts_current_pokemon_objects(self) -> None:
         validate_archive_output(

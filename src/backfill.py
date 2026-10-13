@@ -13,32 +13,9 @@ from src.scrapers.event_page_scraper import EventPageScraper
 from src.utils import make_console_output_safe, write_json_atomic
 from src.validation import validate_archive_output
 
-POKEMON_DEFAULTS = {"asset_url": None, "shiny_available": False}
-
 
 class ArchiveBackfillError(RuntimeError):
     """Raised when published archives cannot be safely rebuilt."""
-
-
-def modernize_pokemon(entries: list[Any]) -> list[Any]:
-    """Convert legacy Pokémon name strings into the current object format.
-
-    Used for events whose source page no longer exists, so the name is all the
-    archive can honestly claim; `asset_url` stays null rather than guessed.
-    """
-    return [
-        {"name": entry, **POKEMON_DEFAULTS} if isinstance(entry, str) else entry
-        for entry in entries
-    ]
-
-
-def modernize_details(details: dict[str, Any]) -> dict[str, Any]:
-    return {
-        section: entries
-        if section == "bonuses" or not isinstance(entries, list)
-        else modernize_pokemon(entries)
-        for section, entries in details.items()
-    }
 
 
 class ArchiveBackfiller:
@@ -46,7 +23,7 @@ class ArchiveBackfiller:
 
     Re-scraping is the only authoritative source for details that were never
     captured, so pages that still exist are re-read and pages that are gone are
-    left as-is apart from a format conversion.
+    left as-is.
     """
 
     def __init__(
@@ -97,15 +74,13 @@ class ArchiveBackfiller:
             raise ArchiveBackfillError(f"Could not read {event['article_url']}") from e
 
         if parsed is None:
-            # The page is gone; keep the snapshot and only modernize its shape.
-            return {**event, "details": modernize_details(event["details"])}, "missing"
+            return event, "missing"
 
         rebuilt = dict(event)
         if parsed.get("description"):
             rebuilt["description"] = parsed["description"]
         if parsed.get("details"):
             rebuilt["details"] = parsed["details"]
-        rebuilt["details"] = modernize_details(rebuilt["details"])
 
         gained_description = "description" not in event and "description" in rebuilt
         changed = rebuilt != event
