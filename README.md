@@ -25,7 +25,7 @@ The scraped data is automatically committed and pushed to the `data` branch of t
   - **Team GO Rocket**: The complete lineups for Giovanni, Leaders, and Grunts.
   - **Egg Pool**: The current list of Pokémon hatching from each egg distance.
 - **Data Archiving**: Automatically archives past events to yearly files for historical data, with a manually triggered backfill that rebuilds them from their source pages.
-- **Failure-safe**: Uses retries, atomic writes, output validation, and nonzero exits to prevent failed runs from publishing empty or partial datasets.
+- **Failure-safe**: Uses retries, atomic writes, and output validation so a failed scraper never publishes an empty or invalid file. Files that pass validation are still published, and any failure marks the run as failed.
 - **Organized**: A clean and modular project structure that is easy to understand and extend.
 
 ---
@@ -118,9 +118,10 @@ ruff format --check .
 ruff check .
 python -m unittest discover -v
 python -m compileall -q src tests
+node --check site/assets/app.js
 ```
 
-Use `ruff format .` to apply formatting. The tests are offline and cover parser selectors, output validation, archive compatibility validation, fetch failures, and archive-preservation behavior.
+Use `ruff format .` to apply formatting. The tests are offline and cover parser selectors, output validation, archive compatibility validation, fetch retries and failures, archive preservation, partial-failure handling, the manifest, and that `site/docs.json` documents exactly the published files.
 
 ### Previewing the API Site
 
