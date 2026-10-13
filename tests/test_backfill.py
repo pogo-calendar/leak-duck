@@ -6,17 +6,20 @@ from unittest.mock import Mock, patch
 
 import requests
 
-from src.backfill import ArchiveBackfiller, modernize_details, modernize_pokemon
+from src.backfill import ArchiveBackfiller
 from src.config import PublishedData, ScraperSettings
 
 
 def archived_event(**overrides: Any) -> dict[str, Any]:
     event: dict[str, Any] = {
-        "title": "Legacy Event",
-        "article_url": "https://example.invalid/events/legacy/",
+        "title": "Archived Event",
+        "article_url": "https://example.invalid/events/archived/",
         "banner_url": "banner-url",
         "category": "Event",
-        "details": {"bonuses": ["2x Stardust"], "spawns": ["Zubat"]},
+        "details": {
+            "bonuses": ["2x Stardust"],
+            "spawns": [{"name": "Zubat", "asset_url": None, "shiny_available": False}],
+        },
         "is_local_time": False,
         "start_time": 1,
         "end_time": 2,
@@ -34,23 +37,6 @@ EVENT_PAGE = (
     '<div class="pkmn-list-img"><img src="zubat.png"></div>'
     "</li></ul></div>"
 )
-
-
-class ModernizeTests(unittest.TestCase):
-    def test_converts_legacy_names_without_inventing_sprites(self) -> None:
-        self.assertEqual(
-            modernize_pokemon(["Zubat"]),
-            [{"name": "Zubat", "asset_url": None, "shiny_available": False}],
-        )
-
-    def test_leaves_current_entries_untouched(self) -> None:
-        entry = {"name": "Palkia", "asset_url": "palkia.png", "shiny_available": True}
-        self.assertEqual(modernize_pokemon([entry]), [entry])
-
-    def test_leaves_bonuses_as_plain_strings(self) -> None:
-        details = modernize_details({"bonuses": ["2x XP"], "spawns": ["Zubat"]})
-        self.assertEqual(details["bonuses"], ["2x XP"])
-        self.assertEqual(details["spawns"][0]["name"], "Zubat")
 
 
 class ArchiveBackfillerTests(unittest.TestCase):
@@ -88,7 +74,7 @@ class ArchiveBackfillerTests(unittest.TestCase):
         for key in ("title", "category", "article_url", "banner_url", "start_time"):
             self.assertEqual(rebuilt[key], event[key])
 
-    def test_missing_page_keeps_the_snapshot_and_only_modernizes_it(self) -> None:
+    def test_missing_page_keeps_the_snapshot(self) -> None:
         event = archived_event()
         with patch(
             "src.fetch.requests.get", return_value=self.response(status_code=404)
@@ -96,11 +82,7 @@ class ArchiveBackfillerTests(unittest.TestCase):
             rebuilt, outcome = self.backfiller._backfill_event(event)
 
         self.assertEqual(outcome, "missing")
-        self.assertNotIn("description", rebuilt)
-        self.assertEqual(
-            rebuilt["details"]["spawns"],
-            [{"name": "Zubat", "asset_url": None, "shiny_available": False}],
-        )
+        self.assertEqual(rebuilt, archived_event())
 
     def test_existing_description_survives_a_page_without_one(self) -> None:
         event = archived_event(description="Original description.")

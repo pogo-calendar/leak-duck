@@ -127,7 +127,9 @@ class EventArchiverTests(unittest.TestCase):
     def test_legacy_archive_without_description_is_preserved(self) -> None:
         legacy_event = archived_event(article_url="legacy")
         del legacy_event["description"]
-        legacy_event["details"] = {"spawns": ["Zubat"]}
+        legacy_event["details"] = {
+            "spawns": [{"name": "Zubat", "asset_url": None, "shiny_available": False}]
+        }
         published_archive = {"Event": [legacy_event]}
         current_events = {"Event": [archived_event()]}
 
