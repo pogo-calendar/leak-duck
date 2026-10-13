@@ -142,12 +142,12 @@
                     {
                         "name": "Blastoise",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_009_00_shiny.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Mega Blastoise",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_009_51_shiny.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     }
                 ]
             },
@@ -173,7 +173,7 @@
                     {
                         "name": "Yveltal",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_717_00_shiny.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     }
                 ]
             },
@@ -199,7 +199,7 @@
                     {
                         "name": "Dialga",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_483_00_shiny.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     }
                 ]
             },
@@ -225,12 +225,12 @@
                     {
                         "name": "Dragonite",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_149_00_shiny.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Mega Dragonite",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm149.fMEGA.s.icon.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     }
                 ]
             },
@@ -261,17 +261,17 @@
                     {
                         "name": "Charizard",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_006_00_shiny.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Mega Charizard X",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_006_51_shiny.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Mega Charizard Y",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_006_52_shiny.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     }
                 ]
             },
@@ -297,7 +297,7 @@
                     {
                         "name": "Palkia",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_484_00_shiny.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     }
                 ]
             },
@@ -323,7 +323,7 @@
                     {
                         "name": "Landorus (Incarnate)",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_645_11_shiny.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     }
                 ]
             },
@@ -349,7 +349,7 @@
                     {
                         "name": "Giratina (Origin)",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_487_12_shiny.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     }
                 ]
             },
@@ -375,12 +375,12 @@
                     {
                         "name": "Mega Sableye",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_302_51_shiny.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Sableye",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_302_00_shiny.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     }
                 ]
             },
@@ -509,17 +509,17 @@
                     {
                         "name": "Krokorok",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_552_00_shiny.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Krookodile",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_553_00_shiny.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Sandile",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_551_00_shiny.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     }
                 ]
             },
@@ -631,12 +631,12 @@
                     {
                         "name": "Electrike",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_309_00_shiny.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Hisuian Growlithe",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm58.fHISUIAN.s.icon.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     }
                 ]
             },
@@ -845,12 +845,12 @@
                     {
                         "name": "Greavard",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm971.s.icon.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Houndstone",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm972.s.icon.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     }
                 ]
             },
@@ -1200,17 +1200,17 @@
                     {
                         "name": "Azelf",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_482_00_shiny.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Mesprit",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_481_00_shiny.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Uxie",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_480_00_shiny.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     }
                 ]
             },
@@ -1781,12 +1781,12 @@
                     {
                         "name": "Hisuian Goodra",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm706.fHISUIAN.s.icon.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Hisuian Sliggoo",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm705.fHISUIAN.s.icon.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     }
                 ]
             },
@@ -2292,12 +2292,12 @@
                     {
                         "name": "Hisuian Goodra",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm706.fHISUIAN.s.icon.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Hisuian Sliggoo",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm705.fHISUIAN.s.icon.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     }
                 ]
             },
