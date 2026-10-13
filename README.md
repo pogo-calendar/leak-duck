@@ -1,6 +1,6 @@
 # Leak Duck
 
-[![Scrape Leek Duck Data](https://github.com/pokelitee/leak-duck/actions/workflows/run_scrapers.yml/badge.svg)](https://github.com/pokelitee/leak-duck/actions/workflows/run_scrapers.yml)
+[![Update Data](https://github.com/pokelitee/leak-duck/actions/workflows/update-data.yml/badge.svg)](https://github.com/pokelitee/leak-duck/actions/workflows/update-data.yml)
 ![Last Updated](https://img.shields.io/github/last-commit/pokelitee/leak-duck/data)
 
 A Python scraper that collects Pokémon GO events and game data from [Leek Duck](https://leekduck.com). GitHub Actions runs hourly, although scheduled runs may be delayed. Source code lives on `main`, generated JSON on `data`, and GitHub Pages serves the API.
