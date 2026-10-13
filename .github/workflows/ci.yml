@@ -36,3 +36,6 @@ jobs:
 
       - name: Compile source
         run: python -m compileall -q src tests
+
+      - name: Check site script syntax
+        run: node --check site/assets/app.js

@@ -118,6 +118,7 @@ ruff format --check .
 ruff check .
 python -m unittest discover -v
 python -m compileall -q src tests
+node --check site/assets/app.js
 ```
 
 Use `ruff format .` to apply formatting. The tests are offline and cover parser selectors, output validation, archive compatibility validation, fetch failures, and archive-preservation behavior.
