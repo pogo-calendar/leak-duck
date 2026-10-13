@@ -41,25 +41,18 @@ You can also run `python -m src.main` from the checkout without installing the p
 
 ## Architecture
 
-- `src/scrapers/`: resource parsers and shared scraper behavior.
-- `src/archiver.py` and `src/backfill.py`: event archiving and historical refreshes.
-- `src/fetch.py`, `src/validation.py`, and `src/published.py`: fetching, output checks, and access to published snapshots.
-- `src/main.py` and `src/manifest.py`: orchestration and publication metadata.
-- `site/`: API explorer and field reference.
-- `tests/` and `scripts/`: offline regression tests and package verification.
-- `.github/`: CI, scraping, backfill, deployment, and repository policies.
-
-Each validated file publishes independently. Failed scrapers preserve the corresponding published files while successful scrapers can still update theirs. The run reports failure whenever a scraper fails.
+Resource scrapers share fetching and validation utilities; orchestration manages event archiving and the publication manifest. Each validated file can publish independently, including after another scraper fails. See [Development](docs/development.md#architecture) for the module layout.
 
 ## Documentation
 
 - [API reference](https://pokelitee.github.io/leak-duck/#reference): the published data contract, maintained in [site/docs.json](site/docs.json).
-- [Contributing](CONTRIBUTING.md): local checks, site preview, automation, and archive backfills.
+- [Development](docs/development.md): local checks, architecture, site preview, and dependencies.
+- [Operations](docs/operations.md): configuration, scraping, archiving, backfills, and recovery.
 - [Data branch guide](.github/data-branch-readme.md): the README copied into published snapshots.
 
 ## Contributing
 
-Follow the [organization contribution guide](https://github.com/pokelitee/.github/blob/main/CONTRIBUTING.md) and the [project instructions](CONTRIBUTING.md). Use a short-lived branch and a pull request into `main`.
+Follow the [organization contribution guide](https://github.com/pokelitee/.github/blob/main/CONTRIBUTING.md) and the [development guide](docs/development.md). Use a short-lived branch and a pull request into `main`.
 
 ## License
 
