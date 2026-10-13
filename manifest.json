@@ -1,14 +1,14 @@
 {
     "files": {
         "archives/archive_2025.json": {
-            "sha256": "f4754e5e479fae0c477c3bcbc0acc459d71e978b3cf8ac9a9c8c0df2f5a01c24",
-            "size": 515920,
-            "updated_at": "2026-10-12T17:30:07Z"
+            "sha256": "392d579acdefb343d023883564a6dcc199310d3a084603c48610095a0a2baad6",
+            "size": 515916,
+            "updated_at": "2026-10-13T01:39:14Z"
         },
         "archives/archive_2026.json": {
-            "sha256": "ca19c1d4aa57263b753f67690d3dfa8e1d1e2d4712789e6e1b99aa8f5ece5056",
-            "size": 1100045,
-            "updated_at": "2026-10-12T17:30:07Z"
+            "sha256": "45745e8556286a504c6873f21e7e7b72d8717d1fb506cc237358fa21370349e4",
+            "size": 1105242,
+            "updated_at": "2026-10-13T01:39:14Z"
         },
         "egg_pool.json": {
             "sha256": "cae8eeffb56c788b643b3b2b7ec314ed6be851582756a06a1e20b7c7e2510a1e",

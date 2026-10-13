@@ -578,7 +578,7 @@
                     },
                     {
                         "name": "Galarian Ponyta",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_077_31.png",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm77.fGALARIAN.icon.png",
                         "shiny_available": true
                     },
                     {
@@ -1491,7 +1491,7 @@
                     {
                         "name": "Nickit",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm827.icon.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Paras",
@@ -1625,7 +1625,7 @@
                     {
                         "name": "Nickit",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm827.icon.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Purrloin",
@@ -2476,7 +2476,7 @@
                     {
                         "name": "Snom",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm872.icon.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     }
                 ],
                 "raids": [
@@ -4275,7 +4275,7 @@
                     },
                     {
                         "name": "Mega Glalie",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm362.fMEGA.icon.png",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm362.fMEGA.s.icon.png",
                         "shiny_available": false
                     }
                 ]
@@ -5421,7 +5421,7 @@
                     {
                         "name": "Sprigatito",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm906.icon.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Totodile",
@@ -8221,7 +8221,7 @@
                     },
                     {
                         "name": "Galarian Ponyta",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_077_31.png",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm77.fGALARIAN.icon.png",
                         "shiny_available": true
                     },
                     {
@@ -8317,7 +8317,7 @@
                     {
                         "name": "Klefki",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_707_00.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Kricketot",
@@ -8649,7 +8649,7 @@
                     },
                     {
                         "name": "Galarian Ponyta",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_077_31.png",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm77.fGALARIAN.icon.png",
                         "shiny_available": true
                     },
                     {
@@ -8909,7 +8909,7 @@
                     },
                     {
                         "name": "Galarian Ponyta",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_077_31.png",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm77.fGALARIAN.icon.png",
                         "shiny_available": true
                     },
                     {
@@ -9000,7 +9000,7 @@
                     {
                         "name": "Klefki",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_707_00.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Kricketot",
@@ -9292,7 +9292,7 @@
                     },
                     {
                         "name": "Galarian Ponyta",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_077_31.png",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm77.fGALARIAN.icon.png",
                         "shiny_available": false
                     },
                     {
@@ -9503,7 +9503,7 @@
                     },
                     {
                         "name": "Galarian Ponyta",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_077_31.png",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm77.fGALARIAN.icon.png",
                         "shiny_available": true
                     },
                     {

@@ -611,7 +611,7 @@
                     {
                         "name": "Mega Slowbro",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_080_51.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     }
                 ],
                 "shiny": [
@@ -1176,7 +1176,7 @@
                     },
                     {
                         "name": "Mega Glalie",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm362.fMEGA.icon.png",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm362.fMEGA.s.icon.png",
                         "shiny_available": false
                     }
                 ]
@@ -1854,7 +1854,7 @@
                     },
                     {
                         "name": "Mega Aggron",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/ppm306.fMEGA.s.icon.png",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm306.fMEGA.s.icon.png",
                         "shiny_available": false
                     }
                 ]
@@ -4087,7 +4087,7 @@
                     },
                     {
                         "name": "Galarian Ponyta",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_077_31.png",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm77.fGALARIAN.icon.png",
                         "shiny_available": true
                     },
                     {
@@ -5910,7 +5910,7 @@
                     {
                         "name": "Snom",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm872.icon.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Solgaleo",
@@ -10726,7 +10726,7 @@
             "is_local_time": true,
             "start_time": "2026-10-02T10:00:00",
             "end_time": "2026-10-02T20:00:00",
-            "description": "This event is available only in Indonesia.\nNote: The original announcement was updated to say this event is exclusive to Indonesia. It originally gave no indication that it was not a global event.\nPatterns of the Wild brings a Special Background for Pikachu wearing a batik shirt, along with boosted wild encounters, Incense bonuses, and research rewards!\nThe event takes place on Friday, October 2, 2026, from 10:00 a.m. to 8:00 p.m. local time. Timed Research is available for a longer period, from September 28 through October 7."
+            "description": "This event is available only in Indonesia.\nNote: The original announcement was updated to say this event is exclusive to Indonesia. It originally gave no indication that it was not a global event.\nPatterns of the Wild brings a Special Background for Pikachu wearing a batik shirt, along with boosted wild encounters, Incense bonuses, and research rewards!\nThe event takes place on Friday, October 2, 2026, from 10:00 a.m. to 8:00 p.m. local time. Timed Research is available for a longer period, from September 28 through October 10."
         },
         {
             "title": "Harvest Festival 2026: Applin Picking",
@@ -10774,13 +10774,33 @@
                         "shiny_available": true
                     },
                     {
+                        "name": "Ekans",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_023_00.png",
+                        "shiny_available": true
+                    },
+                    {
                         "name": "Foongus",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_590_00.png",
                         "shiny_available": true
                     },
                     {
+                        "name": "Koffing",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_109_00.png",
+                        "shiny_available": true
+                    },
+                    {
                         "name": "Lechonk",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm915.icon.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Magmar",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_126_00.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Numel",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_322_00.png",
                         "shiny_available": true
                     },
                     {
@@ -10791,6 +10811,11 @@
                     {
                         "name": "Skwovet",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm819.icon.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Slugma",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_218_00.png",
                         "shiny_available": true
                     },
                     {
@@ -10860,7 +10885,7 @@
             "details": {
                 "bonuses": [
                     "Increased chance to encounter Shiny Slugma",
-                    "More Team GO Rocket appearances at PokéStops and in balloons",
+                    "More Team GO Rocket appearances at PokéStops and balloons appearing every 2 hours",
                     "Use a Charged TM to remove Frustration from Shadow Pokémon",
                     "Wider Attack, Defense, and HP variance for Pokémon caught in one-star and three-star Shadow Raids during the event"
                 ],
@@ -10873,8 +10898,23 @@
                 ],
                 "shadow": [
                     {
+                        "name": "Alolan Grimer",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_088_61.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Cubone",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_104_00.png",
+                        "shiny_available": true
+                    },
+                    {
                         "name": "Fomantis",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm753.icon.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Pancham",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_674_00.png",
                         "shiny_available": true
                     },
                     {
@@ -10890,8 +10930,28 @@
                 ],
                 "spawns": [
                     {
+                        "name": "Applin",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm840.icon.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Ekans",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_023_00.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Foongus",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_590_00.png",
+                        "shiny_available": true
+                    },
+                    {
                         "name": "Koffing",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_109_00.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Lechonk",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm915.icon.png",
                         "shiny_available": true
                     },
                     {
@@ -10905,8 +10965,28 @@
                         "shiny_available": true
                     },
                     {
+                        "name": "Shroomish",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_285_00.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Skwovet",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm819.icon.png",
+                        "shiny_available": true
+                    },
+                    {
                         "name": "Slugma",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_218_00.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Smoliv",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm928.icon.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Snorlax",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_143_00.png",
                         "shiny_available": true
                     }
                 ],
@@ -12711,11 +12791,19 @@
             "article_url": "https://leekduck.com/events/pokemonspotlighthour2026-09-17/",
             "banner_url": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
             "category": "Pokémon Spotlight Hour",
-            "details": {},
+            "details": {
+                "spawns": [
+                    {
+                        "name": "Charmander wearing Friede's goggles",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm4.fGOGGLES_2026.icon.png",
+                        "shiny_available": true
+                    }
+                ]
+            },
             "is_local_time": true,
             "start_time": "2026-09-17T18:00:00",
             "end_time": "2026-09-17T19:00:00",
-            "description": "Pokémon Spotlight Hour will feature an unannounced Pokémon and a special bonus for one hour at 6:00 p.m. local time.\nSeptember 17: The featured Pokémon has not yet been announced, and the special bonus is 2× Catch Stardust."
+            "description": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time.\nSeptember 17: The featured Pokémon is Charmander wearing Friede’s goggles and the special bonus is 2× Catch Stardust."
         },
         {
             "title": "Rattata Spotlight Hour",
@@ -13671,24 +13759,24 @@
                 "features": [
                     {
                         "name": "Mega Raichu X",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/Mega Raichu X.png",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm26.fMEGA_X.icon.png",
                         "shiny_available": true
                     },
                     {
                         "name": "Mega Raichu Y",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/Mega Raichu Y.png",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm26.fMEGA_Y.icon.png",
                         "shiny_available": true
                     }
                 ],
                 "raids": [
                     {
                         "name": "Mega Raichu X",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/Mega Raichu X.png",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm26.fMEGA_X.icon.png",
                         "shiny_available": true
                     },
                     {
                         "name": "Mega Raichu Y",
-                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/Mega Raichu Y.png",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm26.fMEGA_Y.icon.png",
                         "shiny_available": true
                     }
                 ],
@@ -13770,7 +13858,26 @@
                     "Remote Raid limit increased to 20 from Friday, September 18, at 5:00 p.m. to Saturday, September 19, 2026, at 8:00 p.m. PDT",
                     "Staraptor caught from Super Mega Raids will have Mega Level 1 unlocked"
                 ],
+                "features": [
+                    {
+                        "name": "Mega Staraptor",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm398.fMEGA.icon.png",
+                        "shiny_available": true
+                    }
+                ],
+                "raids": [
+                    {
+                        "name": "Mega Staraptor",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm398.fMEGA.icon.png",
+                        "shiny_available": true
+                    }
+                ],
                 "shiny": [
+                    {
+                        "name": "Mega Staraptor",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm398.fMEGA.s.icon.png",
+                        "shiny_available": false
+                    },
                     {
                         "name": "Staraptor",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_398_00_shiny.png",
@@ -16100,7 +16207,7 @@
                     {
                         "name": "Scorbunny",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm813.icon.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Skarmory",
@@ -16125,17 +16232,17 @@
                     {
                         "name": "Snom",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm872.icon.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Sobble",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm816.icon.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Sprigatito",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm906.icon.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Squirtle",
@@ -16412,7 +16519,7 @@
                     {
                         "name": "Snom",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm872.icon.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Tadbulb",
@@ -16819,7 +16926,7 @@
                     {
                         "name": "Nickit",
                         "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm827.icon.png",
-                        "shiny_available": false
+                        "shiny_available": true
                     },
                     {
                         "name": "Tadbulb",
