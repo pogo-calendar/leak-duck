@@ -2481,6 +2481,63 @@
             "start_time": "2026-09-30T06:00:00",
             "end_time": "2026-10-06T22:00:00",
             "description": "Xerneas will be in five-star raid battles from September 30, 2026 to October 6, 2026.\nThere will also be a Raid Hour featuring Xerneas from 6:00 p.m. to 7:00 p.m. local time on September 30."
+        },
+        {
+            "title": "Mega Blastoise in Mega Raids",
+            "article_url": "https://leekduck.com/events/mega-blastoise-in-mega-raids-october-2026/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/mega-default.jpg",
+            "category": "Raid Battles",
+            "details": {
+                "raids": [
+                    {
+                        "name": "Mega Blastoise",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_009_51.png",
+                        "shiny_available": true
+                    }
+                ],
+                "shiny": [
+                    {
+                        "name": "Blastoise",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_009_00_shiny.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Mega Blastoise",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_009_51_shiny.png",
+                        "shiny_available": true
+                    }
+                ]
+            },
+            "is_local_time": true,
+            "start_time": "2026-10-07T06:00:00",
+            "end_time": "2026-10-13T22:00:00",
+            "description": "Mega Blastoise will be in Mega Raids from October 7, 2026 at 6 am to October 13, 2026 at 10 pm local time."
+        },
+        {
+            "title": "Yveltal in 5-star Raid Battles",
+            "article_url": "https://leekduck.com/events/yveltal-in-5-star-raid-battles-october-2026/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/yveltal-2.jpg",
+            "category": "Raid Battles",
+            "details": {
+                "raids": [
+                    {
+                        "name": "Yveltal",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_717_00.png",
+                        "shiny_available": true
+                    }
+                ],
+                "shiny": [
+                    {
+                        "name": "Yveltal",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_717_00_shiny.png",
+                        "shiny_available": true
+                    }
+                ]
+            },
+            "is_local_time": true,
+            "start_time": "2026-10-07T06:00:00",
+            "end_time": "2026-10-13T22:00:00",
+            "description": "Yveltal will be in five-star raid battles from October 7, 2026 to October 13, 2026.\nThere will also be a Raid Hour featuring Yveltal from 6:00 p.m. to 7:00 p.m. local time on October 7."
         }
     ],
     "Community Day": [
