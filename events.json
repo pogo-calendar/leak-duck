@@ -1,39 +1,4 @@
 {
-    "Max Mondays": [
-        {
-            "title": "Dynamax Rookidee during Max Monday",
-            "article_url": "https://leekduck.com/events/max-mondays-2026-10-12/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg",
-            "category": "Max Mondays",
-            "details": {},
-            "is_local_time": true,
-            "start_time": "2026-10-12T06:00:00",
-            "end_time": "2026-10-12T21:00:00",
-            "description": "Dynamax Rookidee may appear in Max Battles from October 12, 2026 through October 18, 2026.\nThese Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays.\n- Power Spots will refresh more frequently.\n- Additional Power Spots will be active on Mondays compared to the rest of the week.\n- Max Battles will rotate to feature different Dynamax Pokémon.\nOn October 12, 2026, the featured Dynamax Pokémon is Rookidee.\n- Rookidee"
-        },
-        {
-            "title": "Dynamax Sneasel during Max Monday",
-            "article_url": "https://leekduck.com/events/max-mondays-2026-10-19/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg",
-            "category": "Max Mondays",
-            "details": {},
-            "is_local_time": true,
-            "start_time": "2026-10-19T06:00:00",
-            "end_time": "2026-10-19T21:00:00",
-            "description": "Dynamax Sneasel may appear in Max Battles from October 19, 2026 through October 25, 2026.\nThese Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays.\n- Power Spots will refresh more frequently.\n- Additional Power Spots will be active on Mondays compared to the rest of the week.\n- Max Battles will rotate to feature different Dynamax Pokémon.\nOn October 19, 2026, the featured Dynamax Pokémon is Sneasel.\n- Sneasel"
-        },
-        {
-            "title": "Dynamax Sableye during Max Monday",
-            "article_url": "https://leekduck.com/events/max-mondays-2026-10-26/",
-            "banner_url": "https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg",
-            "category": "Max Mondays",
-            "details": {},
-            "is_local_time": true,
-            "start_time": "2026-10-26T06:00:00",
-            "end_time": "2026-10-26T21:00:00",
-            "description": "Dynamax Sableye may appear in Max Battles from October 26, 2026 through November 1, 2026.\nThese Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays.\n- Power Spots will refresh more frequently.\n- Additional Power Spots will be active on Mondays compared to the rest of the week.\n- Max Battles will rotate to feature different Dynamax Pokémon.\nOn October 26, 2026, the featured Dynamax Pokémon is Sableye.\n- Sableye"
-        }
-    ],
     "GO Battle League": [
         {
             "title": "Great League: Mega Edition, Ultra League: Mega Edition, and Master League: Mega Edition | Twilight Trails",
@@ -860,6 +825,122 @@
             "description": "Shiny Greavard makes its Pokémon GO debut, and Mega Sableye can reach the new Super Max Mega Level! Halloween continues with costumed Pokémon, themed encounters, and GO Pass bonuses.\nHalloween 2026 Part II runs from Sunday, November 1, at 10:00 a.m. to Thursday, November 5, 2026, at 8:00 p.m. local time.\nSee Halloween 2026 Part I for the first part of the celebration, including the debut of costumed Pikachu, Zubat, and Sinistea."
         },
         {
+            "title": "Into the Wild",
+            "article_url": "https://leekduck.com/events/into-the-wild-2026/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-11-09-into-the-wild-2026/into-the-wild-2026.jpg",
+            "category": "Event",
+            "details": {
+                "bonuses": [
+                    "+1 Candy XL from Max Battles (Trainers level 31+)",
+                    "+1 Candy XL from raids (Trainers level 31+)",
+                    "+1 Candy from Max Battles",
+                    "+1 Candy from raids",
+                    "1/2 Hatch Distance for Eggs placed in Incubators during the event",
+                    "3/4 Max Particle cost for unlocking and powering up Max Moves",
+                    "5,000 additional XP from completed Max Battles",
+                    "5,000 additional XP from completed raids",
+                    "Chance to encounter Shiny Gimmighoul when using a Coin Bag*",
+                    "Chance to encounter Shiny Meltan when opening the Mystery Box*",
+                    "No Remote Raid limit from Saturday, November 14, to Sunday, November 15, 2026",
+                    "Reduced wait time before you can open the Mystery Box again*",
+                    "Remote Raid limit increased to 30 from Monday, November 9, to Friday, November 13, 2026",
+                    "Trainers can receive special event stickers from PokéStops and Gifts"
+                ],
+                "features": [
+                    {
+                        "name": "Meltan",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_808_00.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Regidrago",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm895.icon.png",
+                        "shiny_available": true
+                    }
+                ],
+                "spawns": [
+                    {
+                        "name": "Magnemite",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_081_00.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Noibat",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_714_00.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Togedemaru",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm777.icon.png",
+                        "shiny_available": true
+                    }
+                ],
+                "raids": [
+                    {
+                        "name": "Druddigon",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_621_00.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Latias",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_380_00.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Latios",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_381_00.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Machop",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_066_00.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Orthworm",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm968.icon.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Ralts",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_280_00.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Regidrago",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm895.icon.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Registeel",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_379_00.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Zacian (Crowned Sword)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm888.fCROWNED_SWORD.icon.png",
+                        "shiny_available": true
+                    },
+                    {
+                        "name": "Zamazenta (Crowned Shield)",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm889.fCROWNED_SHIELD.icon.png",
+                        "shiny_available": true
+                    }
+                ],
+                "go-pass": [
+                    {
+                        "name": "Meltan",
+                        "asset_url": "https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_808_00.png",
+                        "shiny_available": true
+                    }
+                ]
+            },
+            "is_local_time": true,
+            "start_time": "2026-11-09T10:00:00",
+            "end_time": "2026-11-13T20:00:00",
+            "description": "It’s time to head back Into the Wild for a Steel- and Dragon-type adventure! Regidrago makes its Dynamax debut in five-star Max Battles, Dynamax Meltan debuts in GO Pass: Into the Wild, and Crowned Sword Zacian and Crowned Shield Zamazenta take over five-star raids as Pokémon GO Wild Area 2026 approaches."
+        },
+        {
             "title": "Minior Showers: Leonids 2026",
             "article_url": "https://leekduck.com/events/minior-showers-leonids-2026/",
             "banner_url": "https://cdn.leekduck.com/assets/img/events/minior-showers-2026.jpg",
@@ -1158,6 +1239,30 @@
             "start_time": "2027-08-10T17:00:00",
             "end_time": "2027-08-15T23:59:00",
             "description": "Explore by starlight during the Perseids meteor shower for a chance to encounter Minior in Pokémon GO!\nThis Minior Shower runs from August 10, 2027 at 5:00 p.m. to August 15, 2027 at 11:59 p.m. local time."
+        }
+    ],
+    "Max Mondays": [
+        {
+            "title": "Dynamax Sneasel during Max Monday",
+            "article_url": "https://leekduck.com/events/max-mondays-2026-10-19/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg",
+            "category": "Max Mondays",
+            "details": {},
+            "is_local_time": true,
+            "start_time": "2026-10-19T06:00:00",
+            "end_time": "2026-10-19T21:00:00",
+            "description": "Dynamax Sneasel may appear in Max Battles from October 19, 2026 through October 25, 2026.\nThese Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays.\n- Power Spots will refresh more frequently.\n- Additional Power Spots will be active on Mondays compared to the rest of the week.\n- Max Battles will rotate to feature different Dynamax Pokémon.\nOn October 19, 2026, the featured Dynamax Pokémon is Sneasel.\n- Sneasel"
+        },
+        {
+            "title": "Dynamax Sableye during Max Monday",
+            "article_url": "https://leekduck.com/events/max-mondays-2026-10-26/",
+            "banner_url": "https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg",
+            "category": "Max Mondays",
+            "details": {},
+            "is_local_time": true,
+            "start_time": "2026-10-26T06:00:00",
+            "end_time": "2026-10-26T21:00:00",
+            "description": "Dynamax Sableye may appear in Max Battles from October 26, 2026 through November 1, 2026.\nThese Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays.\n- Power Spots will refresh more frequently.\n- Additional Power Spots will be active on Mondays compared to the rest of the week.\n- Max Battles will rotate to feature different Dynamax Pokémon.\nOn October 26, 2026, the featured Dynamax Pokémon is Sableye.\n- Sableye"
         }
     ],
     "Max Battles": [
